@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/style.css" rel="stylesheet">
+
+    <title>Ports on Multiple Instances - Gorp Docs</title>
+</head>
+<body>
+
+    <header>
+        Running Multiple Instances
+    </header>
+    
+
+
+    <aside>
+        <span class="title">Gorp Docs</span>
+
+        <a class="nav-item" href="index.html">Getting Started</a>
+        <a class="nav-item" href="instance-and-world.html">Instance & World Management</a>
+        <a class="nav-item" href="backups.html">Backups & Restoring</a>
+        <a class="nav-item" href="updating.html">Updating & Upgrading</a>
+        <a class="nav-item" href="customize.html">Customizing Individual Instances</a>
+        <a class="nav-item active" href="multiple.html">Running Multiple Instances</a>
+        <a class="nav-item" href="commands.html">Command Reference</a>
+        <a class="nav-item" href="configuration.html"> The Configuration File</a>
+    </aside>
+
+
+
+    <div id="background"></div>
+    <main class="article">
+
+        <subnav>
+            <a href="ports.html" class="active">Unique Ports</a>
+            <a href="resources.html" class="">Resources</a>
+        </subnav>
+        
+        <div class="spacer40"></div>
+
+        <h1>Unique Server Ports</h1>
+
+        <p>When running multiple server instances at the same time, it is important that each instance is running on a unique port number. Not doing so will cause errors and may even make your servers unavailable.</p>
+
+        
+        
+        <h2>Chaning an Instances's Port Number</h2>
+
+        <p><strong class="red">Caution:</strong> Please change port number configurations with the server instance STOPPED!</p>
+
+        <p>The port settings for an individual instance is located in its <mono>server.properties</mono> file. The <mono>server-port</mono> option will be <mono>25565</mono> by default.</p>
+
+        <p>Change this option using your favorite text editor (like Vim) to any value you like. Generally, counting up from 25565 is fine (25566, 25567, etc.)</p>
+
+        <p>No other configuration is needed, Gorp will pick up on the port change.</p>
+
+        
+
+    </main>
+    
+</body>
+</html>

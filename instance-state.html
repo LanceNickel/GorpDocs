@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/style.css" rel="stylesheet">
+
+    <title>Starting & Stopping Instances - Gorp Docs</title>
+</head>
+<body>
+
+    <header>
+        Instance & World Management
+    </header>
+    
+
+
+    <aside>
+        <span class="title">Gorp Docs</span>
+
+        <a class="nav-item" href="index.html">Getting Started</a>
+        <a class="nav-item active" href="instance-and-world.html">Instance & World Management</a>
+        <a class="nav-item" href="backups.html">Backups & Restoring</a>
+        <a class="nav-item" href="updating.html">Updating & Upgrading</a>
+        <a class="nav-item" href="customize.html">Customizing Individual Instances</a>
+        <a class="nav-item" href="multiple.html">Running Multiple Instances</a>
+        <a class="nav-item" href="commands.html">Command Reference</a>
+        <a class="nav-item" href="configuration.html"> The Configuration File</a>
+    </aside>
+
+
+
+    <div id="background"></div>
+    <main class="article">
+
+        <subnav>
+            <a href="instance-state.html" class="active">Start & Stop</a>
+            <a href="instances.html" class="">Manage Instances</a>
+            <a href="worlds.html" class="">Manage Worlds</a>
+        </subnav>
+        
+        <div class="spacer40"></div>
+
+        <h1>Starting & Stopping Instances</h1>
+
+        <h2>Start an Instance</h2>
+        <pre>sudo gorp start [name]</pre>
+
+        <p>When an instance is started, a new screen session of the same name is started. Then, the server's run.sh script is executed within. This allows the Minecraft server to begin starting up in the background.</p>
+
+
+
+        <h2>Stopping an Instance</h2>
+        <pre>sudo gorp stop [name] [options]</pre>
+
+        <p>When an instance is stopped, a backup of the world files are taken, a 30 second warning is sent to players in-game, and then the server is gracefully shut down.</p>
+
+        <h3>Shutdown options:</h3>
+        
+        <ul>
+            <li>fast: Skip taking a backup, only give a warning. <code>sudo gorp stop [name] fast</code></li>
+            <li>now: Immediately shut the server down (no warning). <code>sudo gorp stop [name] now</code></li>
+        </ul>
+
+
+
+        <h2>Restarting a Server</h2>
+        <pre>sudo gorp restart [name] [options]</pre>
+
+        <p>When an instance is restarted, a backup of the world files are taken, a 30 second warning is sent to players in-game, and then the server is gracefully shut down and brought back online.</p>
+
+        <h3>Restart options:</h3>
+        
+        <ul>
+            <li>fast: Skip taking a backup, only give a warning. <code>sudo gorp restart [name] fast</code></li>
+            <li>now: Immediately restart the server (no warning). <code>sudo gorp restart [name] now</code></li>
+        </ul>
+
+
+
+        <h2>Access a Running Instance's Console</h2>
+        <pre>sudo screen -r [name]</pre>
+
+        <p>Gorp uses the fantastic Screen utility to execute a server instance in the background. Screen creates virtual sessions that can be resumed at any time. When a server is started, Gorp puts the instance in a Screen session of the same name as the instance.</p>
+
+        <p>To disconnect from the Screen session: <code>CTRL + A</code> + <code>D</code></p>
+
+    </main>
+    
+</body>
+</html>

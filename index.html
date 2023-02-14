@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/style.css" rel="stylesheet">
+
+    <title>Getting Started - Gorp Docs</title>
+</head>
+<body>
+
+    <header>
+        Getting Started
+    </header>
+    
+
+
+    <aside>
+        <span class="title">Gorp Docs</span>
+
+        <a class="nav-item active" href="index.html">Getting Started</a>
+        <a class="nav-item" href="instance-and-world.html">Instance & World Management</a>
+        <a class="nav-item" href="backups.html">Backups & Restoring</a>
+        <a class="nav-item" href="updating.html">Updating & Upgrading</a>
+        <a class="nav-item" href="customize.html">Customizing Individual Instances</a>
+        <a class="nav-item" href="multiple.html">Running Multiple Instances</a>
+        <a class="nav-item" href="commands.html">Command Reference</a>
+        <a class="nav-item" href="configuration.html"> The Configuration File</a>
+    </aside>
+
+
+
+    <div id="background"></div>
+    <main class="article">
+
+        <subnav>
+            <a href="index.html" class="active">Welcome, Installation, Next Steps</a>
+            <a href="about.html" class="">About Gorp</a>
+        </subnav>
+
+        <div class="spacer40"></div>
+
+        <h1>Welcome to Gorp!</h1>
+        <p>Gorp is a small jumble of shell scripts to help automate daily Minecraft server tasks. Gorp is lightweight, fast, and much simpler than other tools. Because of that, installing and updating Gorp takes seconds! Gorp can support many server instances. It has backup functionality, automatic JAR update functionality, and custom global options.</p>
+
+        <p>I created this program to make managing my personal Minecraft servers easier. Before this, I was running each server in a screen and manually updating each. This program makes the task of updating multiple servers go from 5 minutes to 5 seconds!</p>
+
+        <p>Need help or found a bug? Shoot me an email: gorp@lanickel.com</p>
+
+        <p>Gorp's name courtesy of my good friend Connor Atkins.</p>
+
+        
+
+        <h2>Requirements</h2>
+
+        <ul>
+            <li>8GB of RAM (for decent Minecraft server performance)</li>
+            <li>50GB available disk space (for world saves and local backups)</li>
+            <li>Debian or Debian-based distro (tested on: Debian 11, Ubuntu Server 20.04 LTS, Mint 21.1)</li>
+        </ul>
+
+
+
+        <h2>Notices</h2>
+        
+        <p>Gorp will update or install the following packages and their dependencies:</p>
+
+        <ul>
+            <li>apt-transport-https</li>
+            <li>curl</li>
+            <li>wget</li>
+            <li>jq</li>
+            <li>screen</li>
+        </ul>
+
+
+
+        <h2>Installation Instructions</h2>
+
+        <h3>Install Java 17</h3>
+
+        <ol>
+            <li>Run <code>sudo apt update</code></li>
+            <li>Run <code>sudo apt install openjdk-17-jdk openjdk-17-jre</code></li>
+            <li>Run <code>java --version</code>. You should see something like:</li>
+        </ol>
+
+        <pre>openjdk 17.0.5 2022-10-18
+OpenJDK Runtime Environment (build 17.0.5+8-Ubuntu-2ubuntu122.04)
+OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, sharing)</pre>
+
+
+
+        <h3>Download and install Gorp</h3>
+        
+        <ol>        
+            <li>SSH into your (soon to be) Minecraft server.</li>
+            <li>Go to your home directory: <code>cd</code></li>
+            <li>Run <code>git clone https://github.com/LanceNickel/Gorp/ && cd Gorp</code></li>
+            <li>Run <code>chmod +x install.sh</code></li>
+            <li>Run <code>sudo ./install.sh</code></li>
+        </ol>
+
+
+
+        <h4 class="red">If you received a warning message</h4>
+
+        <p>During install, the installer script noticed that your computer already has a directory named "minecraft" in the root. Because this could be from a previous install of this utility, or previous use, the installer skips these directories. This is to prevent potential catastrophic data loss.</p>
+
+
+
+        <h3>Run the server for the first time</h3>
+
+        <ol>
+            <li>Run the server with <code>sudo gorp start server</code></li>
+            <li>Stop the server with <code>sudo gorp stop server</code></li>
+            <li>Backup the server with <code>sudo gorp backup server</code></li>
+        </ol>
+
+        <p>Feel free to delete the <mono>Gorp</mono> directory that was created in your home directory when you Cloned Gorp. We don't need it anymore.</p>
+
+
+
+        <h2>Next Steps</h2>
+
+        <p>Get familar with Gorp! Take a few minutes and read these articles to learn what Gorp can do and how to use Gorp.</p>
+
+        <a class="no-underline" href="instance-and-world.html">
+            <div class="option-button">
+                <span class="subsection">Core Features</span>
+                <span class="description">Learn about the core features of Gorp.</span>
+            </div>
+        </a>
+
+        <a class="no-underline" href="customize.html">
+            <div class="option-button">
+                <span class="subsection">Customizing Individual Instances</span>
+                <span class="description">Custom JAR files and RAM allocations.</span>
+            </div>
+        </a>
+
+        <a class="no-underline" href="commands.html">
+            <div class="option-button">
+                <span class="subsection">Command Reference</span>
+                <span class="description">See all commands Gorp has to offer.</span>
+            </div>
+        </a>
+
+
+    </main>
+    
+</body>
+</html>

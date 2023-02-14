@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/style.css" rel="stylesheet">
+
+    <title>Command Reference - Gorp Docs</title>
+</head>
+<body>
+
+    <header>
+        Gorp Command Reference
+    </header>
+    
+
+
+    <aside>
+        <span class="title">Gorp Docs</span>
+
+        <a class="nav-item" href="index.html">Getting Started</a>
+        <a class="nav-item" href="instance-and-world.html">Instance & World Management</a>
+        <a class="nav-item" href="backups.html">Backups & Restoring</a>
+        <a class="nav-item" href="updating.html">Updating & Upgrading</a>
+        <a class="nav-item" href="customize.html">Customizing Individual Instances</a>
+        <a class="nav-item" href="multiple.html">Running Multiple Instances</a>
+        <a class="nav-item active" href="commands.html">Command Reference</a>
+        <a class="nav-item" href="configuration.html"> The Configuration File</a>
+    </aside>
+
+
+
+    <div id="background"></div>
+    <main class="article">
+
+        <h1>Gorp Command Reference</h1>
+
+        <p>The command structure of Gorp is: <code>gorp [command] [server name] [arguments]</code></p>
+
+        
+        
+        <h2>Start & Stop Instances <span>see: <a href="instance-state.html">start & stop</a></span></h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td><code>gorp start [server name]</code></td>
+                <td>Starts an instance.
+                </td>
+            </tr>
+            
+            <tr>
+                <td><code>gorp stop [server name] [arguments]</code></td>
+                <td>Stops an instance. By default, takes a backup and gives a warning.<br>
+                <strong>Arguments accepted:</strong>
+                <ul>
+                    <li><mono>fast</mono>: Skips the backup</li>
+                    <li><mono>now</mono>: Skips both backup and warning. Immediate shutdown.</li>
+                    <li><mono>power</mono>: Same as a fast shutdown, however the warning specifies the reason for the shutdown is due to a power outage.</li>
+                </ul>
+                </td>
+            </tr>
+
+            <tr>
+                <td><code>gorp restart [server name] [arguments]</code></td>
+                <td>Restarts an instance. By default, takes a backup and gives a warning.<br>
+                <strong>Arguments accepted:</strong>
+                <ul>
+                    <li><mono>fast</mono>: Skips the backup</li>
+                    <li><mono>now</mono>: Skips both backup and warning. Immediate restart.</li>
+                </ul>
+                </td>
+            </tr>
+        </table>
+
+
+
+        <h2>Create & Delete Instances <span>see: <a href="instances.html">manage instances</a></span></h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td><code>gorp create-server [server name]</code></td>
+                <td>Creates a new server instance with the passed name.<br>
+                The instance is created in <mono>/minecraft/servers/[name]</mono>.</td>
+            </tr>
+
+            <tr>
+                <td><code>gorp delete-server [server name]</code></td>
+                <td>Deletes the given server instance's files. <strong class="red">This action is not reversible.</strong> Be sure to take a backup and double-check which instance you want to delete.</strong></td>
+            </tr>
+        </table>
+
+
+
+        <h2>Create, Delete, & Switch Worlds <span>see: <a href="worlds.html">manage worlds</a></span></h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td><code>gorp create-world [server name] [world name]</code></td>
+                <td>Creates a world with the given name in the specified server. The world will be created next time the server instance is started.</td>
+            </tr>
+
+            <tr>
+                <td><code>gorp delete-world [server name] [world name]</code></td>
+                <td>Delets a world with the given name in the specified server. <strong class="red">This action is not reversible.</strong> Be sure to take a backup and double-check which world you want to delete.</td>
+            </tr>
+
+            <tr>
+                <td><code>gorp switch-world [server name]</code></td>
+                <td>Presents you a list of worlds to choose from. Choose the world by entering its name as it appears in the list of options.</td>
+            </tr>
+        </table>
+
+
+
+        <h2>Backup & Restore Worlds <span>see: <a href="backups.html">backups</a></span></h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td><code>gorp backup [server name]</code></td>
+                <td>Backs up the world files for the given server instance. The currently active world will be the one to be backed up. <a href="backup-world.html">Learn more about this behavior</a>.</td>
+            </tr>
+
+            <tr>
+                <td><code>gorp restore [server name]</code></td>
+                <td>Presents you with options of what world you wish to restore, along with specifying the backup's date and exact file.</td>
+            </tr>
+        </table>
+
+
+
+        <h2>Update Server JAR <span>see: <a href="jar-update.html">jar updater</a></span></h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td><code>gorp update</code></td>
+                <td>Download the latest stable Paper JAR file, install it, and set it as the default JAR file.</td>
+            </tr>
+        </table>
+
+
+
+        <h2>Update Gorp <span>see: <a href="gorp-upgrade.html">gorp self-upgrade</a></span></h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+
+            <tr>
+                <td><code>gorp upgrade</code></td>
+                <td>Upgrades the installation of Gorp to the latest available version.<br>
+                    <strong class="red">Caution:</strong> Updating Gorp will overwrite all shell script files and the run.sh file, except for where changes are anticipated.</td>
+            </tr>
+        </table>
+        
+        
+
+    </main>
+
+
+    
+</body>
+</html>

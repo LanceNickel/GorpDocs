@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="assets/style.css" rel="stylesheet">
+
+    <title>Creating & Deleting Worlds - Gorp Docs</title>
+</head>
+<body>
+
+    <header>
+        Instance & World Management
+    </header>
+    
+
+
+    <aside>
+        <span class="title">Gorp Docs</span>
+
+        <a class="nav-item" href="index.html">Getting Started</a>
+        <a class="nav-item active" href="instance-and-world.html">Instance & World Management</a>
+        <a class="nav-item" href="backups.html">Backups & Restoring</a>
+        <a class="nav-item" href="updating.html">Updating & Upgrading</a>
+        <a class="nav-item" href="customize.html">Customizing Individual Instances</a>
+        <a class="nav-item" href="multiple.html">Running Multiple Instances</a>
+        <a class="nav-item" href="commands.html">Command Reference</a>
+        <a class="nav-item" href="configuration.html"> The Configuration File</a>
+    </aside>
+
+
+
+    <div id="background"></div>
+    <main class="article">
+
+        <subnav>
+            <a href="instance-state.html" class="">Start & Stop</a>
+            <a href="instances.html" class="">Manage Instances</a>
+            <a href="worlds.html" class="active">Manage Worlds</a>
+        </subnav>
+        
+        <div class="spacer40"></div>
+
+        <h1>Creating, Deleting, & Switching Worlds</h1>
+
+        <h2>Create a World</h2>
+        <pre>sudo gorp create-world [server] [name]</pre>
+
+        <p>This creates a new world in the instance you specified. The new world will not actually be created until you run the server. This world save is independent of the other worlds created for this instance.</p>
+
+        <div class="important-box">World names may NOT have spaces or special characters in them.</div>
+
+
+
+        <h2>Delete a World</h2>
+        <pre>sudo gorp delete-world [server] [name]</pre>
+
+        <p>This deletes the world in the instance you specified. <strong class="red">This action is not recoverable</strong>, please take a backup!</p>
+
+
+
+        <h2>Switch Worlds</h2>
+        <pre>sudo gorp switch-world [server]</pre>
+
+        <p>This command does not need a world name. When run, it will provide a list of options for you to choose from.</p>
+
+        
+
+    </main>
+    
+</body>
+</html>
