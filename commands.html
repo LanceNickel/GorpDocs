@@ -150,7 +150,7 @@
 
 
 
-        <h2>Update Server JAR <span>see: <a href="jar-update.html">jar updater</a></span></h2>
+        <h2>Update & Download Server JARs <span>see: <a href="jar-update.html">jar updater</a></span></h2>
 
         <table>
             <tr>
@@ -161,6 +161,11 @@
             <tr>
                 <td><code>gorp update</code></td>
                 <td>Download the latest stable Paper JAR file, install it, and set it as the default JAR file.</td>
+            </tr>
+
+            <tr>
+                <td><code>gorp get-jar [game version]</code></td>
+                <td>Download a Paper JAR file for a specified Minecraft game version. Only supports certain versions. <a id="open-gamever-modal" class="button blue nomargin">View Supported Game Versions</a></td>
             </tr>
         </table>
 
@@ -184,6 +189,75 @@
         
 
     </main>
+
+
+
+    <div id="gamever-modal" class="hidden">
+        <div class="modal-bg">
+            <div class="modal-window">
+                <div class="title">Valid GAMEVER Values</div>
+                <div class="content">
+                    <ul>
+                        <li>1.8.8</li>
+                        <li>1.9.4</li>
+                        <li>1.10.2</li>
+                        <li>1.11.2</li>
+                        <li>1.12</li>
+                        <li>1.12.1</li>
+                        <li>1.12.2</li>
+                        <li>1.13-pre7</li>
+                        <li>1.13</li>
+                        <li>1.13.1</li>
+                        <li>1.13.2</li>
+                        <li>1.14</li>
+                        <li>1.14.1</li>
+                        <li>1.14.2</li>
+                        <li>1.14.3</li>
+                        <li>1.14.4</li>
+                        <li>1.15</li>
+                        <li>1.15.1</li>
+                        <li>1.15.2</li>
+                        <li>1.16.1</li>
+                        <li>1.16.2</li>
+                        <li>1.16.3</li>
+                        <li>1.16.4</li>
+                        <li>1.16.5</li>
+                        <li>1.17</li>
+                        <li>1.17.1</li>
+                        <li>1.18</li>
+                        <li>1.18.1</li>
+                        <li>1.18.2</li>
+                        <li>1.19</li>
+                        <li>1.19.1</li>
+                        <li>1.19.2</li>
+                        <li>1.19.3</li>
+                    </ul>
+                </div>
+                <div class="actions">
+                    <button class="button close-modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <script defer>
+        $('#open-gamever-modal').click(function() {
+            $('body').addClass('modal-open');
+            $('#gamever-modal').removeClass('hidden');
+        });
+
+        $('.modal-bg').click(function() {
+            $('body').removeClass('modal-open');
+            $('#gamever-modal').addClass('hidden');
+        });
+
+        $('.close-modal').click(function() {
+            $('body').removeClass('modal-open');
+            $('#gamever-modal').addClass('hidden');
+        });
+    </script>
 
 
     
