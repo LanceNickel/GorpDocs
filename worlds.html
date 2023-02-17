@@ -43,28 +43,35 @@
         
         <div class="spacer40"></div>
 
-        <h1>Creating, Deleting, & Switching Worlds</h1>
+        <h1>Creating, Deleting, Archiving, & Switching Worlds</h1>
 
         <h2>Create a World</h2>
-        <pre>sudo gorp create-world [server] [name]</pre>
+        <pre>sudo gorp create-world [server-name] [?world-name]</pre>
 
-        <p>This creates a new world in the instance you specified. The new world will not actually be created until you run the server. This world save is independent of the other worlds created for this instance.</p>
+        <p>This will update the server instance's configuration, generate the world, and create an intitial world backup. Optionally pass a name for the world to skip an additional prompt.</p>
 
         <div class="important-box">World names may NOT have spaces or special characters in them.</div>
 
 
 
         <h2>Delete a World</h2>
-        <pre>sudo gorp delete-world [server] [name]</pre>
+        <pre>sudo gorp delete-world [server-name] [?world-name]</pre>
 
-        <p>This deletes the world in the instance you specified. <strong class="red">This action is not recoverable</strong>, please take a backup!</p>
+        <p>This deletes the world in the instance you specified. <strong class="red">This action is not recoverable</strong>, please take a backup! Optionally pass a name for the world to skip an additional prompt.</p>
+
+
+
+        <h2>Archive a World</h2>
+        <pre>sudo gorp archive-world [server-name] [?world-name]</pre>
+
+        <p>This archives the world in the instance you specified. <strong class="red">Heads up:</strong> An archived world must be restored manually. This is intended to send world archives to one place for systematic long-term storage. Optionally pass a name for the world to skip an additional prompt.</p>
 
 
 
         <h2>Switch Worlds</h2>
-        <pre>sudo gorp switch-world [server]</pre>
+        <pre>sudo gorp switch-world [server-name] [?world-name]</pre>
 
-        <p>This command does not need a world name. When run, it will provide a list of options for you to choose from.</p>
+        <p>Update a server instance's configuration to another world directory in the instance. Optionally pass a name to avoid needing to choose the world from a list.</p>
 
         
 

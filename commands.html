@@ -39,7 +39,9 @@
 
         <h1>Gorp Command Reference</h1>
 
-        <p>The command structure of Gorp is: <code>gorp [command] [server name] [arguments]</code></p>
+        <p>The command structure of Gorp is: <code>gorp [action] [arguments]... </code></p>
+
+        <p>Items with a question mark in them are optional. In <code>gorp create-world [server-name] [?world-name]</code>, the world name is optional.</p>
 
         
         
@@ -52,13 +54,13 @@
             </tr>
 
             <tr>
-                <td><code>gorp start [server name]</code></td>
+                <td><code>gorp start [server-name]</code></td>
                 <td>Starts an instance.
                 </td>
             </tr>
             
             <tr>
-                <td><code>gorp stop [server name] [arguments]</code></td>
+                <td><code>gorp stop [server-name] [?arguments]</test></code></td>
                 <td>Stops an instance. By default, takes a backup and gives a warning.<br>
                 <strong>Arguments accepted:</strong>
                 <ul>
@@ -70,7 +72,7 @@
             </tr>
 
             <tr>
-                <td><code>gorp restart [server name] [arguments]</code></td>
+                <td><code>gorp restart [server-name] [?arguments]</code></td>
                 <td>Restarts an instance. By default, takes a backup and gives a warning.<br>
                 <strong>Arguments accepted:</strong>
                 <ul>
@@ -92,20 +94,20 @@
             </tr>
 
             <tr>
-                <td><code>gorp create-server [server name]</code></td>
+                <td><code>gorp create-server [server-name]</code></td>
                 <td>Creates a new server instance with the passed name.<br>
                 The instance is created in <mono>/minecraft/servers/[name]</mono>.</td>
             </tr>
 
             <tr>
-                <td><code>gorp delete-server [server name]</code></td>
+                <td><code>gorp delete-server [server-name]</code></td>
                 <td>Deletes the given server instance's files. <strong class="red">This action is not reversible.</strong> Be sure to take a backup and double-check which instance you want to delete.</strong></td>
             </tr>
         </table>
 
 
 
-        <h2>Create, Delete, & Switch Worlds <span>see: <a href="worlds.html">manage worlds</a></span></h2>
+        <h2>Manage Worlds <span>see: <a href="worlds.html">manage worlds</a></span></h2>
 
         <table>
             <tr>
@@ -114,18 +116,23 @@
             </tr>
 
             <tr>
-                <td><code>gorp create-world [server name] [world name]</code></td>
-                <td>Creates a world with the given name in the specified server. The world will be created next time the server instance is started.</td>
+                <td><code>gorp create-world [server-name] [?world-name]</code></td>
+                <td>Creates a world with the given name in the specified server. The world will be created next time the server instance is started. Optionally pass the world name to avoid a prompt.</td>
             </tr>
 
             <tr>
-                <td><code>gorp delete-world [server name] [world name]</code></td>
-                <td>Delets a world with the given name in the specified server. <strong class="red">This action is not reversible.</strong> Be sure to take a backup and double-check which world you want to delete.</td>
+                <td><code>gorp delete-world [server-name] [?world-name]</code></td>
+                <td>Delets a world with the given name in the specified server. <strong class="red">This action is not reversible.</strong> Be sure to take a backup and double-check which world you want to delete. Optionally pass the world name to avoid a prompt.</td>
             </tr>
 
             <tr>
-                <td><code>gorp switch-world [server name]</code></td>
-                <td>Presents you a list of worlds to choose from. Choose the world by entering its name as it appears in the list of options.</td>
+                <td><code>gorp archive-world [server-name] [?world-name]</code></td>
+                <td>Compresses the specified world and moves it to the archives destination. The world is then removed from the server instance's files to reduce clutter.</td>
+            </tr>
+
+            <tr>
+                <td><code>gorp switch-world [server-name] [?world-name]</code></td>
+                <td>Switch the world files the server will use when it starts next. Optionally pass the world name instead of picking it from a list.</td>
             </tr>
         </table>
 
@@ -140,12 +147,12 @@
             </tr>
 
             <tr>
-                <td><code>gorp backup [server name]</code></td>
-                <td>Backs up the world files for the given server instance. The currently active world will be the one to be backed up.<br> <a href="backup-world.html">Learn more about this behavior</a>.</td>
+                <td><code>gorp backup-world [server-name]</code></td>
+                <td>Backs up the world files for the given server instance. The currently active world will be the one to be backed up. <a href="backup-world.html">Learn more about this behavior</a>.</td>
             </tr>
 
             <tr>
-                <td><code>gorp restore [server name]</code></td>
+                <td><code>gorp restore-world [server-name]</code></td>
                 <td>Presents you with options of what world you wish to restore, along with specifying the backup's date and exact file.</td>
             </tr>
         </table>
@@ -161,13 +168,13 @@
             </tr>
 
             <tr>
-                <td><code>gorp update</code></td>
+                <td><code>gorp update-jar</code></td>
                 <td>Download the latest stable Paper JAR file, install it, and set it as the default JAR file.</td>
             </tr>
 
             <tr>
                 <td><code>gorp get-jar [game version]</code></td>
-                <td>Download a Paper JAR file for a specified Minecraft game version. Only supports certain versions. <a id="open-gamever-modal" class="button blue nomargin">View Supported Game Versions</a></td>
+                <td>Download a Paper JAR file for a specified Minecraft game version. Only supports certain versions. <br><a id="open-gamever-modal" class="button blue nomargin">View Supported Game Versions</a></td>
             </tr>
         </table>
 
