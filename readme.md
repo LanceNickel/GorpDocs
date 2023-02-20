@@ -1,2 +1,2 @@
 # Gorp Documentation Files
-Yes, it's really pure HTML and CSS. I know there's more "efficient" ways to do it. However, I don't want a bloated system to literally display some text and a sidebar. So I whipped this up and painfully maintain it anytime I add features.
+A place I used to store the incredibly innefficient, but effective, Gorp documentation website code.
