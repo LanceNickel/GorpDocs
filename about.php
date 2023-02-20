@@ -110,7 +110,7 @@ require_once('0/php/navigation.php');
             </tr>
         </table>
 
-        <p><strong class="red">Important:</strong> During uninstallation, Gorp will remove the associated files in the <mono>/bin/</mono> directory, but does NOT delete the <mono>/minecraft/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
+        <p><strong class="red">Important:</strong> During uninstallation, Gorp will remove the associated files in the <mono>/usr/local/bin/</mono> directory, but does NOT delete the <mono>/minecraft/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
         
 
 
