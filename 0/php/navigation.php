@@ -18,7 +18,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
                 <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
 
-                <span id="sidebar-version">Gorp v1.0.2</span>
+                <span id="sidebar-version">Gorp v1.0.3</span>
 
         EOF;
     }
