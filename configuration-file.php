@@ -63,7 +63,7 @@ require_once('0/php/navigation.php');
             <tr>
                 <td>GAMEVER</td>
 		        <td>Minecraft game version. Used by the JAR update utility when looking for the latest JAR build. This will not apply to servers using a <a href="/manage-instances/instance-settings/">custom JAR file</a>.</td>
-                <td><a id="open-gamever-modal" class="button blue nomargin">See list</a></td>
+                <td><a id="open-modal-1" class="button blue nomargin">See list</a></td>
                 <td>1.19.3</td>
             </tr>
 
@@ -95,11 +95,14 @@ require_once('0/php/navigation.php');
 
 
 
-    <div id="gamever-modal" class="hidden">
+    <div id="modal-1" class="hidden">
         <div class="modal-bg">
             <div class="modal-window">
+                <a class="close-modal-button">
+                    <img src="/0/img/close.svg" />
+                </a>
                 <div class="title">Valid GAMEVER Values</div>
-                <div class="content">
+                <div class="content bulleted">
                     <ul>
                         <li>1.8.8</li>
                         <li>1.9.4</li>
@@ -135,9 +138,6 @@ require_once('0/php/navigation.php');
                         <li>1.19.2</li>
                         <li>1.19.3</li>
                     </ul>
-                </div>
-                <div class="actions">
-                    <button class="button close-modal">Close</button>
                 </div>
             </div>
         </div>

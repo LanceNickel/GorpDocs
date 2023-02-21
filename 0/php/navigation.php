@@ -37,6 +37,24 @@ function sidebar($type='normal') {
 
         EOF;
     }
+
+    else if ($type == 'elements') {
+        echo <<<EOF
+        <span class="title">Sidebar Title</span>
+
+                <a class="nav-item" topic="welcome">Nav Item</a>
+                <a class="nav-item" topic="welcome">Nav Item</a>
+                <a class="nav-item active" topic="welcome">Active Nav Item</a>
+                <a class="nav-item" topic="welcome">Nav Item With Text That's Wrapped</a>
+
+                <span id="sidebar-version">Gorp v420.69</span>
+
+        EOF;
+    }
+
+    else {
+        echo "invalid sidebar type";
+    }
 }
 
 
@@ -92,6 +110,15 @@ function subnav($topic='notpassed') {
         EOF;
     }
 
+    else if ($topic == 'elements') {
+        echo <<<EOF
+        <a>Nav Item</a>
+                    <a class="active">Active Nav Item</a>
+                    <a>Nav Item</a>
+
+        EOF;
+    }
+
     else if ($topic == 'notpassed') {
         echo "a subnav type is required!";
     }
@@ -113,6 +140,8 @@ function mobileMenu() {
 
         <div id="mobile-menu" class="hidden">
             <div class="inner">
+                <a class="close-mobile-menu"><img src="/0/img/close.svg" /></a>
+                
                 <a class="nav-item" topic="welcome" href="/">Welcome Page</a>
                 <a class="nav-item" topic="getting-started" href="/getting-started/">Getting Started</a>
                 <a class="nav-item" topic="manage-instances" href="/manage-instances/">Manage Instances</a>

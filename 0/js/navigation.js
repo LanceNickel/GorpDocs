@@ -132,19 +132,47 @@ $('subnav a[href="' + path + '/"]').addClass('active');
  * MODAL logic
  */
 
-$('#open-gamever-modal').click(function() {
+$('#open-modal-1').click(function() {
     $('body').addClass('modal-open');
-    $('#gamever-modal').removeClass('hidden');
+    $('#modal-1').removeClass('hidden');
+});
+
+$('#open-modal-2').click(function() {
+    $('body').addClass('modal-open');
+    $('#modal-2').removeClass('hidden');
+});
+
+$('#open-modal-3').click(function() {
+    $('body').addClass('modal-open');
+    $('#modal-3').removeClass('hidden');
+});
+
+$('#open-modal-4').click(function() {
+    $('body').addClass('modal-open');
+    $('#modal-4').removeClass('hidden');
+});
+
+$('#open-modal-5').click(function() {
+    $('body').addClass('modal-open');
+    $('#modal-5').removeClass('hidden');
 });
 
 $('.modal-bg').click(function() {
     $('body').removeClass('modal-open');
-    $('#gamever-modal').addClass('hidden');
+    $('#modal-1').addClass('hidden');
+    $('#modal-2').addClass('hidden');
+    $('#modal-3').addClass('hidden');
+    $('#modal-4').addClass('hidden');
+    $('#modal-5').addClass('hidden');
 });
 
 $('.close-modal').click(function() {
     $('body').removeClass('modal-open');
-    $('#gamever-modal').addClass('hidden');
+    $('#modal-1').addClass('hidden');
+    $('#modal-2').addClass('hidden');
+    $('#modal-3').addClass('hidden');
+    $('#modal-4').addClass('hidden');
+    $('#modal-5').addClass('hidden');
 });
 
 
@@ -158,7 +186,7 @@ $('#open-mobile-menu').click(function() {
     $('#mobile-menu').removeClass('hidden');
 });
 
-$('.close-modal').click(function() {
+$('.close-mobile-menu').click(function() {
     $('body').removeClass('modal-open');
     $('#mobile-menu').addClass('hidden');
 });

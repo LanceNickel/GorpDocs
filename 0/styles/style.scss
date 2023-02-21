@@ -43,6 +43,7 @@ $green700: #2a6f5a;
 $green900: #1c4a3c;
 
 
+
 * {
 	box-sizing: border-box;
 }
@@ -244,11 +245,9 @@ aside {
 
 	.nav-item {
 		position: relative;
-		padding-left: 20px;
-		padding-top: 10px;
+		padding: 10px 10px 10px 20px;
 		margin-right: -10px;
-		padding-bottom: 10px;
-		transition-duration: 0.1s;
+		transition-duration: 0.01s;
 		cursor: pointer;
 		display: block;
 
@@ -397,7 +396,8 @@ subnav {
     border-top-left-radius: 6px;
     padding-top: 10px;
     padding-bottom: 10px;
-    transition-duration: 0.1s;
+    transition-duration: 0.01s;
+	z-index: 99;
 
     a {
         margin: 0;
@@ -468,7 +468,7 @@ subnav {
 	-ms-user-select: none;      
 	user-select: none;
 	box-shadow: 0px 5px 5px 0px rgba(18,20,24,0.7);
-    color: $ctext;
+    color: $chead;
 
 	&.nomargin {
 		margin: 0;
@@ -482,8 +482,8 @@ subnav {
 	}
 
 	&.higher {
-		background: $bg4;
-		border-color: $bg6;
+		background: $bg35;
+		border-color: $bg7;
 
 		&:hover {
 			background: $bg5;
@@ -493,31 +493,32 @@ subnav {
 
 	&.red {
 		border-color: $red500;
-		color: white;
+		color: $chead!important;
 
 		&:hover {
 			background: $red500;
 			border-color: $red100;
+			color: white!important;
 		}
 	}
 
 	&.blue {
 		border-color: $blue500;
-		color: white;
 
 		&:hover {
 			background: $blue500;
 			border-color: $blue100;
+			color: white;
 		}
 	}
 
 	&.green {
 		border-color: $green500;
-		color: white;
 
 		&:hover {
 			background: $green500;
 			border-color: $green100;
+			color: white;
 		}
 	}
 }
@@ -531,7 +532,7 @@ subnav {
     width: 300px;
     border: 1px solid $bg4;
     border-radius: 6px;
-    transition-duration: 0.1s;
+    transition-duration: 0.01s;
     cursor: pointer;
     margin-right: 8px;
     margin-bottom: 12px;
@@ -582,8 +583,8 @@ subnav {
 	font-family: $font;
 	font-size: 16;
 	padding: 5px 10px;
-	background: $red900;
-	border: 1px solid $red500;
+	background: $blue900;
+	border: 1px solid $blue500;
 	border-radius: 4px;
 	color: rgba(255,255,255,0.8);
 	display: inline-block;
@@ -634,15 +635,54 @@ body.modal-open {
 		display: block;
 		max-height: 300px;
 		overflow: scroll;
-		padding-left: 20px;
-		padding-right: 20px;
+		padding: 20px;
+
+		&.bulleted {
+			padding: 0;
+		}
+
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
 	}
 
 	.actions {
+		padding: 10px 10px 12px 10px;
+		background: $bg25;
+		width: 100%;
+		text-align: right;
+		border-bottom-right-radius: 6px;
+		border-bottom-left-radius: 6px;
+		border-top: 1px solid $bg3;
 
 		.button {
-			margin-left: 10px;
-			margin-bottom: 12px;
+			margin: 0px 0px 0px 2px;
+		}
+	}
+
+	.close-modal-button {
+		position: relative;
+		float: right;
+		background: $red900;
+		border-radius: 100%;
+		border: 1px solid $red500;
+		padding: 4px 7px 4px 7px;
+		transition-duration: 0.01s;
+		margin-top: -10px;
+		margin-right: -10px;
+		box-shadow: 0px 5px 5px 0px rgba(18,20,24,0.7);
+
+		&:hover {
+			background: $red500;
+			border-color: $red100;
+		}
+
+		img {
+			margin-bottom: -1.25px;
+			width: 15px;
+			height: 15px;
 		}
 	}
 
@@ -660,6 +700,12 @@ body.modal-open {
 
 .spacer40 {
     height: 40px;
+    padding: 0;
+    margin: 0;
+}
+
+.spacer100 {
+    height: 100px;
     padding: 0;
     margin: 0;
 }
@@ -683,7 +729,7 @@ body.modal-open {
 
 
 
-@media screen and (min-width: 801px) {
+@media screen and (min-width: 1001px) {
 	#open-mobile-menu {
 		display: none;
 	}
@@ -695,7 +741,7 @@ body.modal-open {
 
 
 
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 1000px) {
 	aside {
 		display: none;
 	}
@@ -706,12 +752,13 @@ body.modal-open {
 		padding: 0px 20px;
 		font-size: 20px;
 		justify-content: flex-start;
+		border-bottom: 1px solid $bg25;
 	}
 
 	#background {
 		width: 100%;
 		border-top-left-radius: 0;
-		border-left: none;
+		border: none;
 	}
 
 	main {
@@ -734,7 +781,6 @@ body.modal-open {
 
 	subnav {
 		width: 100%;
-		margin-top: -20px;
 		margin-left: 0px;
 		border-top-left-radius: 0;
 		position: relative;
@@ -794,7 +840,28 @@ body.modal-open {
 				font-weight: bold;
 			}
 		}
+
+		.close-mobile-menu {
+			position: absolute;
+			left: 0;
+			top: 0;
+			padding: 7px;
+			margin-top: 10px;
+			margin-left: 10px;
+
+			img {
+				width: 30px;
+			}
+		}
 	}
+}
 
 
+
+@media screen and (max-height: 400px) {
+	#mobile-menu {
+		.inner {
+			margin-top: 0;
+		}
+	}
 }
