@@ -1,7 +1,7 @@
 let rawpathname = window.location.pathname;
 let path = rawpathname;
 
-console.log(path);
+// console.log(path);
 
 /**
  * Topic arrays

@@ -1,6 +1,27 @@
 <?php
+// php is ugly, gross, and disgusting.
+
+
+
+/**
+ * Revision version. Set to current date when publishing to Redifer to clear device caches.
+ */
+function rev() {
+    return '2023-02-22';
+}
+
+
+
+
+
+
+
+/**
+ * Print HTML <head> for pages.
+ */
 
 function head() {
+    $rev = rev();
     $stylesheet = stylesheet();
 
     echo <<<EOF
@@ -11,9 +32,9 @@ function head() {
         $stylesheet
 
         <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
-        <script src="/0/js/cookies.js" type="text/javascript" defer></script>
-        <script src="/0/js/theme.js" type="text/javascript" defer></script>
-        <script src="/0/js/navigation.js" type="text/javascript" defer></script>
+        <script src="/0/js/cookies.js?rev=$rev" type="text/javascript" defer></script>
+        <script src="/0/js/theme.js?rev=$rev" type="text/javascript" defer></script>
+        <script src="/0/js/navigation.js?rev=$rev" type="text/javascript" defer></script>
 
         <script>
             // Firefox fix
@@ -29,14 +50,35 @@ function head() {
 
 
 
+/**
+ * Set stylesheet based on "theme" cookie status.
+ */
+function stylesheet() {
+    $cookie = $_COOKIE['theme'];
+
+    if ($cookie == "light") {
+        return '<link href="/0/styles/light.css" rel="stylesheet">';
+    }
+    else {
+        return '<link href="/0/styles/dark.css" rel="stylesheet">';
+    }
+}
+
+
+
+
+
 
 
 /**
- * Echoes sidebar HTML for site pages
+ * Prints sidebar HTML for site pages
  * 
  * @param type (optional) Sidebar type to render (default is 'normal') 
  */
+
 function sidebar($type='normal') {
+    $rev = rev();
+
     if ($type == 'normal') {
         echo <<<EOF
         <span class="title">Gorp Docs</span>
@@ -49,7 +91,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
                 <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
 
-                <span id="sidebar-version">Gorp v1.0.3</span>
+                <span id="sidebar-version">For Gorp 1.0.3<br>$rev</span>
 
         EOF;
     }
@@ -90,8 +132,12 @@ function sidebar($type='normal') {
 
 
 
+
+
+
+
 /**
- * Echoes subnav HTML for site pages
+ * Prints subnav HTML for site pages
  * 
  * @param topic Topic for which the subnav should be rendered
  */
@@ -161,6 +207,13 @@ function subnav($topic='notpassed') {
 
 
 
+
+
+
+
+/**
+ * Prints mobile menu items for all pages.
+ */
 function mobileMenu() {
     echo <<<EOF
     <a id="open-mobile-menu">
@@ -183,17 +236,4 @@ function mobileMenu() {
             </div>
         </div>
     EOF;
-}
-
-
-
-function stylesheet() {
-    $cookie = $_COOKIE['theme'];
-
-    if ($cookie == "light") {
-        return '<link href="/0/styles/light.css" rel="stylesheet">';
-    }
-    else {
-        return '<link href="/0/styles/dark.css" rel="stylesheet">';
-    }
 }

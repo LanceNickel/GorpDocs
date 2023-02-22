@@ -43,4 +43,4 @@ else {
     theme = 'dark';
 }
 
-console.log('from themesetup.js: ' + theme)
+// console.log('from themesetup.js: ' + theme)

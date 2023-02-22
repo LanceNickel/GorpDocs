@@ -26,4 +26,4 @@ $("#change-theme").click(function() {
 
 
 
-console.log('frome theme.js: ' + theme);
+// console.log('frome theme.js: ' + theme);
