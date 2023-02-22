@@ -2,35 +2,29 @@
 
 
 <?php
-require_once('0/php/navigation.php');
+require_once('0/php/functions.php');
 ?>
 
 
 
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <?= stylesheet('dark'); ?>
-
-    <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
-    <script src="/0/js/navigation.js" type="text/javascript" defer></script>
+    <script src="/0/js/themesetup.js" type="text/javascript"></script>
+    <?= head(); ?>
 
     <title>Welcome - Gorp Docs</title>
-
-    <script>
-        // Firefox fix
-        let HI_MOM;
-    </script>
 </head>
+
+
+
 <body>
 
     <header>
         <?= mobileMenu(); ?>
 
         Welcome
+
+        <a id="change-theme" class="button theme"></a>
     </header>
     
 

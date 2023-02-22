@@ -85,6 +85,7 @@ mono {
 .important {
     color: $importantColor;
     text-shadow: $importantShadow;
+	font-weight: 700;
 }
 
 bold, strong {
@@ -183,6 +184,14 @@ table {
 			}
 		}
 	}
+
+	pre {
+		background: $tablePreBG;
+	}
+
+	code {
+		background: $tableCodeBG;
+	}
 }
 
 
@@ -207,7 +216,7 @@ header {
 	background: $headerBG;
 	height: 60px;
 	left: 208px;
-	padding: 0px 40px;
+	padding: 0px 20px 0px 40px;
 	font-family: $fontCondensed;
 	font-size: 22px;
 	font-weight: bold;
@@ -537,6 +546,11 @@ subnav {
 			color: white;
 		}
 	}
+
+	&.theme {
+		padding: 5px 10px;
+		font-weight: normal;
+	}
 }
 
 
@@ -781,6 +795,12 @@ body.modal-open {
 		font-size: 20px;
 		justify-content: flex-start;
 		border-bottom: 1px solid $mainBorder;
+
+		.button.theme {
+			position: absolute;
+			right: 0;
+			margin-right: 10px;
+		}
 	}
 
 	#background {
@@ -828,15 +848,20 @@ body.modal-open {
 
 	#open-mobile-menu {
 		display: inline-block;
+
+		img {
+			fill: red;
+		}
 	}
 
 	.mobile-menu-image {
-		img {
+		svg {
 			width: 45px;
 			padding: 7px;
 			margin-top: 7px;
 			margin-left: -7px;
 			margin-right: 10px;
+			fill: $mobileIconFill;
 		}
 	}
 
@@ -877,8 +902,10 @@ body.modal-open {
 			margin-top: 10px;
 			margin-left: 10px;
 
-			img {
+			svg {
 				width: 30px;
+				height: 30px;
+				fill: $mobileIconFill;
 			}
 		}
 	}

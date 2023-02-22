@@ -71,6 +71,7 @@ mono {
 .important {
   color: #c05979;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
+  font-weight: 700;
 }
 
 bold, strong {
@@ -143,6 +144,12 @@ table tr:last-child td:first-child {
 table tr:last-child td:last-child {
   border-bottom-right-radius: 4px;
 }
+table pre {
+  background: #454b58;
+}
+table code {
+  background: #454b58;
+}
 
 header {
   position: fixed;
@@ -151,7 +158,7 @@ header {
   background: #191b20;
   height: 60px;
   left: 208px;
-  padding: 0px 40px;
+  padding: 0px 20px 0px 40px;
   font-family: "IBM Plex Sans Condensed", sans-serif;
   font-size: 22px;
   font-weight: bold;
@@ -385,6 +392,10 @@ subnav a.active {
   border-color: #6bc7ab;
   color: white;
 }
+.button.theme {
+  padding: 5px 10px;
+  font-weight: normal;
+}
 
 .option-button {
   display: inline-block;
@@ -556,6 +567,11 @@ body.modal-open {
     justify-content: flex-start;
     border-bottom: 1px solid #2f333c;
   }
+  header .button.theme {
+    position: absolute;
+    right: 0;
+    margin-right: 10px;
+  }
   #background {
     width: 100%;
     border-top-left-radius: 0;
@@ -594,12 +610,16 @@ body.modal-open {
   #open-mobile-menu {
     display: inline-block;
   }
-  .mobile-menu-image img {
+  #open-mobile-menu img {
+    fill: red;
+  }
+  .mobile-menu-image svg {
     width: 45px;
     padding: 7px;
     margin-top: 7px;
     margin-left: -7px;
     margin-right: 10px;
+    fill: #c7cad3;
   }
   #mobile-menu {
     position: fixed;
@@ -635,8 +655,10 @@ body.modal-open {
     margin-top: 10px;
     margin-left: 10px;
   }
-  #mobile-menu .close-mobile-menu img {
+  #mobile-menu .close-mobile-menu svg {
     width: 30px;
+    height: 30px;
+    fill: #c7cad3;
   }
 }
 @media screen and (max-height: 400px) {

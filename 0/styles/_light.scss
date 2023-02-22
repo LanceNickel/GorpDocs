@@ -24,78 +24,99 @@ $fontMono: "IBM Plex Mono", monospace;
 //  ██████  ██████  ███████  ██████  ██   ██ ███████ 
 
 
-// General Colourful Palette
-$blue50: #E3F2FD;
-$blue100: #BBDEFB;
-$blue200: #90CAF9;
-$blue300: #64B5F6;
-$blue400: #42A5F5;
-$blue500: #2196F3;
-$blue600: #1E88E5;
-$blue700: #1976D2;
-$blue800: #1565C0;
-$blue900: #0D47A1;
+// Palette Definition
+// These colors are used throughout the subsequent color sections.
+$blue50: #b5c3e3;
+$blue100: #90a5d5;
+$blue200: #7e96ce;
+$blue300: #6b87c7;
+$blue400: #5978c0;
+$blue500: #4669b9;
+$blue600: #3f5fa7;
+$blue700: #385494;
+$blue800: #314a82;
+$blue900: #2a3f6f;
 
-$green50: #E8F5E9;
-$green100: #C8E6C9;
-$green200: #A5D6A7;
-$green300: #81C784;
-$green400: #66BB6A;
-$green500: #4CAF50;
-$green600: #43A047;
-$green700: #388E3C;
-$green800: #2E7D32;
-$green900: #1B5E20;
+$green50: #90d5c0;
+$green100: #6bc7ab;
+$green200: #59c0a1;
+$green300: #46b996;
+$green400: #3fa787;
+$green500: #389478;
+$green600: #318269;
+$green700: #2a6f5a;
+$green800: #235d4b;
+$green900: #1c4a3c;
 
-$red50: #FFEBEE;
-$red100: #FFCDD2;
-$red200: #EF9A9A;
-$red300: #E57373;
-$red400: #EF5350;
-$red500: #F44336;
-$red600: #E53935;
-$red700: #D32F2F;
-$red800: #C62828;
-$red900: #C62828;
+$red50: #dca3b5;
+$red100: #ce7e97;
+$red200: #c76b88;
+$red300: #c05979;
+$red400: #b9466a;
+$red500: #a73f5f;
+$red600: #943854;
+$red700: #82314a;
+$red800: #6f2a3f;
+$red900: #5d2335;
+
+$neutral50: #f6f6f7;
+$neutral100: #e8e9eb;
+$neutral200: #dadcdf;
+$neutral300: #cccfd3;
+$neutral400: #bec2c7;
+$neutral500: #b0b5bb;
+$neutral600: #a2a8af;
+$neutral700: #949ba3;
+$neutral750: #89919a;
+$neutral800: #868e97;
+$neutral900: #78818b;
+$neutral1000: #6c747e;
+
+$text300: #565a62;
+$text500: #3e4147;
+$text700: #26282c;
 
 
 
 // Sidebar & header
-$asideBG: #E0E0E0;
-$headerBG: #E0E0E0;
-$asideNavHover: #BDBDBD;
+$asideBG: $neutral200;
+$headerBG: $neutral200;
+$asideNavHover: $neutral500;
 
 
 
 // Mobile menu
-$mobileBG: #E0E0E0;
+$mobileBG: $neutral200;
 $mobileActiveColor: $blue500;
+$mobileIconFill: $text700;
 
 
 
 // Subnav
-$subnavBG: $blue500;
+$subnavBG: $blue400;
 $subnavColor: rgba(255,255,255,0.8);
-$subnavHover: $blue700;
+$subnavHover: $blue600;
 $subnavFirstBorder: rgba(255,255,255,0.1);
 
 
 
 // Main structure
-$mainBG: #EEEEEE;
-$mainBorder: #D0D0D0;
+$mainBG: $neutral100;
+$mainBorder: $neutral300;
 
 
 
 // Text
-$bodyColor: #37474F;
-$headerColor: #212121;
-$preBG: #D0D0D0;
-$codeBG: #D0D0D0;
-$monoColor: $green500;
-$importantColor: $red500;
+$bodyColor: $text500;
+$headerColor: $text700;
+$preBG: $neutral300;
+$codeBG: $neutral300;
+$tablePreBG: $neutral400;
+$tableCodeBG: $neutral400;
+$monoColor: $green300;
+$importantColor: $red300;
 $linkColor: $blue500;
-$linkUnderline: rgba(0,0,0,0.25);
+$linkUnderline: rgba(255,255,255,0.25);
 $linkUnderlineHover: rgba(255,255,255,0.75);
 $h2Underline: rgba(0,0,0,0.2);
 $offWhite: rgba(255,255,255,0.8);
@@ -103,60 +124,62 @@ $offWhite: rgba(255,255,255,0.8);
 
 
 // Buttons
-$buttonColor: #424242;
+$buttonColor: $text700;
 
-$buttonBG: #D0D0D0;
-$buttonBorder: #BDBDBD;
-$buttonBorderHover: $blue500;
+$buttonBG: $neutral200;
+$buttonHoverBG: $neutral300;
+$buttonBorder: $neutral800;
+$buttonBorderHover: $neutral900;
 
-$buttonHigherBG: #BDBDBD;
-$buttonHigherBorder: #9E9E9E;
-$buttonHigherBorderHover: $blue500;
+$buttonHigherBG: $neutral100;
+$buttonHigherHoverBG: $neutral200;
+$buttonHigherBorder: $neutral800;
+$buttonHigherBorderHover: $neutral900;
 
 $buttonRedHoverBG: $red500;
-$buttonRedBorder: $red500;
-$buttonRedBorderHover: $red700;
+$buttonRedBorder: $red300;
+$buttonRedBorderHover: $red900;
 
 $buttonBlueHoverBG: $blue500;
-$buttonBlueBorder: $blue500;
-$buttonBlueBorderHover: $blue700;
+$buttonBlueBorder: $blue300;
+$buttonBlueBorderHover: $blue900;
 
 $buttonGreenHoverBG: $green500;
-$buttonGreenBorder: $green500;
-$buttonGreenBorderHover: $green700;
+$buttonGreenBorder: $green300;
+$buttonGreenBorderHover: $green900;
 
 
 
 // Tables
-$thBG: #BDBDBD;
-$tdBG: #E0E0E0;
-$tableBorder: #9E9E9E;
+$thBG: $neutral400;
+$tdBG: $neutral200;
+$tableBorder: $neutral700;
 
 
 
 // Modal
-$modalTitleBG: #c6c9ce;
-$modalTitleBorder: #b1b5bc;
-$modalBG: #dbdde0;
-$modalBorder: #c6c9ce;
-$modalActionBG: #d1d3d7;
-$modalActionBorder: #c7c9ce;
+$modalTitleBG: $neutral300;;
+$modalTitleBorder: $neutral700;
+$modalBG: $neutral200;
+$modalBorder: $neutral700;
+$modalActionBG: $neutral300;
+$modalActionBorder: $neutral700;
 $modalCloseBG: $red700;
-$modalCloseBorder: $red900;
+$modalCloseBorder: $red200;
 $modalCloseHoverBG: $red500;
-$modalCloseBorderHover: $red700;
+$modalCloseBorderHover: $red100;
 
 
 
 // Alert boxes
-$boxBlueBG: $blue700;
-$boxBlueBorder: $blue900;
+$boxBlueBG: $blue400;
+$boxBlueBorder: $blue600;
 
-$boxRedBG: $red700;
-$boxRedBorder: $red900;
+$boxRedBG: $red400;
+$boxRedBorder: $red600;
 
-$boxGreenBG: $green700;
-$boxGreenBorder: $green900;
+$boxGreenBG: $green400;
+$boxGreenBorder: $green600;
 
 
 
@@ -173,9 +196,9 @@ $boxGreenBorder: $green900;
 // ███████ ██   ██ ██   ██ ██████   ██████   ███ ███  ███████
 
 
-$buttonShadow: 0px 1px 2px 0px rgba(18,20,24,0.2);
-$buttonShadowHover: 0px 2px 4px 0px rgba(18,20,24,0.3);
-$modalTitleShadow: 0px 1px 2px 0px rgba(18,20,24,0.3);
-$tableShadow: 0px 2px 4px 0px rgba(18,20,24,0.3);
-$monoShadow: 1px 1px 0px rgba(18,20,24,0.3);
-$importantShadow: 1px 1px 0px rgba(18,20,24,0.3);
+$buttonShadow: 0px 1px 1px 0px rgba(0,0,0,0.3);
+$buttonShadowHover: 0px 1px 2px 0px rgba(0,0,0,0.2);
+$modalTitleShadow: 0px 1px 4px 0px rgba(0,0,0,0.3);
+$tableShadow: 0px 2px 3px 0px rgba(0,0,0,0.3);
+$monoShadow: 1px 1px 0px rgba(0,0,0,0.4);
+$importantShadow: 1px 1px 0px rgba(0,0,0,0.4);
