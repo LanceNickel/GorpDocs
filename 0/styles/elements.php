@@ -13,7 +13,7 @@ require_once('../php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -72,7 +72,11 @@ require_once('../php/navigation.php');
 
         <h6>Senary heading</h6>
 
-        <p>Headings below level 3 can be used as necessary. They are also written in sentence case.</p>
+        <p>Headings below level 3 can be used as necessary. They are also written in sentence case. <a>This is a link, by the way</a>.</p>
+
+        <p class="important">Emphasize important text with the important class.</p>
+
+        <h3 class="important">Headers, too!</h3>
 
 
 
@@ -152,6 +156,14 @@ gorp stop <em>server</em> [fast|now]</pre>
                 <td>Content</td>
                 <td>My girlfriend works at Yoshinoya Beef Bowl.</td>
             </tr>
+            <tr>
+                <td>More Content</td>
+                <td><code>This is what a code block looks like in a table.</code></td>
+            </tr>
+             <tr>
+                <td>More Content</td>
+                <td><pre>This is what a preformatted block looks like in a table.</pre></td>
+            </tr>
         </table>
 
 
@@ -160,8 +172,9 @@ gorp stop <em>server</em> [fast|now]</pre>
 
         <p>These can be used in articles to emphasize important content.</p>
 
-        <div class="important-box">This is an important-box.</div>
+        <div class="red-box">This is a red-box.</div>
         <div class="blue-box">This is a blue-box.</div>
+        <div class="green-box">This is a green-box.</div>
         
 
 

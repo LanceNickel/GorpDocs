@@ -13,7 +13,7 @@ require_once('0/php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -110,7 +110,7 @@ require_once('0/php/navigation.php');
             </tr>
         </table>
 
-        <p><strong class="red">Important:</strong> During uninstallation, Gorp will remove the associated files in the <mono>/usr/local/bin/</mono> directory, but does NOT delete the <mono>/minecraft/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
+        <p><strong class="important">Important:</strong> During uninstallation, Gorp will remove the associated files in the <mono>/usr/local/bin/</mono> directory, but does NOT delete the <mono>/minecraft/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
         
 
 

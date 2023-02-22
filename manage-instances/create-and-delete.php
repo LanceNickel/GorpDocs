@@ -13,7 +13,7 @@ require_once('../0/php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -68,7 +68,7 @@ require_once('../0/php/navigation.php');
 
         <pre>gorp delete-server <em>server</em></pre>
 
-        <p>This will delete an instance's files. <strong class="red">This action is irreverisble. Ensure you have a backup!</strong></p>
+        <p>This will delete an instance's files. <strong class="important">This action is irreverisble. Ensure you have a backup!</strong></p>
 
 
     </main>

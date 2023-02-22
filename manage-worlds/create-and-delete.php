@@ -13,7 +13,7 @@ require_once('../0/php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -64,7 +64,7 @@ require_once('../0/php/navigation.php');
 
         <p>If the world name is not specified, Gorp will ask for a world name.</p>
 
-        <div class="important-box">World names may NOT have spaces or special characters in them.</div>
+        <div class="red-box">World names may NOT have spaces or special characters in them.</div>
 
 
 
@@ -76,7 +76,7 @@ require_once('../0/php/navigation.php');
 
         <p>If the world name is not specified, Gorp will show a list of options and ask for you to enter a world name.</p>
 
-        <p><strong class="red">This action is irreversible!</strong> Ensure you have a backup of the world. Gorp will force you to confirm you are deleting the intended world.</p>
+        <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the world. Gorp will force you to confirm you are deleting the intended world.</p>
 
 
     </main>

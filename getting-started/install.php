@@ -13,7 +13,7 @@ require_once('../0/php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -82,7 +82,7 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
 
 
 
-        <h3 class="red">If you received a warning message</h3>
+        <h3 class="important">If you received a warning message</h3>
 
         <p>During install, the installer script noticed that your computer already has a directory named "minecraft" in the root. Because this could be from a previous install of this utility, or previous use, the installer skips these directories. This is to prevent potential catastrophic data loss.</p>
 

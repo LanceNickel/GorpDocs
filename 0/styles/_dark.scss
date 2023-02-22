@@ -1,0 +1,200 @@
+// ███████  ██████  ███    ██ ████████ ███████ 
+// ██      ██    ██ ████   ██    ██    ██      
+// █████   ██    ██ ██ ██  ██    ██    ███████ 
+// ██      ██    ██ ██  ██ ██    ██         ██ 
+// ██       ██████  ██   ████    ██    ███████ 
+
+
+$font: "IBM Plex Sans", sans-serif;
+$fontCondensed: "IBM Plex Sans Condensed", sans-serif;
+$fontMono: "IBM Plex Mono", monospace;
+
+
+
+
+
+
+
+
+
+//  ██████  ██████  ██       ██████  ██████  ███████ 
+// ██      ██    ██ ██      ██    ██ ██   ██ ██      
+// ██      ██    ██ ██      ██    ██ ██████  ███████ 
+// ██      ██    ██ ██      ██    ██ ██   ██      ██ 
+//  ██████  ██████  ███████  ██████  ██   ██ ███████ 
+
+
+// Palette Definition
+// These colors are used throughout the subsequent color sections.
+$blue50: #b5c3e3;
+$blue100: #90a5d5;
+$blue200: #7e96ce;
+$blue300: #6b87c7;
+$blue400: #5978c0;
+$blue500: #4669b9;
+$blue600: #3f5fa7;
+$blue700: #385494;
+$blue800: #314a82;
+$blue900: #2a3f6f;
+
+$green50: #90d5c0;
+$green100: #6bc7ab;
+$green200: #59c0a1;
+$green300: #46b996;
+$green400: #3fa787;
+$green500: #389478;
+$green600: #318269;
+$green700: #2a6f5a;
+$green800: #235d4b;
+$green900: #1c4a3c;
+
+$red50: #dca3b5;
+$red100: #ce7e97;
+$red200: #c76b88;
+$red300: #c05979;
+$red400: #b9466a;
+$red500: #a73f5f;
+$red600: #943854;
+$red700: #82314a;
+$red800: #6f2a3f;
+$red900: #5d2335;
+
+$neutral50: #80889b;
+$neutral100: #727b90;
+$neutral200: #666f82;
+$neutral300: #5b6374;
+$neutral400: #505766;
+$neutral500: #454b58;
+$neutral600: #3a3f4a;
+$neutral700: #2f333c;
+$neutral750: #2d3039;
+$neutral800: #24272e;
+$neutral900: #191b20;
+$neutral1000: #0e0f12;
+
+$text500: #b9bdc8;
+$text300: #c7cad3;
+
+
+
+// Sidebar & header
+$asideBG: $neutral900;
+$headerBG: $neutral900;
+$asideNavHover: $neutral1000;
+
+
+
+// Mobile menu
+$mobileBG: $neutral900;
+$mobileActiveColor: $blue500;
+
+
+
+// Subnav
+$subnavBG: $blue700;
+$subnavColor: rgba(255,255,255,0.8);
+$subnavHover: $blue800;
+$subnavFirstBorder: rgba(255,255,255,0.1);
+
+
+
+// Main structure
+$mainBG: $neutral800;
+$mainBorder: $neutral700;
+
+
+
+// Text
+$bodyColor: $text500;
+$headerColor: $text300;
+$preBG: $neutral600;
+$codeBG: $neutral600;
+$monoColor: $green300;
+$importantColor: $red300;
+$linkColor: $blue300;
+$linkUnderline: rgba(255,255,255,0.25);
+$linkUnderlineHover: rgba(255,255,255,0.75);
+$h2Underline: rgba(255,255,255,0.1);
+$offWhite: rgba(255,255,255,0.8);
+
+
+
+// Buttons
+$buttonColor: $text300;
+
+$buttonBG: $neutral700;
+$buttonHoverBG: $neutral500;
+$buttonBorder: $neutral200;
+$buttonBorderHover: $neutral50;
+
+$buttonHigherBG: $neutral600;
+$buttonHigherHoverBG: $neutral400;
+$buttonHigherBorder: $neutral100;
+$buttonHigherBorderHover: $neutral50;
+
+$buttonRedHoverBG: $red500;
+$buttonRedBorder: $red400;
+$buttonRedBorderHover: $red100;
+
+$buttonBlueHoverBG: $blue500;
+$buttonBlueBorder: $blue400;
+$buttonBlueBorderHover: $blue100;
+
+$buttonGreenHoverBG: $green500;
+$buttonGreenBorder: $green400;
+$buttonGreenBorderHover: $green100;
+
+
+
+// Tables
+$thBG: $neutral900;
+$tdBG: $neutral750;
+$tableBorder: $neutral300;
+
+
+
+// Modal
+$modalTitleBG: $neutral700;;
+$modalTitleBorder: $neutral200;
+$modalBG: $neutral800;
+$modalBorder: $neutral300;
+$modalActionBG: $neutral750;
+$modalActionBorder: $neutral300;
+$modalCloseBG: $red700;
+$modalCloseBorder: $red200;
+$modalCloseHoverBG: $red500;
+$modalCloseBorderHover: $red100;
+
+
+
+// Alert boxes
+$boxBlueBG: $blue600;
+$boxBlueBorder: $blue200;
+
+$boxRedBG: $red600;
+$boxRedBorder: $red200;
+
+$boxGreenBG: $green600;
+$boxGreenBorder: $green200;
+
+
+
+
+
+
+
+
+
+// ███████ ██   ██  █████  ██████   ██████  ██     ██ ███████ 
+// ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██ ██      
+// ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██ ███████ 
+//      ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██      ██ 
+// ███████ ██   ██ ██   ██ ██████   ██████   ███ ███  ███████
+
+
+$buttonShadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
+$buttonShadowHover: 0px 3px 4px 0px rgba(0,0,0,0.75);
+$modalTitleShadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
+$tableShadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+$monoShadow: 1px 1px 0px rgba(0,0,0,0.75);
+$importantShadow: 1px 1px 0px rgba(0,0,0,0.75);

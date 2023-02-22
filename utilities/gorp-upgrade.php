@@ -13,7 +13,7 @@ require_once('../0/php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -62,7 +62,7 @@ require_once('../0/php/navigation.php');
 
         <p>This will install the latest version of Gorp over the current version. All settings in <mono>gorp.conf</mono> and each instance's </mono>run.sh</mono> are preserved.</p>
 
-        <div class="important-box">All Gorp files in /usr/local/bin are OVERWRITTEN. Only settings in the above mentioned files are carried over.</div>
+        <div class="red-box">All Gorp files in /usr/local/bin are OVERWRITTEN. Only settings in the above mentioned files are carried over.</div>
 
 
     </main>

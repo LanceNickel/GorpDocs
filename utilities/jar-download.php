@@ -13,7 +13,7 @@ require_once('../0/php/navigation.php');
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link href="/0/styles/style.css" rel="stylesheet">
+    <?= stylesheet(); ?>
 
     <script src="/0/js/jquery-3.6.3.min.js" type="text/javascript" defer></script>
     <script src="/0/js/navigation.js" type="text/javascript" defer></script>
@@ -54,7 +54,7 @@ require_once('../0/php/navigation.php');
 
         <p>The JAR downloader will download the Paper Server JAR file for the specified Minecraft game version.</p>
 
-        <div class="important-box">The PaperMC team only maintains Paper for the latest version of Minecraft. Using older versions of Minecraft is considered less secure, as security flaws and other such bugs will not be addressed.</div>
+        <div class="red-box">The PaperMC team only maintains Paper for the latest version of Minecraft. Using older versions of Minecraft is considered less secure, as security flaws and other such bugs will not be addressed.</div>
 
 
 

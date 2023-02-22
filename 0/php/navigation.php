@@ -153,3 +153,9 @@ function mobileMenu() {
         </div>
     EOF;
 }
+
+
+
+function stylesheet($theme='dark') {
+    echo '<link href="/0/styles/' . $theme . '.css" rel="stylesheet">';
+}

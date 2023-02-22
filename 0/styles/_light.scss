@@ -1,0 +1,181 @@
+// ███████  ██████  ███    ██ ████████ ███████ 
+// ██      ██    ██ ████   ██    ██    ██      
+// █████   ██    ██ ██ ██  ██    ██    ███████ 
+// ██      ██    ██ ██  ██ ██    ██         ██ 
+// ██       ██████  ██   ████    ██    ███████ 
+
+
+$font: "IBM Plex Sans", sans-serif;
+$fontCondensed: "IBM Plex Sans Condensed", sans-serif;
+$fontMono: "IBM Plex Mono", monospace;
+
+
+
+
+
+
+
+
+
+//  ██████  ██████  ██       ██████  ██████  ███████ 
+// ██      ██    ██ ██      ██    ██ ██   ██ ██      
+// ██      ██    ██ ██      ██    ██ ██████  ███████ 
+// ██      ██    ██ ██      ██    ██ ██   ██      ██ 
+//  ██████  ██████  ███████  ██████  ██   ██ ███████ 
+
+
+// General Colourful Palette
+$blue50: #E3F2FD;
+$blue100: #BBDEFB;
+$blue200: #90CAF9;
+$blue300: #64B5F6;
+$blue400: #42A5F5;
+$blue500: #2196F3;
+$blue600: #1E88E5;
+$blue700: #1976D2;
+$blue800: #1565C0;
+$blue900: #0D47A1;
+
+$green50: #E8F5E9;
+$green100: #C8E6C9;
+$green200: #A5D6A7;
+$green300: #81C784;
+$green400: #66BB6A;
+$green500: #4CAF50;
+$green600: #43A047;
+$green700: #388E3C;
+$green800: #2E7D32;
+$green900: #1B5E20;
+
+$red50: #FFEBEE;
+$red100: #FFCDD2;
+$red200: #EF9A9A;
+$red300: #E57373;
+$red400: #EF5350;
+$red500: #F44336;
+$red600: #E53935;
+$red700: #D32F2F;
+$red800: #C62828;
+$red900: #C62828;
+
+
+
+// Sidebar & header
+$asideBG: #E0E0E0;
+$headerBG: #E0E0E0;
+$asideNavHover: #BDBDBD;
+
+
+
+// Mobile menu
+$mobileBG: #E0E0E0;
+$mobileActiveColor: $blue500;
+
+
+
+// Subnav
+$subnavBG: $blue500;
+$subnavColor: rgba(255,255,255,0.8);
+$subnavHover: $blue700;
+$subnavFirstBorder: rgba(255,255,255,0.1);
+
+
+
+// Main structure
+$mainBG: #EEEEEE;
+$mainBorder: #D0D0D0;
+
+
+
+// Text
+$bodyColor: #37474F;
+$headerColor: #212121;
+$preBG: #D0D0D0;
+$codeBG: #D0D0D0;
+$monoColor: $green500;
+$importantColor: $red500;
+$linkColor: $blue500;
+$linkUnderline: rgba(0,0,0,0.25);
+$linkUnderlineHover: rgba(255,255,255,0.75);
+$h2Underline: rgba(0,0,0,0.2);
+$offWhite: rgba(255,255,255,0.8);
+
+
+
+// Buttons
+$buttonColor: #424242;
+
+$buttonBG: #D0D0D0;
+$buttonBorder: #BDBDBD;
+$buttonBorderHover: $blue500;
+
+$buttonHigherBG: #BDBDBD;
+$buttonHigherBorder: #9E9E9E;
+$buttonHigherBorderHover: $blue500;
+
+$buttonRedHoverBG: $red500;
+$buttonRedBorder: $red500;
+$buttonRedBorderHover: $red700;
+
+$buttonBlueHoverBG: $blue500;
+$buttonBlueBorder: $blue500;
+$buttonBlueBorderHover: $blue700;
+
+$buttonGreenHoverBG: $green500;
+$buttonGreenBorder: $green500;
+$buttonGreenBorderHover: $green700;
+
+
+
+// Tables
+$thBG: #BDBDBD;
+$tdBG: #E0E0E0;
+$tableBorder: #9E9E9E;
+
+
+
+// Modal
+$modalTitleBG: #c6c9ce;
+$modalTitleBorder: #b1b5bc;
+$modalBG: #dbdde0;
+$modalBorder: #c6c9ce;
+$modalActionBG: #d1d3d7;
+$modalActionBorder: #c7c9ce;
+$modalCloseBG: $red700;
+$modalCloseBorder: $red900;
+$modalCloseHoverBG: $red500;
+$modalCloseBorderHover: $red700;
+
+
+
+// Alert boxes
+$boxBlueBG: $blue700;
+$boxBlueBorder: $blue900;
+
+$boxRedBG: $red700;
+$boxRedBorder: $red900;
+
+$boxGreenBG: $green700;
+$boxGreenBorder: $green900;
+
+
+
+
+
+
+
+
+
+// ███████ ██   ██  █████  ██████   ██████  ██     ██ ███████ 
+// ██      ██   ██ ██   ██ ██   ██ ██    ██ ██     ██ ██      
+// ███████ ███████ ███████ ██   ██ ██    ██ ██  █  ██ ███████ 
+//      ██ ██   ██ ██   ██ ██   ██ ██    ██ ██ ███ ██      ██ 
+// ███████ ██   ██ ██   ██ ██████   ██████   ███ ███  ███████
+
+
+$buttonShadow: 0px 1px 2px 0px rgba(18,20,24,0.2);
+$buttonShadowHover: 0px 2px 4px 0px rgba(18,20,24,0.3);
+$modalTitleShadow: 0px 1px 2px 0px rgba(18,20,24,0.3);
+$tableShadow: 0px 2px 4px 0px rgba(18,20,24,0.3);
+$monoShadow: 1px 1px 0px rgba(18,20,24,0.3);
+$importantShadow: 1px 1px 0px rgba(18,20,24,0.3);
