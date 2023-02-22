@@ -431,22 +431,24 @@ subnav {
     margin-top: -30px;
     margin-left: -40px;
     border-top-left-radius: 6px;
-    padding-top: 10px;
+    padding-top: 9px;
     padding-bottom: 10px;
     transition-duration: 0.05s;
 	z-index: 99;
+	border-top: 1px solid $subnavBorder;
+	border-left: 1px solid $subnavBorder;
 
     a {
         margin: 0;
-        padding: 10px 20px;
-		margin-top: -10px;
+        padding: 9px 20px 10px 20px;
+		margin-top: -9px;
 		margin-bottom: -10px;
         color: $subnavColor;
 		display: inline-block;
 
         &:first-child {
             margin-left: 40px;
-            border-left: 1px solid rgba(255,255,255,0.05);
+            border-left: 1px solid $subnavFirstItemBorder;
         }
 
         &:hover {
@@ -548,8 +550,19 @@ subnav {
 	}
 
 	&.theme {
-		padding: 5px 10px;
-		font-weight: normal;
+		padding: 5px;
+		border: none;
+		background: none;
+		box-shadow: none;
+		margin: 0;
+		margin-bottom: -5px;
+		border-radius: 0;
+
+		svg {
+			fill: $buttonColor;
+			width: 20px;
+			height: 20px;
+		}
 	}
 }
 

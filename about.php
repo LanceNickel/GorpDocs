@@ -12,7 +12,7 @@ require_once('0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Command Reference - Gorp Docs</title>
+    <title>About Gorp - Gorp Docs</title>
 </head>
 
 
@@ -22,7 +22,7 @@ require_once('0/php/functions.php');
     <header>
         <?= mobileMenu(); ?>
 
-        Command Reference
+        About Gorp
 
         <a id="change-theme" class="button theme"></a>
     </header>

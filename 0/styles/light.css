@@ -309,22 +309,24 @@ subnav {
   margin-top: -30px;
   margin-left: -40px;
   border-top-left-radius: 6px;
-  padding-top: 10px;
+  padding-top: 9px;
   padding-bottom: 10px;
   transition-duration: 0.05s;
   z-index: 99;
+  border-top: 1px solid #cccfd3;
+  border-left: 1px solid #cccfd3;
 }
 subnav a {
   margin: 0;
-  padding: 10px 20px;
-  margin-top: -10px;
+  padding: 9px 20px 10px 20px;
+  margin-top: -9px;
   margin-bottom: -10px;
   color: rgba(255, 255, 255, 0.8);
   display: inline-block;
 }
 subnav a:first-child {
   margin-left: 40px;
-  border-left: 1px solid rgba(255, 255, 255, 0.05);
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
 }
 subnav a:hover {
   background: #3f5fa7;
@@ -396,8 +398,18 @@ subnav a.active {
   color: white;
 }
 .button.theme {
-  padding: 5px 10px;
-  font-weight: normal;
+  padding: 5px;
+  border: none;
+  background: none;
+  box-shadow: none;
+  margin: 0;
+  margin-bottom: -5px;
+  border-radius: 0;
+}
+.button.theme svg {
+  fill: #26282c;
+  width: 20px;
+  height: 20px;
 }
 
 .option-button {
