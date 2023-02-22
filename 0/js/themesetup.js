@@ -1,9 +1,7 @@
 function setup_setCookie(key, value, expiration) {
-    const date = new Date();
-    date.setTime(date.getTime() + (expiration*24*60*60*1000));
-    let expires = "expires=" + date.toUTCString;
+    let age = expiration*60*60*24;
 
-    document.cookie = key + "=" + value + ";" + expires + ";path=/";
+    document.cookie = key + "=" + value + ";max-age=" + age + ";path=/";
 }
 
 function setup_getCookie(key) {
