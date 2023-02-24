@@ -12,7 +12,7 @@ require_once('../0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Create & Delete Worlds - Gorp Docs</title>
+    <title>Create, Delete, & Reset Worlds - Gorp Docs</title>
 </head>
 
 
@@ -44,7 +44,7 @@ require_once('../0/php/functions.php');
 
         <div class="spacer40"></div>
 
-        <h1>Create & Delete Worlds</h1>
+        <h1>Create, Delete, & Reset Worlds</h1>
 
         <p>Each server instance can have many worlds. Creating and deleting worlds can be done per-instance with ease.</p>
 
