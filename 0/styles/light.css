@@ -616,6 +616,7 @@ body.modal-open {
     width: 100%;
     border-top-left-radius: 0;
     border: none;
+    background: #e8e9eb;
   }
   main {
     left: 0;
@@ -647,6 +648,9 @@ body.modal-open {
   subnav a:first-child {
     margin-left: 0;
     border: none;
+  }
+  table {
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
   }
   #open-mobile-menu {
     display: inline-block;

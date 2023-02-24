@@ -854,6 +854,7 @@ body.modal-open {
 		width: 100%;
 		border-top-left-radius: 0;
 		border: none;
+		background: $mainMobileBG;
 	}
 
 	main {
@@ -892,6 +893,10 @@ body.modal-open {
 				border: none;
 			}
 		}
+	}
+
+	table {
+		box-shadow: $tableShadowMobile;
 	}
 
 	#open-mobile-menu {
