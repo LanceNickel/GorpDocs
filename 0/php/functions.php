@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-02-22';
+    return '2023-02-23';
 }
 
 
@@ -91,7 +91,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
                 <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
 
-                <span id="sidebar-version">For Gorp 1.0.3<br>$rev</span>
+                <span id="sidebar-version">For Gorp 1.1.0<br>$rev</span>
 
         EOF;
     }

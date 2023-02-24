@@ -340,12 +340,12 @@ subnav a.active {
 .button {
   position: relative;
   display: inline-block;
-  padding: 10px 20px;
+  padding: 8px 16px;
   margin-right: 3px;
   margin-top: 15px;
   margin-bottom: 15px;
   border: 1px solid #868e97;
-  border-radius: 3px;
+  border-radius: 4px;
   background: #dadcdf;
   font-size: 14px;
   transition-duration: 0.05s;

@@ -52,7 +52,7 @@ require_once('0/php/functions.php');
         <p>Gorp's name courtesy of my good friend Connor Atkins. He was not aware at the time (and neither was I) that Gorp was another name for trail mix. Yummy!</p>
 
         <a href="https://github.com/LanceNickel/Gorp" target="_blank" class="button">Gorp on Github</a>
-        <a href="https://github.com/LanceNickel/Gorp/issues" target="_blank" class="button">Report an Issue</a>
+        <a href="https://github.com/LanceNickel/Gorp/issues" target="_blank" class="button">Raise an Issue</a>
         <a href="mailto:gorp@lanickel.com" class="button">Email Me (gorp@lanickel.com)</a>
 
         
