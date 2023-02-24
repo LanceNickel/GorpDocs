@@ -56,7 +56,9 @@ const utilities = [
     "/utilities/jar-download",
     "/utilities/jar-download/",
     "/utilities/gorp-upgrade",
-    "/utilities/gorp-upgrade/"
+    "/utilities/gorp-upgrade/",
+    "/utilities/general-utilities",
+    "/utilities/general-utilities/"
 ];
 
 const commandReference = [

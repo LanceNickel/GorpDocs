@@ -93,6 +93,10 @@ require_once('0/php/functions.php');
                 <td>Deletes a world named <em><mono>world</mono></em> in a server instance.</td>
             </tr>
             <tr>
+                <td><code>gorp reset-world <em>server</em></code></td>
+                <td>Deletes and regenerates the active world in a server instance.</td>
+            </tr>
+            <tr>
                 <td><code>gorp switch-world <em>server</em> [<em>world</em>]</code></td>
                 <td>Switches to a world named <em><mono>world</mono></em> in a server instance.</td>
             </tr>

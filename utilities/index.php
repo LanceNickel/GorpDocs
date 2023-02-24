@@ -69,6 +69,13 @@ require_once('../0/php/functions.php');
             </div>
         </a>
 
+        <a class="no-underline" href="/utilities/general-utilities/">
+            <div class="option-button">
+                <span class="subsection">General Utilities</span>
+                <span class="description">Simple utilities that provide information or get a quick thing done.</span>
+            </div>
+        </a>
+
 
 
         <h2>Related Reading</h2>

@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-02-23';
+    return '2023-02-24';
 }
 
 
@@ -170,7 +170,7 @@ function subnav($topic='notpassed') {
 
     else if ($topic == 'manage-worlds') {
         echo <<<EOF
-        <a href="/manage-worlds/create-and-delete/">Create & Delete</a>
+        <a href="/manage-worlds/create-and-delete/">Create, Delete, & Reset</a>
                 <a href="/manage-worlds/switch-worlds/">Switch Worlds</a>
                 <a href="/manage-worlds/backup/">Backup a World</a>
                 <a href="/manage-worlds/archive/">Archive a World</a>
@@ -183,6 +183,7 @@ function subnav($topic='notpassed') {
         <a href="/utilities/jar-update/">JAR Updater</a>
                     <a href="/utilities/jar-download/">JAR Downloader</a>
                     <a href="/utilities/gorp-upgrade/">Gorp Upgrader</a>
+                    <a href="/utilities/general-utilities/">General Utilities</a>
 
         EOF;
     }

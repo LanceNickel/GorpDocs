@@ -616,6 +616,39 @@ subnav {
 // ██   ██ ███████ ███████ ██   ██    ██        ██████   ██████  ██   ██ ███████ ███████ 
 
 
+.box {
+	font-family: $font;
+	font-size: 16;
+	padding: 5px 10px;
+	border-radius: 4px;
+	color: white;
+	display: block;
+	margin-bottom: 30px;
+
+	&.blue {
+		background: $boxBlueBG;
+		border: 1px solid $boxBlueBorder;
+	}
+
+	&.green {
+		background: $boxGreenBG;
+		border: 1px solid $boxGreenBorder;
+	}
+
+	&.red {
+		background: $boxRedBG;
+		border: 1px solid $boxRedBorder;
+	}
+
+	pre,code {
+		background: rgba(0,0,0,0.25)!important;
+	}
+}
+
+
+
+
+
 .red-box {
 	font-family: $font;
 	font-size: 16;
@@ -633,8 +666,7 @@ subnav {
 	font-family: $font;
 	font-size: 16;
 	padding: 5px 10px;
-	background: $boxBlueBG;
-	border: 1px solid $boxBlueBorder;
+	
 	border-radius: 4px;
 	color: white;
 	display: inline-block;

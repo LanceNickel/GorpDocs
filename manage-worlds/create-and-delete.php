@@ -73,6 +73,18 @@ require_once('../0/php/functions.php');
         <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the world. Gorp will force you to confirm you are deleting the intended world.</p>
 
 
+
+        <h2>Reset a World</h2>
+        
+        <pre>gorp reset-world <em>server</em></pre>
+
+        <p>This will delete and regenerate the active world in the server instance named <em><mono>server</mono></em>.</p>
+
+        <p>This tool is useful for pulling a <em>Mulligan</em>, or to start over if another generated world was bad (such as a remote island).</p>
+
+        <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the active world. Gorp will force you to confirm you are regenerating the intended world.</p>
+
+
     </main>
 
 </html>

@@ -52,9 +52,11 @@ require_once('../0/php/functions.php');
         
         <h2>Create an Instance</h2>
 
-        <pre>gorp create-server <em>server</em></pre>
+        <pre>gorp create-server <em>server</em> [<em>world</em>]</pre>
 
-        <p>This will create an instance directory in <mono>/minecraft/servers</mono> and perform the first-time world generation.</p>
+        <p>This will create an instance directory in <mono>/minecraft/servers</mono>. The world name will be set on first run.</p>
+
+        <p>If a world name is not specified, an world named <mono>default</mono> will be created.</p>
 
 
 

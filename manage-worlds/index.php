@@ -48,10 +48,12 @@ require_once('../0/php/functions.php');
 
         <p>Server instances can have many worlds. Worlds are the actual game environment the players experience, and contain player data, advancements, and other such game features.</p>
 
+        <div class="box blue">Each server instance has an <strong>active</strong> world. The active world is the one that is run when the server is started. It is also the world that is backed up or archived if <code>backup-world</code> or <code>archive-world</code> are run.</div>
+
         <a class="no-underline" href="/manage-worlds/create-and-delete/">
             <div class="option-button">
-                <span class="subsection">Create & Delete</span>
-                <span class="description">Create and delete worlds in a server instance.</span>
+                <span class="subsection">Create, Delete, & Reset</span>
+                <span class="description">Create, delete, and regenerate worlds in a server instance.</span>
             </div>
         </a>
 

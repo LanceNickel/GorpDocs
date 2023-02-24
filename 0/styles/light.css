@@ -441,6 +441,31 @@ subnav a.active {
   font-size: 14px;
 }
 
+.box {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16;
+  padding: 5px 10px;
+  border-radius: 4px;
+  color: white;
+  display: block;
+  margin-bottom: 30px;
+}
+.box.blue {
+  background: #5978c0;
+  border: 1px solid #3f5fa7;
+}
+.box.green {
+  background: #3fa787;
+  border: 1px solid #318269;
+}
+.box.red {
+  background: #b9466a;
+  border: 1px solid #943854;
+}
+.box pre, .box code {
+  background: rgba(0, 0, 0, 0.25) !important;
+}
+
 .red-box {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16;
@@ -456,8 +481,6 @@ subnav a.active {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16;
   padding: 5px 10px;
-  background: #5978c0;
-  border: 1px solid #3f5fa7;
   border-radius: 4px;
   color: white;
   display: inline-block;
