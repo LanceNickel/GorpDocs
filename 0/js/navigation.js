@@ -183,10 +183,12 @@ $('.close-modal').click(function() {
 
 $('#open-mobile-menu').click(function() {
     $('body').addClass('modal-open');
+    $('#mobile-menu-bg').removeClass('hidden');
     $('#mobile-menu').removeClass('hidden');
 });
 
 $('.close-mobile-menu').click(function() {
     $('body').removeClass('modal-open');
     $('#mobile-menu').addClass('hidden');
+    $('#mobile-menu-bg').addClass('hidden');
 });

@@ -905,6 +905,7 @@ body.modal-open {
 	.mobile-menu-image {
 		svg {
 			width: 45px;
+			height: 45px;
 			padding: 7px;
 			margin-top: 7px;
 			margin-left: -7px;
@@ -913,32 +914,50 @@ body.modal-open {
 		}
 	}
 
+	#mobile-menu-bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background: rgba(0,0,0,0.75);
+		z-index: 999;
+	}
+	
 	#mobile-menu {
 		position: fixed;
-		width: 100%;
+		width: 300px;
 		height: 100vh;
 		z-index: 9999;
 		background: $mobileBG;
 		top: 0;
 		left: 0;
-		display: flex;
 		justify-content: center;
 		align-items: center;
+		box-shadow: 20px 0px 50px 0px rgba(0,0,0,1);
+		border-right: 1px solid $mobileBorder;
 
 		.inner {
-			margin-top: -50px;
+			margin-top: 75px;
+			margin-left: 14px;
+			margin-right: 14px;
 		}
 
 		.nav-item {
 			display: block;
 			padding: 10px;
-			text-align: center;
+			text-align: left;
 			font-size: 18px;
 			font-weight: normal;
+			border-bottom: 1px solid $mobileItemBorder;
 
 			&.active {
 				color: $mobileActiveColor;
 				font-weight: bold;
+			}
+
+			&:nth-child(2) {
+				border-top: 1px solid $mobileItemBorder;
 			}
 		}
 
@@ -947,14 +966,21 @@ body.modal-open {
 			left: 0;
 			top: 0;
 			padding: 7px;
-			margin-top: 10px;
-			margin-left: 10px;
+			margin-top: 11px;
+			margin-left: 14px;
 
 			svg {
-				width: 30px;
-				height: 30px;
+				width: 25px;
+				height: 25px;
 				fill: $mobileIconFill;
 			}
+		}
+
+		#mobile-version {
+			font-size: 16px;
+			font-weight: normal;
+			position: absolute;
+			bottom: 14px;
 		}
 	}
 }
