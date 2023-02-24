@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-02-24';
+    return '2023-02-24.2';
 }
 
 
@@ -183,7 +183,6 @@ function subnav($topic='notpassed') {
         <a href="/utilities/jar-update/">JAR Updater</a>
                     <a href="/utilities/jar-download/">JAR Downloader</a>
                     <a href="/utilities/gorp-upgrade/">Gorp Upgrader</a>
-                    <a href="/utilities/general-utilities/">General Utilities</a>
 
         EOF;
     }

@@ -132,8 +132,31 @@ require_once('0/php/functions.php');
                 <td>Downloads a Paper JAR file for the specified Minecraft version. <a id="open-modal-1">SUPPORTED GAME VERSIONS</a></td>
             </tr>
             <tr>
-                <td><code>gorp upgrades</code></td>
+                <td><code>gorp upgrade</code></td>
                 <td>Downloads and installs the latest version of Gorp.</td>
+            </tr>
+        </table>
+
+
+
+        <h2>Miscellaneous</h2>
+
+        <table>
+            <tr>
+                <th>Command</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><code>gorp help</code></td>
+                <td>Open a command reference in the command line.</td>
+            </tr>
+            <tr>
+                <td><code>gorp -v</code></td>
+                <td>Show the installed Gorp version.</td>
+            </tr>
+            <tr>
+                <td><code>gorp list-servers</code></td>
+                <td>List servers in <mono>/minecraft/servers</mono>.</td>
             </tr>
         </table>
             
