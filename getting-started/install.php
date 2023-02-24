@@ -58,9 +58,11 @@ require_once('../0/php/functions.php');
             <li>Run <code>java --version</code>. You should see something like:</li>
         </ol>
 
-        <pre>openjdk 17.0.5 2022-10-18
+        <div class="pre-container">
+            <pre>openjdk 17.0.5 2022-10-18
 OpenJDK Runtime Environment (build 17.0.5+8-Ubuntu-2ubuntu122.04)
 OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, sharing)</pre>
+        </div>
 
 
 

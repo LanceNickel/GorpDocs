@@ -68,6 +68,13 @@ pre, code {
     margin: 0px;
 }
 
+.pre-container {
+	overflow: scroll;
+	margin-left: -20px;
+	margin-right: -20px;
+	padding-left: 20px;
+}
+
 pre {
     padding: 10px;
     line-height: 1.5;
@@ -897,6 +904,18 @@ body.modal-open {
 
 	table {
 		box-shadow: $tableShadowMobile;
+
+		&.minx {
+			min-width: 700px;
+		}
+	}
+
+	.table-container {
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 20px;
+		max-width: calc(100% + 40px);
+		overflow: scroll;
 	}
 
 	#open-mobile-menu {
