@@ -64,7 +64,7 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
 
 
 
-        <h2>Download and install Gorp</h2>
+        <h2>Download and Install Gorp</h2>
         
         <ol>        
             <li>SSH into your (soon to be) Minecraft server.</li>
@@ -82,15 +82,13 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
 
 
 
-        <h2>Run the server for the first time</h2>
+        <h2>Run Your First Server</h2>
 
         <ol>
-            <li>Run the server with <code>sudo gorp start server</code></li>
-            <li>Stop the server with <code>sudo gorp stop server</code></li>
-            <li>Backup the server with <code>sudo gorp backup server</code></li>
+            <li>Create a server using <code>sudo gorp create-server <em>server</em> [<em>world</em>]</code>, replacing <em><mono>server</mono></em> and <em><mono>world</mono></em> with a server and world name you want to use.</li>
+            <li>Run <code>sudo gorp start <em>server</em></code> to start your server.</li>
+            <li>Run <code>sudo gorp stop <em>server</em></code> to stop the server.</li>
         </ol>
-
-        <p>Feel free to delete the <mono>Gorp</mono> directory that was created in your home directory when you Cloned Gorp. We don't need it anymore.</p>
 
 
 
