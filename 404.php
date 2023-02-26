@@ -39,9 +39,7 @@ require_once('0/php/functions.php');
     <main class="article">
 
         <h1>Page Not Found</h1>
-        <p>The page requested was not found. Apologies for the inconvenience.</p>
-
-        <a href="https://github.com/LanceNickel/Gorp/issues" target="_blank">Report This Problem</a>
+        <p>The page requested was not found. If there should <em>actually</em> be a page here, please reach out: <a href="mailto:gorp@lanickel.com">gorp@lanickel.com</a>.</p>
 
 
     </main>

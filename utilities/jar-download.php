@@ -48,7 +48,7 @@ require_once('../0/php/functions.php');
 
         <p>The JAR downloader will download the Paper Server JAR file for the specified Minecraft game version.</p>
 
-        <div class="red-box">The PaperMC team only maintains Paper for the latest version of Minecraft. Using older versions of Minecraft is considered less secure, as security flaws and other such bugs will not be addressed.</div>
+        <div class="box red">The PaperMC team only maintains Paper for the latest version of Minecraft. Using older versions of Minecraft is considered less secure, as security flaws and other such bugs will not be addressed.</div>
 
 
 

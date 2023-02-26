@@ -12,6 +12,7 @@ require_once('../php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
+    <script src="/0/js/modal.js" type="text/javascript" defer></script>
     <title>Hi Mom! - Gorp Docs</title>
 </head>
 
@@ -141,24 +142,26 @@ gorp stop <em>server</em> [fast|now]</pre>
 
         <p>Standard HTML tables have been formatted. No classes requied. A table header is required, though.</p>
 
-        <table>
-            <tr>
-                <th>Header</th>
-                <th>Header</th>
-            </tr>
-            <tr>
-                <td>Content</td>
-                <td>My girlfriend works at Yoshinoya Beef Bowl.</td>
-            </tr>
-            <tr>
-                <td>More Content</td>
-                <td><code>This is what a code block looks like in a table.</code></td>
-            </tr>
-             <tr>
-                <td>More Content</td>
-                <td><pre>This is what a preformatted block looks like in a table.</pre></td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table class="minx">
+                <tr>
+                    <th>Header</th>
+                    <th>Header</th>
+                </tr>
+                <tr>
+                    <td>Content</td>
+                    <td>My girlfriend works at Yoshinoya Beef Bowl.</td>
+                </tr>
+                <tr>
+                    <td>More Content</td>
+                    <td><code>This is what a code block looks like in a table.</code></td>
+                </tr>
+                    <tr>
+                    <td>More Content</td>
+                    <td>This is quite a long block of text in the table. Because of this, the table has a class 'minx'. This prevents the table from becoming smaller than 700px wide. In cases where the viewport is less than 700px wide, the table will individually scroll horizontally. This allows the table to be readable without causing the entire page to horizontally scroll, significantly degrading the mobile viewing experience. This functionality is achieved by wrapping the table in a div with the class "table-container". <strong class="important">All tables must be wrapped in a div with the class "table-container".</strong></td>
+                </tr>
+            </table>
+        </div>
 
 
 
@@ -166,9 +169,13 @@ gorp stop <em>server</em> [fast|now]</pre>
 
         <p>These can be used in articles to emphasize important content.</p>
 
-        <div class="red-box">This is a red-box.</div>
-        <div class="blue-box">This is a blue-box.</div>
-        <div class="green-box">This is a green-box.</div>
+        <div class="box red">This is a red box</div>
+        <div class="box green">This is a green box.</div>
+        <div class="box blue">This is a blue box.</div>
+
+        <div class="box red inline">This is a red inline box.</div>
+        <div class="box green inline">This is a green inline box.</div>
+        <div class="box blue inline">This is a blue inline box.</div>
         
 
 

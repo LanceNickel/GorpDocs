@@ -50,28 +50,30 @@ require_once('../0/php/functions.php');
 
         <p>Some key terms used throughout this documentation.</p>
 
-        <table>
-            <tr>
-                <th>Term</th>
-                <th>Definition</th>
-            </tr>
-            <tr>
-                <td>world</td>
-                <td>The actual Minecraft world where play happens. A world is split into three folders, one for each dimension. Worlds have names and are stored inside of server instances.</td>
-            </tr>
-            <tr>
-                <td>server instance (<em>instance</em>)</td>
-                <td>An individual Minecraft Server. Each instance contains its own properties, plugins, worlds, and more). Each server instance has a name.</td>
-            </tr>
-            <tr>
-                <td>Paper</td>
-                <td>Paper is a Minecraft Server software similar to Spigot and Bukkit. It has many great performance improvements, supports the same plugins, and is more supported. Gorp works exclusively with Paper.</td>
-            </tr>
-            <tr>
-                <td>server JAR</td>
-                <td>A server JAR is a Java program file that, when run, starts the Minecraft Server.</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Term</th>
+                    <th>Definition</th>
+                </tr>
+                <tr>
+                    <td>world</td>
+                    <td>The actual Minecraft world where play happens. A world is split into three folders, one for each dimension. Worlds have names and are stored inside of server instances.</td>
+                </tr>
+                <tr>
+                    <td>server instance (<em>instance</em>)</td>
+                    <td>An individual Minecraft Server. Each instance contains its own properties, plugins, worlds, and more). Each server instance has a name.</td>
+                </tr>
+                <tr>
+                    <td>Paper</td>
+                    <td>Paper is a Minecraft Server software similar to Spigot and Bukkit. It has many great performance improvements, supports the same plugins, and is more supported. Gorp works exclusively with Paper.</td>
+                </tr>
+                <tr>
+                    <td>server JAR</td>
+                    <td>A server JAR is a Java program file that, when run, starts the Minecraft Server.</td>
+                </tr>
+            </table>
+        </div>
 
 
 

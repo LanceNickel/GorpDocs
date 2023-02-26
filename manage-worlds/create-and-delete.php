@@ -58,7 +58,7 @@ require_once('../0/php/functions.php');
 
         <p>If the world name is not specified, Gorp will ask for a world name.</p>
 
-        <div class="red-box">World names may NOT have spaces or special characters in them.</div>
+        <div class="box red inline">World names may NOT have spaces or special characters in them.</div>
 
 
 

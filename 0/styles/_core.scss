@@ -52,6 +52,15 @@ a {
 	
 }
 
+a.invisible {
+	cursor: text;
+	color: $bodyColor;
+
+	&:hover {
+		text-decoration: none;
+	}
+}
+
 ul, ol {
     li {
         margin-bottom: 5px;
@@ -72,7 +81,7 @@ pre, code {
 	overflow: scroll;
 	margin-left: -20px;
 	margin-right: -20px;
-	padding-left: 20px;
+	padding-left: 10px;
 }
 
 pre {
@@ -80,6 +89,7 @@ pre {
     line-height: 1.5;
     background: $preBG;
     margin-bottom: 10px;
+	margin-right: 10px;
 }
 
 mono {
@@ -632,6 +642,10 @@ subnav {
 	display: block;
 	margin-bottom: 30px;
 
+	&.inline {
+		display: inline-block;
+	}
+
 	&.blue {
 		background: $boxBlueBG;
 		border: 1px solid $boxBlueBorder;
@@ -650,44 +664,6 @@ subnav {
 	pre,code {
 		background: rgba(0,0,0,0.25)!important;
 	}
-}
-
-
-
-
-
-.red-box {
-	font-family: $font;
-	font-size: 16;
-	padding: 5px 10px;
-	background: $boxRedBG;
-	border: 1px solid $boxRedBorder;
-	border-radius: 4px;
-	color: white;
-	display: inline-block;
-}
-
-
-
-.blue-box {
-	font-family: $font;
-	font-size: 16;
-	padding: 5px 10px;
-	
-	border-radius: 4px;
-	color: white;
-	display: inline-block;
-}
-
-.green-box {
-	font-family: $font;
-	font-size: 16;
-	padding: 5px 10px;
-	background: $boxGreenBG;
-	border: 1px solid $boxGreenBorder;
-	border-radius: 4px;
-	color: white;
-	display: inline-block;
 }
 
 
@@ -722,10 +698,8 @@ body.modal-open {
 
 .modal-window {
 	width: 340px;
-	background: $modalBG;
 	margin-top: -75px;
 	border-radius: 6px;
-	border: 1px solid $modalBorder;
 	box-shadow: 0px 20px 50px 0px rgba(0,0,0,0.5);
 
 	&.wide {
@@ -733,8 +707,12 @@ body.modal-open {
 	}
 
 	.title {
+		position: relative;
 		background: $modalTitleBG;
 		border-bottom: 1px solid $modalTitleBorder;
+		border-top: 1px solid $modalBorder;
+		border-right: 1px solid $modalBorder;
+		border-left: 1px solid $modalBorder;
         color: $headerColor;
 		padding: 10px 20px;
 		font-family: $fontCondensed;
@@ -743,13 +721,19 @@ body.modal-open {
 		border-top-left-radius: 6px;
 		border-top-right-radius: 6px;
 		box-shadow: $modalTitleShadow;
+		z-index: 50;
 	}
 
 	.content {
+		position: relative;
 		display: block;
 		max-height: 300px;
 		overflow: scroll;
 		padding: 20px;
+		background: $modalBG;
+		border-left: 1px solid $modalBorder;
+		border-right: 1px solid $modalBorder;
+		z-index: 40;
 
 		&.bulleted {
 			padding: 0;
@@ -759,6 +743,12 @@ body.modal-open {
 			&:last-child {
 				margin-bottom: 0;
 			}
+		}
+
+		&:last-child {
+			border-bottom: 1px solid $modalBorder;
+			border-bottom-left-radius: 6px;
+			border-bottom-right-radius: 6px;
 		}
 	}
 
@@ -770,6 +760,10 @@ body.modal-open {
 		border-bottom-right-radius: 6px;
 		border-bottom-left-radius: 6px;
 		border-top: 1px solid $modalActionBorder;
+		border-left: 1px solid $modalBorder;
+		border-right: 1px solid $modalBorder;
+		border-bottom: 1px solid $modalBorder;
+
 
 		.button {
 			margin: 0px 0px 0px 2px;
@@ -787,6 +781,7 @@ body.modal-open {
 		margin-top: -10px;
 		margin-right: -10px;
 		box-shadow: 0px 5px 5px 0px rgba(18,20,24,0.7);
+		z-index: 60;
 
 		&:hover {
 			background: $modalCloseHoverBG;
@@ -904,6 +899,8 @@ body.modal-open {
 
 	table {
 		box-shadow: $tableShadowMobile;
+		display: inline-block;
+		margin-right: 10px;
 
 		&.minx {
 			min-width: 700px;
@@ -913,9 +910,10 @@ body.modal-open {
 	.table-container {
 		margin-left: -20px;
 		margin-right: -20px;
-		padding-left: 20px;
+		padding-left: 10px;
 		max-width: calc(100% + 40px);
 		overflow: scroll;
+		display: inline-block;
 	}
 
 	#open-mobile-menu {

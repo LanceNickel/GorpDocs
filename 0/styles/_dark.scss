@@ -177,14 +177,14 @@ $modalCloseBorderHover: $red100;
 
 
 // Alert boxes
-$boxBlueBG: $blue600;
-$boxBlueBorder: $blue200;
+$boxBlueBG: $blue700;
+$boxBlueBorder: $blue300;
 
-$boxRedBG: $red600;
-$boxRedBorder: $red200;
+$boxRedBG: $red700;
+$boxRedBorder: $red300;
 
-$boxGreenBG: $green600;
-$boxGreenBorder: $green200;
+$boxGreenBG: $green700;
+$boxGreenBorder: $green300;
 
 
 
@@ -201,12 +201,11 @@ $boxGreenBorder: $green200;
 // ███████ ██   ██ ██   ██ ██████   ██████   ███ ███  ███████
 
 
-$buttonShadow: 0px 2px 3px 0px rgba(0,0,0,0.75);
-$buttonShadowHover: 0px 3px 4px 0px rgba(0,0,0,0.75);
+$buttonShadow: 0px 1px 2px 0px rgba(255,255,255,0.1);
+$buttonShadowHover: 0px 2px 4px 0px rgba(255,255,255,0.1);
 $modalTitleShadow: 0px 3px 4px 0px rgba(0,0,0,0.75);
-$tableShadow: 0px 4px 5px 0px rgba(0,0,0,0.75);
+$tableShadow: 0px 2px 4px 0px rgba(255,255,255,0.1);
 $tableShadowMobile: $tableShadow;
-// $tableShadowMobile: 0px 1px 6px 0px rgba(255,255,255,0.45);
 $monoShadow: 1px 1px 0px rgba(0,0,0,0.75);
 $importantShadow: 1px 1px 0px rgba(0,0,0,0.75);
 $headerShadow: 0px 3px 4px 0px rgba(0,0,0,0.75);

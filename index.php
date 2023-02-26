@@ -49,7 +49,7 @@ require_once('0/php/functions.php');
 
         <p>I created this program to make managing my personal Minecraft servers easier. Before this, I was running each server in a screen and manually updating each. This program makes the task of updating multiple servers go from 5 minutes to 5 seconds!</p>
 
-        <p>Gorp's name courtesy of my good friend Connor Atkins. He was not aware at the time (and neither was I) that Gorp was another name for trail mix. Yummy!</p>
+        <p>Gorp's name courtesy of my good friend <a class="invisible" href="/0/styles/elements/">Connor Atkins</a>. He was not aware at the time (and neither was I) that Gorp was another name for trail mix. Yummy!</p>
 
         <a href="https://github.com/LanceNickel/Gorp" target="_blank" class="button">Gorp on Github</a>
         <a href="https://github.com/LanceNickel/Gorp/issues" target="_blank" class="button">Raise an Issue</a>

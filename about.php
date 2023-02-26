@@ -82,27 +82,29 @@ require_once('0/php/functions.php');
 
         <p>Gorp installs to or creates these directories:</p>
 
-        <table>
-            <tr>
-                <th>Location</th>
-                <th>Purpose</th>
-            </tr>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Location</th>
+                    <th>Purpose</th>
+                </tr>
 
-            <tr>
-                <td>/usr/local/bin/</td>
-                <td>The main <mono>gorp</mono> launcher script lives here.</td>
-            </tr>
+                <tr>
+                    <td>/usr/local/bin/</td>
+                    <td>The main <mono>gorp</mono> launcher script lives here.</td>
+                </tr>
 
-            <tr>
-                <td>/usr/local/bin/gorputils/</td>
-                <td>Created during installation. Contains <mono>action</mono> and <mono>worker</mono> directories to store script files.</td>
-            </tr>
+                <tr>
+                    <td>/usr/local/bin/gorputils/</td>
+                    <td>Created during installation. Contains <mono>action</mono> and <mono>worker</mono> directories to store script files.</td>
+                </tr>
 
-            <tr>
-                <td>/minecraft/</td>
-                <td>Created during installation. Contains <mono>backups</mono>, <mono>jars</mono> and <mono>servers</mono> directories to store server and world files. Also contains a <mono>gorp.conf</mono> configuration file.</td>
-            </tr>
-        </table>
+                <tr>
+                    <td>/minecraft/</td>
+                    <td>Created during installation. Contains <mono>backups</mono>, <mono>jars</mono> and <mono>servers</mono> directories to store server and world files. Also contains a <mono>gorp.conf</mono> configuration file.</td>
+                </tr>
+            </table>
+        </div>
 
         <p><strong class="important">Important:</strong> During uninstallation, Gorp will remove the associated files in the <mono>/usr/local/bin/</mono> directory, but does NOT delete the <mono>/minecraft/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
         

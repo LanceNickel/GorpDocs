@@ -56,7 +56,7 @@ require_once('../0/php/functions.php');
 
         <p>This will install the latest version of Gorp over the current version. All settings in <mono>gorp.conf</mono> and each instance's </mono>run.sh</mono> are preserved.</p>
 
-        <div class="red-box">All Gorp files in /usr/local/bin are OVERWRITTEN. Only settings in the above mentioned files are carried over.</div>
+        <div class="box red inline">All Gorp files in /usr/local/bin are OVERWRITTEN. Only settings in the above mentioned files are carried over.</div>
 
 
     </main>

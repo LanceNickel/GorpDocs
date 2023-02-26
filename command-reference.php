@@ -12,6 +12,7 @@ require_once('0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
+    <script src="/0/js/modal.js" type="text/javascript" defer></script>
     <title>Command Reference - Gorp Docs</title>
 </head>
 
@@ -48,119 +49,127 @@ require_once('0/php/functions.php');
 
         <h2>Manage Instances <span>see: <a href="/manage-instances/">manage instances</a></span></h2>
 
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td><code>gorp start <em>server</em></code></td>
-                <td>Starts an instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp stop <em>server</em> [fast|now]</code></td>
-                <td>Stops an instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp restart <em>server</em> [fast|now]</code></td>
-                <td>Restarts an instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp create-server <em>server</em></code></td>
-                <td>Creates a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp delete-server <em>server</em></code></td>
-                <td>Deletes a server instance.</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>gorp start <em>server</em></code></td>
+                    <td>Starts an instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp stop <em>server</em> [fast|now]</code></td>
+                    <td>Stops an instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp restart <em>server</em> [fast|now]</code></td>
+                    <td>Restarts an instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp create-server <em>server</em></code></td>
+                    <td>Creates a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp delete-server <em>server</em></code></td>
+                    <td>Deletes a server instance.</td>
+                </tr>
+            </table>
+        </div>
 
 
 
         <h2>Manage Worlds <span>see: <a href="/manage-worlds/">manage worlds</a></span></h2>
 
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td><code>gorp create-world <em>server</em> [<em>world</em>]</code></td>
-                <td>Creates a world named <em><mono>world</mono></em> in a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp delete-world <em>server</em> [<em>world</em>]</code></td>
-                <td>Deletes a world named <em><mono>world</mono></em> in a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp reset-world <em>server</em></code></td>
-                <td>Deletes and regenerates the active world in a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp switch-world <em>server</em> [<em>world</em>]</code></td>
-                <td>Switches to a world named <em><mono>world</mono></em> in a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp backup-world <em>server</em></code></td>
-                <td>Backs up the active world in a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp restore-world <em>server</em></code></td>
-                <td>Restores a world from a backup in a server instance.</td>
-            </tr>
-            <tr>
-                <td><code>gorp archive-world <em>server</em> [<em>world</em>]</code></td>
-                <td>Archives the world named <em><mono>world</mono></em> in a server instance.</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>gorp create-world <em>server</em> [<em>world</em>]</code></td>
+                    <td>Creates a world named <em><mono>world</mono></em> in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp delete-world <em>server</em> [<em>world</em>]</code></td>
+                    <td>Deletes a world named <em><mono>world</mono></em> in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp reset-world <em>server</em></code></td>
+                    <td>Deletes and regenerates the active world in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp switch-world <em>server</em> [<em>world</em>]</code></td>
+                    <td>Switches to a world named <em><mono>world</mono></em> in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp backup-world <em>server</em></code></td>
+                    <td>Backs up the active world in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp restore-world <em>server</em></code></td>
+                    <td>Restores a world from a backup in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp archive-world <em>server</em> [<em>world</em>]</code></td>
+                    <td>Archives the world named <em><mono>world</mono></em> in a server instance.</td>
+                </tr>
+            </table>
+        </div>
 
 
 
         <h2>Utilities <span>see: <a href="/utilities/">utilities</a></span></h2>
 
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td><code>gorp update-jar</code></td>
-                <td>Downloads and sets the latest stable Paper JAR file globally.</td>
-            </tr>
-            <tr>
-                <td><code>gorp download-jar <em>version</em></code></td>
-                <td>Downloads a Paper JAR file for the specified Minecraft version. <a id="open-modal-1">SUPPORTED GAME VERSIONS</a></td>
-            </tr>
-            <tr>
-                <td><code>gorp upgrade</code></td>
-                <td>Downloads and installs the latest version of Gorp.</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>gorp update-jar</code></td>
+                    <td>Downloads and sets the latest stable Paper JAR file globally.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp download-jar <em>version</em></code></td>
+                    <td>Downloads a Paper JAR file for the specified Minecraft version.<br><a id="open-modal-1">SUPPORTED GAME VERSIONS</a></td>
+                </tr>
+                <tr>
+                    <td><code>gorp upgrade</code></td>
+                    <td>Downloads and installs the latest version of Gorp.</td>
+                </tr>
+            </table>
+        </div>
 
 
 
         <h2>Miscellaneous</h2>
 
-        <table>
-            <tr>
-                <th>Command</th>
-                <th>Description</th>
-            </tr>
-            <tr>
-                <td><code>gorp help</code></td>
-                <td>Open a command reference in the command line.</td>
-            </tr>
-            <tr>
-                <td><code>gorp -v</code></td>
-                <td>Show the installed Gorp version.</td>
-            </tr>
-            <tr>
-                <td><code>gorp list-servers</code></td>
-                <td>List servers in <mono>/minecraft/servers</mono>.</td>
-            </tr>
-        </table>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th>Command</th>
+                    <th>Description</th>
+                </tr>
+                <tr>
+                    <td><code>gorp help</code></td>
+                    <td>Open a command reference in the command line.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp -v</code></td>
+                    <td>Show the installed Gorp version.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp list-servers</code></td>
+                    <td>List servers in <mono>/minecraft/servers</mono>.</td>
+                </tr>
+            </table>
+        </div>
             
-
+            
 
     </main>
 

@@ -43,6 +43,14 @@ a.underline:hover {
   border-color: rgba(255, 255, 255, 0.75);
 }
 
+a.invisible {
+  cursor: text;
+  color: #b9bdc8;
+}
+a.invisible:hover {
+  text-decoration: none;
+}
+
 ul li, ol li {
   margin-bottom: 5px;
 }
@@ -61,7 +69,7 @@ pre, code {
   overflow: scroll;
   margin-left: -20px;
   margin-right: -20px;
-  padding-left: 20px;
+  padding-left: 10px;
 }
 
 pre {
@@ -69,6 +77,7 @@ pre {
   line-height: 1.5;
   background: #3a3f4a;
   margin-bottom: 10px;
+  margin-right: 10px;
 }
 
 mono {
@@ -124,7 +133,7 @@ table {
   border-spacing: 0px;
   margin-bottom: 15px;
   border-radius: 4px;
-  box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.1);
 }
 table td {
   padding: 10px;
@@ -359,7 +368,7 @@ subnav a.active {
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.1);
   color: #c7cad3;
 }
 .button.nomargin {
@@ -368,7 +377,7 @@ subnav a.active {
 .button:hover {
   background: #454b58;
   border-color: #80889b;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.1);
   cursor: pointer;
   text-decoration: none;
 }
@@ -431,12 +440,12 @@ subnav a.active {
   cursor: pointer;
   margin-right: 8px;
   margin-bottom: 12px;
-  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 1px 2px 0px rgba(255, 255, 255, 0.1);
 }
 .option-button:hover {
   background: #454b58;
   border-color: #80889b;
-  box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.1);
 }
 .option-button span {
   display: block;
@@ -457,51 +466,23 @@ subnav a.active {
   display: block;
   margin-bottom: 30px;
 }
+.box.inline {
+  display: inline-block;
+}
 .box.blue {
-  background: #3f5fa7;
-  border: 1px solid #7e96ce;
+  background: #385494;
+  border: 1px solid #6b87c7;
 }
 .box.green {
-  background: #318269;
-  border: 1px solid #59c0a1;
+  background: #2a6f5a;
+  border: 1px solid #46b996;
 }
 .box.red {
-  background: #943854;
-  border: 1px solid #c76b88;
+  background: #82314a;
+  border: 1px solid #c05979;
 }
 .box pre, .box code {
   background: rgba(0, 0, 0, 0.25) !important;
-}
-
-.red-box {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 16;
-  padding: 5px 10px;
-  background: #943854;
-  border: 1px solid #c76b88;
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-}
-
-.blue-box {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 16;
-  padding: 5px 10px;
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
-}
-
-.green-box {
-  font-family: "IBM Plex Sans", sans-serif;
-  font-size: 16;
-  padding: 5px 10px;
-  background: #318269;
-  border: 1px solid #59c0a1;
-  border-radius: 4px;
-  color: white;
-  display: inline-block;
 }
 
 body.modal-open {
@@ -521,18 +502,20 @@ body.modal-open {
 
 .modal-window {
   width: 340px;
-  background: #24272e;
   margin-top: -75px;
   border-radius: 6px;
-  border: 1px solid #5b6374;
   box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.5);
 }
 .modal-window.wide {
   width: 500px;
 }
 .modal-window .title {
+  position: relative;
   background: #2f333c;
   border-bottom: 1px solid #666f82;
+  border-top: 1px solid #5b6374;
+  border-right: 1px solid #5b6374;
+  border-left: 1px solid #5b6374;
   color: #c7cad3;
   padding: 10px 20px;
   font-family: "IBM Plex Sans Condensed", sans-serif;
@@ -541,18 +524,29 @@ body.modal-open {
   border-top-left-radius: 6px;
   border-top-right-radius: 6px;
   box-shadow: 0px 3px 4px 0px rgba(0, 0, 0, 0.75);
+  z-index: 50;
 }
 .modal-window .content {
+  position: relative;
   display: block;
   max-height: 300px;
   overflow: scroll;
   padding: 20px;
+  background: #24272e;
+  border-left: 1px solid #5b6374;
+  border-right: 1px solid #5b6374;
+  z-index: 40;
 }
 .modal-window .content.bulleted {
   padding: 0;
 }
 .modal-window .content p:last-child {
   margin-bottom: 0;
+}
+.modal-window .content:last-child {
+  border-bottom: 1px solid #5b6374;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
 }
 .modal-window .actions {
   padding: 10px 10px 12px 10px;
@@ -562,6 +556,9 @@ body.modal-open {
   border-bottom-right-radius: 6px;
   border-bottom-left-radius: 6px;
   border-top: 1px solid #5b6374;
+  border-left: 1px solid #5b6374;
+  border-right: 1px solid #5b6374;
+  border-bottom: 1px solid #5b6374;
 }
 .modal-window .actions .button {
   margin: 0px 0px 0px 2px;
@@ -577,6 +574,7 @@ body.modal-open {
   margin-top: -10px;
   margin-right: -10px;
   box-shadow: 0px 5px 5px 0px rgba(18, 20, 24, 0.7);
+  z-index: 60;
 }
 .modal-window .close-modal-button:hover {
   background: #a73f5f;
@@ -657,7 +655,9 @@ body.modal-open {
     border: none;
   }
   table {
-    box-shadow: 0px 4px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.1);
+    display: inline-block;
+    margin-right: 10px;
   }
   table.minx {
     min-width: 700px;
@@ -665,9 +665,10 @@ body.modal-open {
   .table-container {
     margin-left: -20px;
     margin-right: -20px;
-    padding-left: 20px;
+    padding-left: 10px;
     max-width: calc(100% + 40px);
     overflow: scroll;
+    display: inline-block;
   }
   #open-mobile-menu {
     display: inline-block;
