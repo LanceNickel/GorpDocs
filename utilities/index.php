@@ -51,7 +51,7 @@ require_once('../0/php/functions.php');
         <a class="no-underline" href="/utilities/jar-update/">
             <div class="option-button">
                 <span class="subsection">JAR Updater</span>
-                <span class="description">Get & set the latest JAR file for for the set Minecraft game version.</span>
+                <span class="description">Update the Minecraft Server software for all servers. Should be done weekly.</span>
             </div>
         </a>
 

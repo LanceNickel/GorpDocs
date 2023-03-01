@@ -7,11 +7,11 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-02-26.1';
+    return '2023-03-01.1';
 }
 
 function ver() {
-    return '1.1.0';
+    return '2.0.0';
 }
 
 
@@ -90,7 +90,7 @@ function sidebar($type='normal') {
 
                 <a class="nav-item" topic="welcome" href="/">Welcome Page</a>
                 <a class="nav-item" topic="getting-started" href="/getting-started/">Getting Started</a>
-                <a class="nav-item" topic="manage-instances" href="/manage-instances/">Manage Instances</a>
+                <a class="nav-item" topic="manage-servers" href="/manage-servers/">Manage Servers</a>
                 <a class="nav-item" topic="manage-worlds" href="/manage-worlds/">Manage Worlds</a>
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
@@ -107,7 +107,7 @@ function sidebar($type='normal') {
 
                 <a class="nav-item" topic="welcome" href="/">Welcome Page</a>
                 <a class="nav-item" topic="getting-started" href="/getting-started/">Getting Started</a>
-                <a class="nav-item" topic="manage-instances" href="/manage-instances/">Manage Instances</a>
+                <a class="nav-item" topic="manage-servers" href="/manage-servers/">Manage Servers</a>
                 <a class="nav-item" topic="manage-worlds" href="/manage-worlds/">Manage Worlds</a>
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
@@ -164,11 +164,12 @@ function subnav($topic='notpassed') {
         EOF;
     }
 
-    else if ($topic == 'manage-instances') {
+    else if ($topic == 'manage-servers') {
         echo <<<EOF
-        <a href="/manage-instances/create-and-delete/">Create & Delete</a>
-                    <a href="/manage-instances/start-and-stop/">Start & Stop</a>
-                    <a href="/manage-instances/instance-settings/">Instance Settings</a>
+        <a href="/manage-servers/create-and-delete/">Create & Delete</a>
+                    <a href="/manage-servers/start-and-stop/">Start & Stop</a>
+                    <a href="/manage-servers/server-settings/">Server Settings</a>
+                    <a href="/manage-servers/home-directory/">Home Directory</a>
 
         EOF;
     }

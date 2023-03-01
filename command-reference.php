@@ -47,7 +47,7 @@ require_once('0/php/functions.php');
 
 
 
-        <h2>Manage Instances <span>see: <a href="/manage-instances/">manage instances</a></span></h2>
+        <h2>Manage Servers <span>see: <a href="/manage-servers/">manage servers</a></span></h2>
 
         <div class="table-container">
             <table>
@@ -57,15 +57,15 @@ require_once('0/php/functions.php');
                 </tr>
                 <tr>
                     <td><code>gorp start <em>server</em></code></td>
-                    <td>Starts an instance.</td>
+                    <td>Starts a servers.</td>
                 </tr>
                 <tr>
                     <td><code>gorp stop <em>server</em> [fast|now]</code></td>
-                    <td>Stops an instance.</td>
+                    <td>Stops a server.</td>
                 </tr>
                 <tr>
                     <td><code>gorp restart <em>server</em> [fast|now]</code></td>
-                    <td>Restarts an instance.</td>
+                    <td>Restarts a server.</td>
                 </tr>
                 <tr>
                     <td><code>gorp create-server <em>server</em></code></td>
@@ -164,7 +164,7 @@ require_once('0/php/functions.php');
                 </tr>
                 <tr>
                     <td><code>gorp list-servers</code></td>
-                    <td>List servers in <mono>/minecraft/servers</mono>.</td>
+                    <td>List servers in <mono>~/gorpmc/servers</mono>.</td>
                 </tr>
             </table>
         </div>

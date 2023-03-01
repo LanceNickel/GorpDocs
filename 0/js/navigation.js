@@ -26,15 +26,17 @@ const gettingStarted = [
     "/getting-started/uninstall/",
 ];
 
-const manageInstances = [
-    "/manage-instances",
-    "/manage-instances/",
-    "/manage-instances/start-and-stop",
-    "/manage-instances/start-and-stop/",
-    "/manage-instances/create-and-delete",
-    "/manage-instances/create-and-delete/",
-    "/manage-instances/instance-settings",
-    "/manage-instances/instance-settings/"
+const manageServers = [
+    "/manage-servers",
+    "/manage-servers/",
+    "/manage-servers/start-and-stop",
+    "/manage-servers/start-and-stop/",
+    "/manage-servers/create-and-delete",
+    "/manage-servers/create-and-delete/",
+    "/manage-servers/server-settings",
+    "/manage-servers/server-settings/",
+    "/manage-servers/home-directory",
+    "/manage-servers/home-directory/"
 ];
 
 const manageWorlds = [
@@ -88,9 +90,9 @@ if (gettingStarted.includes(path)) {
 }
 
 // MANAGE INSTANCES
-if (manageInstances.includes(path)) {
-    $('aside a.nav-item[topic="manage-instances"]').addClass('active');
-    $('#mobile-menu a.nav-item[topic="manage-instances"]').addClass('active');
+if (manageServers.includes(path)) {
+    $('aside a.nav-item[topic="manage-servers"]').addClass('active');
+    $('#mobile-menu a.nav-item[topic="manage-servers"]').addClass('active');
 }
 
 // MANAGE WORLDS

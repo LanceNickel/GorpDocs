@@ -83,30 +83,35 @@ require_once('0/php/functions.php');
         <p>Gorp installs to or creates these directories:</p>
 
         <div class="table-container">
-            <table>
+            <table class="minx">
                 <tr>
-                    <th>Location</th>
-                    <th>Purpose</th>
+                    <th width="200px">Location</th>
+                    <th>Contains</th>
                 </tr>
 
                 <tr>
                     <td>/usr/local/bin/</td>
-                    <td>The main <mono>gorp</mono> launcher script lives here.</td>
+                    <td>The main <mono>gorp</mono> launcher script.</td>
                 </tr>
 
                 <tr>
-                    <td>/usr/local/bin/gorputils/</td>
-                    <td>Created during installation. Contains <mono>action</mono> and <mono>worker</mono> directories to store script files.</td>
+                    <td>/usr/local/etc/</td>
+                    <td>Gorp's configuration file, <mono>gorp.conf</mono>.</td>
                 </tr>
 
                 <tr>
-                    <td>/minecraft/</td>
-                    <td>Created during installation. Contains <mono>backups</mono>, <mono>jars</mono> and <mono>servers</mono> directories to store server and world files. Also contains a <mono>gorp.conf</mono> configuration file.</td>
+                    <td>/usr/local/bin/gorpmc/</td>
+                    <td>Folders named <mono>action</mono> and <mono>worker</mono> that contain the main scripts. File named <mono>help.txt</mono> that is shown when <code>gorp help</code> is run.</td>
+                </tr>
+
+                <tr>
+                    <td>~/gorpmc/</td>
+                    <td>Folders named <mono>archives</mono>, <mono>backups</mono>, <mono>jars</mono>, and <mono>servers</mono> that contain server instance files. This folder is located in the home directory (<mono>~</mono>) of the user who originally installed Gorp.</td>
                 </tr>
             </table>
         </div>
 
-        <p><strong class="important">Important:</strong> During uninstallation, Gorp will remove the associated files in the <mono>/usr/local/bin/</mono> directory, but does NOT delete the <mono>/minecraft/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
+        <p><strong class="important">Important:</strong> During uninstallation, Gorp will remove the associated files and directories in <mono>/usr/local/</mono>, but does NOT delete the <mono>~/gorpmc/</mono> directory. This must be done manually to force you to think of the potential consequences of your actions while you type the delete command yourself. This directory could contain tons of memories and world files that are not recoverable should it be deleted without a backup being done. I don't want that in my conscience :)</p>
         
 
 

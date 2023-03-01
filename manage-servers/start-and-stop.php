@@ -12,7 +12,7 @@ require_once('../0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Start & Stop Server Instances - Gorp Docs</title>
+    <title>Start & Stop Servers - Gorp Docs</title>
 </head>
 
 
@@ -22,7 +22,7 @@ require_once('../0/php/functions.php');
     <header>
         <?= mobileMenu(); ?>
 
-        Manage Instances
+        Manage Server Instances
 
         <a id="change-theme" class="button theme"></a>
     </header>
@@ -39,7 +39,7 @@ require_once('../0/php/functions.php');
     <main class="article">
 
         <subnav>
-            <?= subnav('manage-instances'); ?>
+            <?= subnav('manage-servers'); ?>
         </subnav>
 
         <div class="spacer40"></div>
@@ -50,7 +50,7 @@ require_once('../0/php/functions.php');
 
 
 
-        <h2>Start an Instance</h2>
+        <h2>Start a Server</h2>
         
         <pre>gorp start <em>server</em></pre>
 
@@ -58,7 +58,7 @@ require_once('../0/php/functions.php');
 
 
 
-        <h2>Stop an Instance</h2>
+        <h2>Stop a Server</h2>
 
         <pre>gorp stop <em>server</em> [fast|now]</pre>
 
@@ -71,11 +71,11 @@ require_once('../0/php/functions.php');
 
 
 
-        <h2>Restarting an Instance</h2>
+        <h2>Restarting a Server</h2>
 
         <pre>gorp restart <em>server</em> [fast|now]</pre>
 
-        <p>Restarting an instance behaves just like stopping an instance, except it is started back up.</p>
+        <p>Restarting a server behaves just like stopping an instance, except it is started back up.</p>
 
 
     </main>

@@ -46,7 +46,7 @@ require_once('../0/php/functions.php');
 
         <h1>Backup a World</h1>
 
-        <p>The backup utility will back up an instance's active world to the backup destination as set in the <a href="/configuration-file/">Gorp configuration file</a>.</p>
+        <p>The backup utility will back up a server's active world to the backup destination as set in the <a href="/configuration-file/">Gorp configuration file</a>.</p>
 
 
 

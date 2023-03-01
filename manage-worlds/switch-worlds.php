@@ -46,11 +46,11 @@ require_once('../0/php/functions.php');
 
         <h1>Switch Worlds</h1>
 
-        <p>Switching the world a server instance will load is simple. An instance's active world is also the world which will be backed up when using the backup tool.</p>
+        <p>Switching the world a server instance will load is simple. A server's active world is also the world which will be backed up when using the backup tool.</p>
 
         
 
-        <h2>Switch an Instance's Active World</h2>
+        <h2>Switch a Server's Active World</h2>
 
         <pre>gorp switch-world <em>server</em> [<em>world</em>]</pre>
 

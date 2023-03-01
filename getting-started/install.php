@@ -73,7 +73,7 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
             <li>Go to your home directory: <code>cd</code></li>
             <li>Run <code>git clone https://github.com/LanceNickel/Gorp/ && cd Gorp</code></li>
             <li>Run <code>chmod +x install.sh</code></li>
-            <li>Run <code>sudo ./install.sh</code></li>
+            <li>Run <code>./install.sh</code></li>
         </ol>
 
 
@@ -87,9 +87,9 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
         <h2>Run Your First Server</h2>
 
         <ol>
-            <li>Create a server using <code>sudo gorp create-server <em>server</em> [<em>world</em>]</code>, replacing <em><mono>server</mono></em> and <em><mono>world</mono></em> with a server and world name you want to use.</li>
-            <li>Run <code>sudo gorp start <em>server</em></code> to start your server.</li>
-            <li>Run <code>sudo gorp stop <em>server</em></code> to stop the server.</li>
+            <li>Create a server using <code>gorp create-server <em>server</em> [<em>world</em>]</code>, replacing <em><mono>server</mono></em> and <em><mono>world</mono></em> with a server and world name you want to use.</li>
+            <li>Run <code>gorp start <em>server</em></code> to start your server.</li>
+            <li>Run <code>gorp stop <em>server</em></code> to stop the server.</li>
         </ol>
 
 

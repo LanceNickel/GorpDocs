@@ -12,7 +12,7 @@ require_once('../0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Manage Instances - Gorp Docs</title>
+    <title>Manage Servers - Gorp Docs</title>
 </head>
 
 
@@ -22,7 +22,7 @@ require_once('../0/php/functions.php');
     <header>
         <?= mobileMenu(); ?>
 
-        Manage Instances
+        Manage Server Instances
 
         <a id="change-theme" class="button theme"></a>
     </header>
@@ -39,30 +39,30 @@ require_once('../0/php/functions.php');
     <main class="article">
 
         <subnav>
-            <?= subnav('manage-instances'); ?>
+            <?= subnav('manage-servers'); ?>
         </subnav>
 
         <div class="spacer40"></div>
 
-        <h1>Manage Instances</h1>
+        <h1>Manage Server Instances</h1>
 
-        <p>A server instance is an individual Minecraft server. A server instance may have <a href="/manage-worlds/">many worlds</a>, and contains individual plugins, world files, properties, and more).</p>
+        <p>A server instance is an individual Minecraft server. A server instance may have <a href="/manage-worlds/">many worlds</a>, and contains individual plugins, world files, properties, and more). Instances may also be referred to as just "instances" in some places.</p>
 
-        <a class="no-underline" href="/manage-instances/create-and-delete/">
+        <a class="no-underline" href="/manage-servers/create-and-delete/">
             <div class="option-button">
                 <span class="subsection">Create & Delete</span>
                 <span class="description">Create and delete individual server instances.</span>
             </div>
         </a>
 
-        <a class="no-underline" href="/manage-instances/start-and-stop/">
+        <a class="no-underline" href="/manage-servers/start-and-stop/">
             <div class="option-button">
                 <span class="subsection">Start & Stop</span>
                 <span class="description">Start and stop the Minecraft server in individual server instances.</span>
             </div>
         </a>
 
-        <a class="no-underline" href="/manage-instances/instance-settings/">
+        <a class="no-underline" href="/manage-servers/server-settings/">
             <div class="option-button">
                 <span class="subsection">Instance Settings</span>
                 <span class="description">Each server instance can be customized for optimized performance.</span>

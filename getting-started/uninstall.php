@@ -57,7 +57,7 @@ require_once('../0/php/functions.php');
             <li>Go to your home directory: <code>cd</code></li>
             <li>Run <code>git clone https://github.com/LanceNickel/Gorp/ && cd Gorp</code></li>
             <li>Run <code>chmod +x uninstall.sh</code></li>
-            <li>Run <code>sudo ./uninstall.sh</code></li>
+            <li>Run <code>./uninstall.sh</code></li>
         </ol>
 
         <p>Feel free to delete the <mono>Gorp</mono> directory that was created in your home directory when you Cloned Gorp. We don't need it anymore.</p>

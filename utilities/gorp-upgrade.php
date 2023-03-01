@@ -46,7 +46,9 @@ require_once('../0/php/functions.php');
 
         <h1>Gorp Upgrader</h1>
 
-        <p>The Gorp upgrader downloads the latest version of Gorp and installs it.</p>
+        <p>The Gorp upgrader downloads the latest release of Gorp and installs it.</p>
+
+        <div class="box blue">The Gorp upgrader will ask for your password for elevated privileges via sudo. This is necessary to install program files to the /usr/local/bin/ folder.</div>
 
         
 
@@ -54,7 +56,7 @@ require_once('../0/php/functions.php');
 
         <pre>gorp upgrade</pre>
 
-        <p>This will install the latest version of Gorp over the current version. All settings in <mono>gorp.conf</mono> and each instance's </mono>run.sh</mono> are preserved.</p>
+        <p>This will install the latest version of Gorp over the current version. All settings in <mono>gorp.conf</mono> and each server instance's </mono>run.sh</mono> are preserved.</p>
 
         <div class="box red inline">All Gorp files in /usr/local/bin are OVERWRITTEN. Only settings in the above mentioned files are carried over.</div>
 

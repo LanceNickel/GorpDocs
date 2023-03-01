@@ -60,21 +60,21 @@ require_once('../0/php/functions.php');
         <a class="no-underline" href="/manage-worlds/switch-worlds/">
             <div class="option-button">
                 <span class="subsection">Switch Worlds</span>
-                <span class="description">Switch the world the instance will load when started.</span>
+                <span class="description">Switch the world a server will load when started.</span>
             </div>
         </a>
 
         <a class="no-underline" href="/manage-worlds/backup/">
             <div class="option-button">
                 <span class="subsection">Backup</span>
-                <span class="description">Backup the currently set world in an instance.</span>
+                <span class="description">Backup the active world in a server instance.</span>
             </div>
         </a>
 
         <a class="no-underline" href="/manage-worlds/archive/">
             <div class="option-button">
                 <span class="subsection">Archive</span>
-                <span class="description">Move a world's files out of an instance and to long-term storage.</span>
+                <span class="description">Move a world's files out of a server and to long-term storage.</span>
             </div>
         </a>
 
@@ -82,7 +82,7 @@ require_once('../0/php/functions.php');
 
         <h2>Related Reading</h2>
 
-        <a href="/manage-instances/" class="button">Manage Instances</a>
+        <a href="/manage-servers/" class="button">Manage Servers</a>
         <a href="/utilities/" class="button">Utilities</a>
 
 

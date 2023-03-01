@@ -33,16 +33,18 @@ h2 span {
 }
 
 a {
+  color: #4669b9;
+  text-decoration: underline;
+}
+a:hover {
   text-decoration: none;
-  cursor: pointer;
+  background: #4669b9;
+  color: white;
 }
-a.underline {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+a.no-underline {
+  text-decoration: none;
+  background: none;
 }
-a.underline:hover {
-  border-color: rgba(255, 255, 255, 0.75);
-}
-
 a.invisible {
   cursor: text;
   color: #3e4147;
@@ -215,6 +217,7 @@ aside .nav-item {
   transition-duration: 0.05s;
   cursor: pointer;
   display: block;
+  text-decoration: none;
 }
 aside .nav-item::before {
   opacity: 0;
@@ -234,6 +237,7 @@ aside .nav-item.active::before {
 }
 aside .nav-item:hover {
   background: #b0b5bb;
+  color: #3e4147;
 }
 aside .nav-item:hover::before {
   content: "";
@@ -296,16 +300,6 @@ main h5 {
 main h6 {
   font-size: 16px;
 }
-main a {
-  color: #4669b9;
-  text-decoration: none;
-}
-main a:hover {
-  text-decoration: underline;
-}
-main a.no-underline:hover {
-  text-decoration: none;
-}
 main p {
   font-size: 16px;
 }
@@ -340,6 +334,7 @@ subnav a {
   margin-bottom: -10px;
   color: rgba(255, 255, 255, 0.8);
   display: inline-block;
+  text-decoration: none;
 }
 subnav a:first-child {
   margin-left: 40px;
@@ -348,6 +343,7 @@ subnav a:first-child {
 subnav a:hover {
   background: #3f5fa7;
   text-decoration: none;
+  color: rgba(255, 255, 255, 0.8);
 }
 subnav a.active {
   background: #3f5fa7;
@@ -370,6 +366,7 @@ subnav a.active {
   user-select: none;
   box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.3);
   color: #26282c;
+  text-decoration: none;
 }
 .button.nomargin {
   margin: 0;
@@ -483,6 +480,15 @@ subnav a.active {
 }
 .box pre, .box code {
   background: rgba(0, 0, 0, 0.25) !important;
+}
+.box a {
+  color: white;
+  text-decoration: underline;
+}
+.box a:hover {
+  background: white;
+  color: black;
+  text-decoration: none;
 }
 
 body.modal-open {

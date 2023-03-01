@@ -22,7 +22,7 @@ require_once('../0/php/functions.php');
     <header>
         <?= mobileMenu(); ?>
 
-        Manage Instances
+        Manage Server Instances
 
         <a id="change-theme" class="button theme"></a>
     </header>
@@ -39,32 +39,32 @@ require_once('../0/php/functions.php');
     <main class="article">
 
         <subnav>
-            <?= subnav('manage-instances'); ?>
+            <?= subnav('manage-servers'); ?>
         </subnav>
 
         <div class="spacer40"></div>
 
         <h1>Create & Delete Server Instances</h1>
 
-        <p>Using multiple server instances allows for different worlds and game versions to be played with ease. Use cases for multiple instances would be hosting a public server, whilst also hosting a smaller "friends only" private server.</p>
+        <p>Using multiple servers allows for different worlds and game versions to be played with ease. Use cases for multiple server instances would be hosting a public server, while also hosting a smaller "friends only" private server.</p>
 
         
         
-        <h2>Create an Instance</h2>
+        <h2>Create a Server</h2>
 
         <pre>gorp create-server <em>server</em> [<em>world</em>]</pre>
 
-        <p>This will create an instance directory in <mono>/minecraft/servers</mono>. The world name will be set on first run.</p>
+        <p>This will create a server directory in <mono>~/gorpmc/servers</mono>. The world name will be set on first run.</p>
 
         <p>If a world name is not specified, an world named <mono>default</mono> will be created.</p>
 
 
 
-        <h2>Delete an Instance</h2>
+        <h2>Delete a Server</h2>
 
         <pre>gorp delete-server <em>server</em></pre>
 
-        <p>This will delete an instance's files. <strong class="important">This action is irreverisble. Ensure you have a backup!</strong></p>
+        <p>This will delete a server's files. <strong class="important">This action is irreverisble. Ensure you have a backup of the server instance's files!</strong></p>
 
 
     </main>

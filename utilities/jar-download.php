@@ -56,7 +56,7 @@ require_once('../0/php/functions.php');
 
         <pre>gorp get-jar <em>version</em></pre>
 
-        <p>This will download the latest stable JAR file for the game version to <mono>/minecraft/jars</mono>. This will NOT set the JAR for any instance, though. This must be done by configuring an <a href="/manage-instances/instance-settings/">instance's settings</a>.</p>
+        <p>This will download the latest stable JAR file for the game version to <mono>~/gorpmc/jars/</mono>. This will NOT set the JAR for any server instance, though. This must be done by configuring an <a href="/manage-instances/instance-settings/">instance's settings</a>.</p>
 
 
 
