@@ -64,8 +64,15 @@ require_once('../0/php/functions.php');
 
         <a class="no-underline" href="/manage-servers/server-settings/">
             <div class="option-button">
-                <span class="subsection">Instance Settings</span>
+                <span class="subsection">Server Settings</span>
                 <span class="description">Each server instance can be customized for optimized performance.</span>
+            </div>
+        </a>
+
+        <a class="no-underline" href="/manage-servers/home-directory/">
+            <div class="option-button">
+                <span class="subsection">Home Directory</span>
+                <span class="description">Where the Gorp server instance files are stored.</span>
             </div>
         </a>
 
