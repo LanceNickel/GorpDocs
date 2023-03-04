@@ -75,6 +75,14 @@ require_once('0/php/functions.php');
                     <td><code>gorp delete-server <em>server</em></code></td>
                     <td>Deletes a server instance.</td>
                 </tr>
+                <tr>
+                    <td><code>gorp backup-server <em>server</em></code></td>
+                    <td>Backup a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp restore-server <em>server</em></code></td>
+                    <td>Restore a server instance's files from a backup.</td>
+                </tr>
             </table>
         </div>
 
@@ -134,12 +142,16 @@ require_once('0/php/functions.php');
                     <td>Downloads and sets the latest stable Paper JAR file globally.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp download-jar <em>version</em></code></td>
-                    <td>Downloads a Paper JAR file for the specified Minecraft version.<br><a id="open-modal-1">SUPPORTED GAME VERSIONS</a></td>
+                    <td><code>gorp get-jar -v <em>version</em> | -u <em>URL</em></code></td>
+                    <td>Downloads a Paper JAR for either the specified game version or from the specified URL. <a href="/utilities/jar-download/">Learn more</a>.</td>
                 </tr>
                 <tr>
                     <td><code>gorp upgrade</code></td>
                     <td>Downloads and installs the latest version of Gorp.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp -s <em>server</em></code></td>
+                    <td>Get the status of a server instance in JSON format.</td>
                 </tr>
             </table>
         </div>

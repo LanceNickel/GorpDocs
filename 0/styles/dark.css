@@ -48,9 +48,10 @@ a.no-underline {
 a.invisible {
   cursor: text;
   color: #b9bdc8;
+  text-decoration: none;
 }
 a.invisible:hover {
-  text-decoration: none;
+  background: none;
 }
 
 ul li, ol li {
@@ -214,7 +215,7 @@ aside .nav-item {
   position: relative;
   padding: 10px 10px 10px 20px;
   margin-right: -10px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   cursor: pointer;
   display: block;
   text-decoration: none;
@@ -322,7 +323,7 @@ subnav {
   border-top-left-radius: 6px;
   padding-top: 9px;
   padding-bottom: 10px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   z-index: 99;
   border-top: 1px solid #2f333c;
   border-left: 1px solid #2f333c;
@@ -356,11 +357,11 @@ subnav a.active {
   margin-right: 3px;
   margin-top: 15px;
   margin-bottom: 15px;
-  border: 1px solid #505766;
+  border: 1px solid #454b58;
   border-radius: 4px;
   background: #2f333c;
   font-size: 14px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -377,6 +378,7 @@ subnav a.active {
   box-shadow: 0px 2px 4px 0px rgba(255, 255, 255, 0.1);
   cursor: pointer;
   text-decoration: none;
+  color: #c7cad3;
 }
 .button.higher {
   background: #3a3f4a;
@@ -431,9 +433,9 @@ subnav a.active {
   background: #2f333c;
   padding: 20px;
   width: 300px;
-  border: 1px solid #505766;
+  border: 1px solid #454b58;
   border-radius: 6px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   cursor: pointer;
   margin-right: 8px;
   margin-bottom: 12px;
@@ -489,6 +491,16 @@ subnav a.active {
   background: white;
   color: black;
   text-decoration: none;
+}
+
+h1 .tag {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  margin-bottom: 0px;
+  margin-top: 7px;
+  margin-left: 10px;
 }
 
 body.modal-open {
@@ -576,7 +588,7 @@ body.modal-open {
   border-radius: 100%;
   border: 1px solid #c76b88;
   padding: 4px 7px 4px 7px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   margin-top: -10px;
   margin-right: -10px;
   box-shadow: 0px 5px 5px 0px rgba(18, 20, 24, 0.7);

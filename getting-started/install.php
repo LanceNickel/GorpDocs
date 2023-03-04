@@ -71,23 +71,23 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
         <ol>        
             <li>SSH into your (soon to be) Minecraft server.</li>
             <li>Go to your home directory: <code>cd</code></li>
-            <li>Run <code>git clone https://github.com/LanceNickel/Gorp/ && cd Gorp</code></li>
-            <li>Run <code>chmod +x install.sh</code></li>
-            <li>Run <code>./install.sh</code></li>
+            <li>Download Gorp: <code>wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v1.2.3.tar.gz</code></li>
+            <li>Unarchive Gorp & cd: <code>tar -xf v1.2.3.tar.gz && cd Gorp-1.2.3</code></li>
+            <li>Run the installer: <code>chmod +x install.sh && ./install.sh</code></li>
         </ol>
 
 
 
         <h3 class="important">If you received a warning message</h3>
 
-        <p>During install, the installer script noticed that your computer already has a directory named "minecraft" in the root. Because this could be from a previous install of this utility, or previous use, the installer skips these directories. This is to prevent potential catastrophic data loss.</p>
+        <p>During install, Gorp noticed that you already have a folder at ~/gorpmc. Gorp skips creating the folder and moving files inside to prevent any accidentail data loss. If these files are no longer needed or have been backed up, delete the folder and uninstall gorp with: <code>chmod +x uninstall.sh && ./uninstall.sh</code>. Then re-install Gorp.</p>
 
 
 
         <h2>Run Your First Server</h2>
 
         <ol>
-            <li>Create a server using <code>gorp create-server <em>server</em> [<em>world</em>]</code>, replacing <em><mono>server</mono></em> and <em><mono>world</mono></em> with a server and world name you want to use.</li>
+            <li>Create a server using <code>gorp create-server <em>server</em> [<em>world</em>]</code>&mdash;replacing <em><mono>server</mono></em> and <em><mono>world</mono></em> with a server and world name you want to use.</li>
             <li>Run <code>gorp start <em>server</em></code> to start your server.</li>
             <li>Run <code>gorp stop <em>server</em></code> to stop the server.</li>
         </ol>

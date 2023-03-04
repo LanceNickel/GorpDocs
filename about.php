@@ -91,22 +91,22 @@ require_once('0/php/functions.php');
 
                 <tr>
                     <td>/usr/local/bin/</td>
-                    <td>The main <mono>gorp</mono> launcher script.</td>
+                    <td>The main Gorp launcher script.</td>
                 </tr>
 
                 <tr>
                     <td>/usr/local/etc/</td>
-                    <td>Gorp's configuration file, <mono>gorp.conf</mono>.</td>
+                    <td>The Gorp global <a href="/configuration-file/">configuration file</a>.</td>
                 </tr>
 
                 <tr>
                     <td>/usr/local/bin/gorpmc/</td>
-                    <td>Folders named <mono>action</mono> and <mono>worker</mono> that contain the main scripts. File named <mono>help.txt</mono> that is shown when <code>gorp help</code> is run.</td>
+                    <td>Action and worker scripts, along with other supporting files.</td>
                 </tr>
 
                 <tr>
                     <td>~/gorpmc/</td>
-                    <td>Folders named <mono>archives</mono>, <mono>backups</mono>, <mono>jars</mono>, and <mono>servers</mono> that contain server instance files. This folder is located in the home directory (<mono>~</mono>) of the user who originally installed Gorp.</td>
+                    <td>Minecraft server files. This is where server instances, worlds, plugins, and other server-related files are stored.</td>
                 </tr>
             </table>
         </div>

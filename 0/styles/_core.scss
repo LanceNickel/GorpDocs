@@ -56,9 +56,10 @@ a {
 	&.invisible {
 		cursor: text;
 		color: $bodyColor;
+		text-decoration: none;
 
 		&:hover {
-			text-decoration: none;
+			background: none;
 		}
 	}
 }
@@ -286,7 +287,7 @@ aside {
 		position: relative;
 		padding: 10px 10px 10px 20px;
 		margin-right: -10px;
-		transition-duration: 0.05s;
+		transition-duration: 0.075s;
 		cursor: pointer;
 		display: block;
 		text-decoration: none;
@@ -442,7 +443,7 @@ subnav {
     border-top-left-radius: 6px;
     padding-top: 9px;
     padding-bottom: 10px;
-    transition-duration: 0.05s;
+    transition-duration: 0.075s;
 	z-index: 99;
 	border-top: 1px solid $subnavBorder;
 	border-left: 1px solid $subnavBorder;
@@ -499,7 +500,7 @@ subnav {
 	border-radius: 4px;
 	background: $buttonBG;
 	font-size: 14px;
-	transition-duration: 0.05s;
+	transition-duration: 0.075s;
 	-webkit-user-select: none;  
 	-moz-user-select: none;    
 	-ms-user-select: none;      
@@ -518,6 +519,7 @@ subnav {
 		box-shadow: $buttonShadowHover;
 		cursor: pointer;
         text-decoration: none;
+		color: $buttonColor;
 	}
 
 	&.higher {
@@ -587,7 +589,7 @@ subnav {
     width: 300px;
     border: 1px solid $buttonBorder;
     border-radius: 6px;
-    transition-duration: 0.05s;
+    transition-duration: 0.075s;
     cursor: pointer;
     margin-right: 8px;
     margin-bottom: 12px;
@@ -668,6 +670,20 @@ subnav {
 			color: black;
 			text-decoration: none;
 		}
+	}
+}
+
+
+
+h1 {
+	.tag {
+		position: absolute;
+		display: inline-block;
+		font-size: 14px;
+		font-family: $fontCondensed;
+		margin-bottom: 0px;
+		margin-top: 7px;
+		margin-left: 10px;
 	}
 }
 
@@ -782,7 +798,7 @@ body.modal-open {
 		border-radius: 100%;
 		border: 1px solid $modalCloseBorder;
 		padding: 4px 7px 4px 7px;
-		transition-duration: 0.05s;
+		transition-duration: 0.075s;
 		margin-top: -10px;
 		margin-right: -10px;
 		box-shadow: 0px 5px 5px 0px rgba(18,20,24,0.7);

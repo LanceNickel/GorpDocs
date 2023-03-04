@@ -36,7 +36,9 @@ const manageServers = [
     "/manage-servers/server-settings",
     "/manage-servers/server-settings/",
     "/manage-servers/home-directory",
-    "/manage-servers/home-directory/"
+    "/manage-servers/home-directory/",
+    "/manage-servers/backup",
+    "/manage-servers/backup/"
 ];
 
 const manageWorlds = [
@@ -47,7 +49,9 @@ const manageWorlds = [
     "/manage-worlds/switch-worlds",
     "/manage-worlds/switch-worlds/",
     "/manage-worlds/archive",
-    "/manage-worlds/archive/"
+    "/manage-worlds/archive/",
+    "/manage-worlds/backup",
+    "/manage-worlds/backup/"
 ];
 
 const utilities = [

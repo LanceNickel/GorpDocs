@@ -46,7 +46,7 @@ require_once('../0/php/functions.php');
 
         <h1>Manage Server Instances</h1>
 
-        <p>A server instance is an individual Minecraft server. A server instance may have <a href="/manage-worlds/">many worlds</a>, and contains individual plugins, world files, properties, and more). Instances may also be referred to as just "instances" in some places.</p>
+        <p>Server instances are individual Minecraft servers. Each server instance contains the files created and used by the Minecraft server&mdash;like workds, plugins, properties, whitelist, and more. Server instances are located in <mono>~/gorpmc/servers/</mono>.</p>
 
         <a class="no-underline" href="/manage-servers/create-and-delete/">
             <div class="option-button">
@@ -65,7 +65,14 @@ require_once('../0/php/functions.php');
         <a class="no-underline" href="/manage-servers/server-settings/">
             <div class="option-button">
                 <span class="subsection">Server Settings</span>
-                <span class="description">Each server instance can be customized for optimized performance.</span>
+                <span class="description">Override the global settings for an individual instance.</span>
+            </div>
+        </a>
+
+        <a class="no-underline" href="/manage-servers/backup/">
+            <div class="option-button">
+                <span class="subsection">Server Backup</span>
+                <span class="description">Backup and restore entire server instances. This may take a while!</span>
             </div>
         </a>
 

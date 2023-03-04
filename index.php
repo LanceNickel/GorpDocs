@@ -62,7 +62,7 @@ require_once('0/php/functions.php');
         <ul>
             <li>8GB of RAM (for decent Minecraft server performance)</li>
             <li>50GB available disk space (for world saves and local backups)</li>
-            <li>Debian or Debian-based distro (tested on: Debian 11, Ubuntu Server 20.04 LTS, Mint 21.1)</li>
+            <li>Debian or Debian-based distro (tested on: Debian 11, Ubuntu Server 22.04 LTS, Mint 21.1)</li>
         </ul>
 
 

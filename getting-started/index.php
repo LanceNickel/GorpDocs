@@ -58,14 +58,14 @@ require_once('../0/php/functions.php');
         <a class="no-underline" href="/getting-started/install/">
             <div class="option-button">
                 <span class="subsection">Install</span>
-                <span class="description">Installing Gorp is quick and easy. This is about a 5 minute read.</span>
+                <span class="description">Installing Java, dependencies, and cloning & downloading Gorp.</span>
             </div>
         </a>
 
         <a class="no-underline" href="/getting-started/uninstall/">
             <div class="option-button">
                 <span class="subsection">Uninstall</span>
-                <span class="description">As fast as Gorp installs, it uninstalls twice as fast.</span>
+                <span class="description">All Gorp-related files are removed, but Minecraft files are preserved.</span>
             </div>
         </a>
 

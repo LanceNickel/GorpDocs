@@ -46,7 +46,7 @@ require_once('../0/php/functions.php');
 
         <h1>Home Directory</h1>
 
-        <p>During installation, a folder named <mono>gorpmc</mono> is created in the current user's home directory (<mono>~</mono>). This is where Gorp stores server instance files are.</p>
+        <p>Gorp creates a folder named <mono>gorpmc</mono> in the home directory of the user who installed Gorp. This folder contains the server-related files such as worlds, plugins, jars, and much more.</p>
 
 
 
@@ -71,7 +71,7 @@ require_once('../0/php/functions.php');
 
                 <tr>
                     <td>jars</td>
-                    <td>The jars directory contains the Minecraft server Java programs (JARs). It also contains a file named "latest", which stores information about the latest installed release. Server instances use the "latest" file to determine which JAR in this directory to use when starting up.</td>
+                    <td>The jars directory contains the Minecraft server Java programs (JARs).</td>
                 </tr>
 
                 <tr>

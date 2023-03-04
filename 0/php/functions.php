@@ -7,11 +7,11 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-03-01.2';
+    return '2023-03-03.1';
 }
 
 function ver() {
-    return '2.0.1';
+    return '1.3.0';
 }
 
 
@@ -169,6 +169,7 @@ function subnav($topic='notpassed') {
         <a href="/manage-servers/create-and-delete/">Create & Delete</a>
                     <a href="/manage-servers/start-and-stop/">Start & Stop</a>
                     <a href="/manage-servers/server-settings/">Server Settings</a>
+                    <a href="/manage-servers/backup/">Backup</a>
                     <a href="/manage-servers/home-directory/">Home Directory</a>
 
         EOF;
@@ -178,8 +179,8 @@ function subnav($topic='notpassed') {
         echo <<<EOF
         <a href="/manage-worlds/create-and-delete/">Create, Delete, & Reset</a>
                 <a href="/manage-worlds/switch-worlds/">Switch Worlds</a>
-                <a href="/manage-worlds/backup/">Backup a World</a>
-                <a href="/manage-worlds/archive/">Archive a World</a>
+                <a href="/manage-worlds/backup/">Backup</a>
+                <a href="/manage-worlds/archive/">Archive</a>
 
         EOF;
     }

@@ -48,9 +48,10 @@ a.no-underline {
 a.invisible {
   cursor: text;
   color: #3e4147;
+  text-decoration: none;
 }
 a.invisible:hover {
-  text-decoration: none;
+  background: none;
 }
 
 ul li, ol li {
@@ -214,7 +215,7 @@ aside .nav-item {
   position: relative;
   padding: 10px 10px 10px 20px;
   margin-right: -10px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   cursor: pointer;
   display: block;
   text-decoration: none;
@@ -322,7 +323,7 @@ subnav {
   border-top-left-radius: 6px;
   padding-top: 9px;
   padding-bottom: 10px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   z-index: 99;
   border-top: 1px solid #cccfd3;
   border-left: 1px solid #cccfd3;
@@ -360,7 +361,7 @@ subnav a.active {
   border-radius: 4px;
   background: #dadcdf;
   font-size: 14px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   -webkit-user-select: none;
   -moz-user-select: none;
   user-select: none;
@@ -377,6 +378,7 @@ subnav a.active {
   box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   text-decoration: none;
+  color: #26282c;
 }
 .button.higher {
   background: #e8e9eb;
@@ -433,7 +435,7 @@ subnav a.active {
   width: 300px;
   border: 1px solid #868e97;
   border-radius: 6px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   cursor: pointer;
   margin-right: 8px;
   margin-bottom: 12px;
@@ -489,6 +491,16 @@ subnav a.active {
   background: white;
   color: black;
   text-decoration: none;
+}
+
+h1 .tag {
+  position: absolute;
+  display: inline-block;
+  font-size: 14px;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+  margin-bottom: 0px;
+  margin-top: 7px;
+  margin-left: 10px;
 }
 
 body.modal-open {
@@ -576,7 +588,7 @@ body.modal-open {
   border-radius: 100%;
   border: 1px solid #c76b88;
   padding: 4px 7px 4px 7px;
-  transition-duration: 0.05s;
+  transition-duration: 0.075s;
   margin-top: -10px;
   margin-right: -10px;
   box-shadow: 0px 5px 5px 0px rgba(18, 20, 24, 0.7);

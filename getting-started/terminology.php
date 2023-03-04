@@ -57,16 +57,20 @@ require_once('../0/php/functions.php');
                     <th>Definition</th>
                 </tr>
                 <tr>
-                    <td>world</td>
-                    <td>The actual Minecraft world where play happens. A world is split into three folders, one for each dimension. Worlds have names and are stored inside of server instances.</td>
+                    <td><mono>~</mono> <em>(tilde)</em></td>
+                    <td>Your home directory, where Gorp is likely installed. If not, it is in the home directory of the user who originally installed Gorp. <a href="/manage-servers/home-directory/">Learn more</a>.</td>
                 </tr>
                 <tr>
-                    <td>server instance (<em>instance</em>)</td>
-                    <td>An individual Minecraft Server. Each instance contains its own properties, plugins, worlds, and more). Each server instance has a name.</td>
+                    <td>world</td>
+                    <td>A Minecraft world itself, including the Nether and End dimensions.</td>
+                </tr>
+                <tr>
+                    <td>server instance, "server"</td>
+                    <td>An individual Minecraft Server. Each server instance contains its own properties, plugins, and worlds.</td>
                 </tr>
                 <tr>
                     <td>Paper</td>
-                    <td>Paper is a Minecraft Server software similar to Spigot and Bukkit. It has many great performance improvements, supports the same plugins, and is more supported. Gorp works exclusively with Paper.</td>
+                    <td>Paper is a Minecraft Server software similar to Spigot and Bukkit. Gorp is exclusively tested with Paper, but should work fine with Bukkit and Spigot servers.</td>
                 </tr>
                 <tr>
                     <td>server JAR</td>

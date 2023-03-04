@@ -46,15 +46,15 @@ require_once('../0/php/functions.php');
 
         <h1>Server Settings</h1>
 
-        <p>Servers may be cusomized further by editing the <mono>run.sh</mono> file in each server's directory.</p>
+        <p>Servers may be customized further by editing the <mono>run.sh</mono> file in each server's directory.</p>
 
 
 
         <h2>Editing run.sh</h2>
 
-        <p>The <mono>run.sh</mono> file is located in a server's directory. Server instance directories are located in <mono>~/gorpmc/servers</mono>.</p>
+        <p>The <mono>run.sh</mono> file is located in a server's directory. Server instance directories are located in <mono>~/gorpmc/servers/</mono>.</p>
 
-        <p>The upper portion of the file contains cusomizable options. These options, when left uncustomized, will inherit the settings in the <a href="/configuration-file/">Gorp configuration file</a>.</p>
+        <p>The upper portion of the file contains customizable options. These options, when left uncustomized, will inherit the settings in the <a href="/configuration-file/">Gorp configuration file</a>.</p>
 
 
 
@@ -64,22 +64,19 @@ require_once('../0/php/functions.php');
             <table>
                 <tr>
                     <th>Option</th>
-                    <th>Description</th>
                     <th>Expected Value</th>
                     <th>Default Value</th>
                     <th>Example Value</th>
                 </tr>
                 <tr>
                     <td>JAR</td>
-                    <td>JAR file to execute when the server is started.</td>
-                    <td>Absolute path to JAR file.</td>
+                    <td>Absolute path to a JAR file. For JARs downloaded with <code>get-jar</code> use:<br><mono>$HOMEDIR/jars/[version].jar</td>
                     <td><mono>$LATEST_JAR</mono></td>
-                    <td>/path/to/MCJAR.jar</td>
+                    <td>$HOMEDIR/jars/1.18.2.jar</td>
                 </tr>
                 <tr>
                     <td>RAM</td>
-                    <td>RAM allocation for the server.</td>
-                    <td>Integer followed by <mono>G</mono>
+                    <td>The amount of RAM to allocate to the server, in gigabytes.</td>
                     <td><mono>$RAM</mono></td>
                     <td>8G</td>
                 </tr>

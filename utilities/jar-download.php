@@ -44,25 +44,51 @@ require_once('../0/php/functions.php');
 
         <div class="spacer40"></div>
 
-        <h1>JAR Downloader</h1>
+        <h1>JAR Downloader <div class="box green tag">Updated in 1.3.0</div></h1>
 
-        <p>The JAR downloader will download the Paper Server JAR file for the specified Minecraft game version.</p>
+        <p>The JAR downloader can be used to download JARS from a URL, or a Paper JAR for a particular Minecraft version.</p>
 
-        <div class="box red">The PaperMC team only maintains Paper for the latest version of Minecraft. Using older versions of Minecraft is considered less secure, as security flaws and other such bugs will not be addressed.</div>
-
-
-
-        <h2>Download a Server JAR</h2>
-
-        <pre>gorp get-jar <em>version</em></pre>
-
-        <p>This will download the latest stable JAR file for the game version to <mono>~/gorpmc/jars/</mono>. This will NOT set the JAR for any server instance, though. This must be done by configuring an <a href="/manage-instances/instance-settings/">instance's settings</a>.</p>
+        <p>This will NOT set the JAR for any server instance, though. This must be done by configuring an <a href="/manage-servers/server-settings/">instance's settings</a>.</p>
 
 
 
-        <h2>Supported Game Versions</h2>
+        <h2>Download by URL</h2>
+
+        <pre>gorp get-jar -u <em>url</em></pre>
+
+        <p>This will download the JAR file in the link and will put it in <mono>~/gorpmc/jars/</mono>. <strong class="important">Please make sure you trust the source of the JAR file!</strong></p>
+
         
-        <p>Gorp only supports the versions of Minecraft that Paper does, so these versions of Minecraft can be downloaded:</p>
+        <h3 class="important">IMPORTANT NOTICES:</h3>
+
+        <ul>
+            <li>The server must have a bukkit-like world structure, with three separate world directories.</li>
+            <li>Vanilla JARs are not supported yet.</li>
+            <li>The provided download URL must be a .jar file, not an archive (zip/tarball, etc).</li>
+            <li>By downloading potentially untested software, you acknowledge that Gorp may not behave as expected and may cause unexpected file loss or extreme amounts of inconvenience.</li>
+        </ul>
+
+        <h4>Tested versions:</h4>
+
+        <ul>
+            <li><strong>CraftBukkit</strong> 1.0.0 - 1.19.3</li>
+            <li><strong>Spigot</strong> 1.4.6 - 1.19.3</li>
+            <li><strong>Paper</strong> 1.8.8 - 1.19.3 (Gorp default)</li>
+        </ul>  
+        
+        
+        
+        <h2>Download by Version</h2>
+
+        <pre>gorp get-jar -v <em>version</em></pre>
+
+        <p>This will download the latest stable Paper JAR file for the game version to <mono>~/gorpmc/jars/</mono>.</p>
+
+
+
+        <h3>Supported versions</h3>
+        
+        <p>Download by version only works with the Paper API, therefore any version of Paper can be downloaded:</p>
 
         <div class="listcols">
             <div class="col">
