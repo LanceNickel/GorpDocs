@@ -71,8 +71,8 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
         <ol>        
             <li>SSH into your (soon to be) Minecraft server.</li>
             <li>Go to your home directory: <code>cd</code></li>
-            <li>Download Gorp: <code>wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v1.2.3.tar.gz</code></li>
-            <li>Unarchive Gorp & cd: <code>tar -xf v1.2.3.tar.gz && cd Gorp-1.2.3</code></li>
+            <li>Download Gorp: <code>wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v<?= ver(); ?>.tar.gz</code></li>
+            <li>Unarchive Gorp & cd: <code>tar -xf v<?= ver(); ?>.tar.gz && cd Gorp-<?= ver(); ?></code></li>
             <li>Run the installer: <code>chmod +x install.sh && ./install.sh</code></li>
         </ol>
 
