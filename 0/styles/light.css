@@ -649,6 +649,12 @@ body.modal-open {
   main h1 {
     font-size: 24px;
   }
+  main h1 .tag {
+    font-size: 12px;
+    font-family: "IBM Plex Sans", sans-serif;
+    margin-left: 5px;
+    margin-top: 2px;
+  }
   main h2 {
     font-size: 22px;
   }
@@ -738,6 +744,7 @@ body.modal-open {
     font-size: 18px;
     font-weight: normal;
     border-bottom: 1px solid #bec2c7;
+    text-decoration: none;
   }
   #mobile-menu .nav-item.active {
     color: #4669b9;

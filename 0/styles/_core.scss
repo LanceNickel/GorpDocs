@@ -887,6 +887,13 @@ body.modal-open {
 
 		h1 {
 			font-size: 24px;
+
+			.tag {
+				font-size: 12px;
+				font-family: $font;
+				margin-left: 5px;
+				margin-top: 2px;
+			}
 		}
 
 		h2 {
@@ -994,6 +1001,7 @@ body.modal-open {
 			font-size: 18px;
 			font-weight: normal;
 			border-bottom: 1px solid $mobileItemBorder;
+			text-decoration: none;
 
 			&.active {
 				color: $mobileActiveColor;
