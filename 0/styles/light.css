@@ -480,6 +480,13 @@ subnav a.active {
   background: #b9466a;
   border: 1px solid #943854;
 }
+.box.grey {
+  background: #949ba3;
+  border: 1px solid #bec2c7;
+}
+.box.subtle {
+  background: #b0b5bb;
+}
 .box pre, .box code {
   background: rgba(0, 0, 0, 0.25) !important;
 }

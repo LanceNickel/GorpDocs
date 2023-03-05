@@ -22,6 +22,10 @@ const gettingStarted = [
     "/getting-started/terminology/",
     "/getting-started/install",
     "/getting-started/install/",
+    "/getting-started/install/debian",
+    "/getting-started/install/debian/",
+    "/getting-started/install/fedora",
+    "/getting-started/install/fedora/",
     "/getting-started/uninstall",
     "/getting-started/uninstall/",
 ];

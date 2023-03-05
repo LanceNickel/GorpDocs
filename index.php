@@ -62,17 +62,16 @@ require_once('0/php/functions.php');
         <ul>
             <li>8GB of RAM (for decent Minecraft server performance)</li>
             <li>50GB available disk space (for world saves and local backups)</li>
-            <li>Debian or Debian-based distro (tested on: Debian 11, Ubuntu Server 22.04 LTS, Mint 21.1)</li>
+            <li>Debian (or Debian-based) or Fedora</li>
         </ul>
 
 
 
         <h2>Notices</h2>
         
-        <p>Gorp will update or install the following packages and their dependencies:</p>
+        <p>You will install/update the following packages during installation.</p>
 
         <ul>
-            <li>apt-transport-https</li>
             <li>curl</li>
             <li>wget</li>
             <li>jq</li>
