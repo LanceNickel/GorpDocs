@@ -85,13 +85,7 @@ require_once('../0/php/functions.php');
 
         <h2>Changing the Home Directory</h2>
 
-        <div class="red box">This may cause data loss if something goes wrong. Please have a backup handy.</div>
-
-        <ol>
-            <li>Copy the <mono>gorpmc</mono> directory to the new location.</li>
-            <li>Check to make sure it copied correctly.</li>
-            <li>Change the <mono>HOMEDIR</mono> option in <mono>gorp.conf</mono> to reflect the new location by entering the absolute path to directory <mono>gorpmc</mono> is now stored in. <strong class="important">Do not include the gorpmc folder itself in the value.</strong></li>
-        </ol>
+        <pre>gorp move-home <em>path</em></pre>
 
 
 
