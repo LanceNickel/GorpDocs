@@ -198,8 +198,8 @@ require_once('../0/php/functions.php');
   "properties": [
     {
       "whitelist": false,
-      "gamemode": "false",
-      "difficulty": "easy",
+      "gamemode": "survival",
+      "difficulty": "hard",
       "hardcore": false,
       "server_port": 25565
     }
