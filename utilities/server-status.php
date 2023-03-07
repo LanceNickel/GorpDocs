@@ -181,9 +181,9 @@ require_once('../0/php/functions.php');
     {
       "running": true,
       "version": "1.19.3",
-      "jar_file": "/home/test/gorpmc/jars/paper-1.19.3-445.jar",
+      "jar_file": "/home/user/gorpmc/jars/paper-1.19.3-445.jar",
       "ram": "4G",
-      "path": "/home/test/gorpmc/servers/public"
+      "path": "/home/user/gorpmc/servers/public"
     }
   ],
   "world": [
