@@ -53,8 +53,12 @@ require_once('../../0/php/functions.php');
         <h2>Install Java 17</h2>
 
         <ol>
-            <li>Run <code>sudo apt update</code></li>
-            <li>Run <code>sudo apt install openjdk-17-jdk openjdk-17-jre</code></li>
+            <li>Run <code>sudo apt update && sudo apt upgrade</code></li>
+            <li>Run <code>sudo apt-get install software-properties-common ca-certificates apt-transport-https curl</code></li>
+            <li>Run <code>curl https://apt.corretto.aws/corretto.key | sudo apt-key add -</code></li>
+            <li>Run <code>sudo add-apt-repository 'deb https://apt.corretto.aws stable main'</code></li>
+            <li>Run <code>sudo apt-get update</code></li>
+            <li>Run <code>sudo apt-get install -y java-17-amazon-corretto-jdk</code></li>
         </ol>
 
         <h3>Verify Java installed correctly</h3>

@@ -45,6 +45,15 @@ require_once('0/php/functions.php');
 
         <p>Elements in <code><em>italics</em></code> are placeholder values where your values should go (like world names). Elements in <code>[brackets]</code> are optional. Elements separated <code>by|pipes</code> are mutually exlusive arguments.</p>
 
+        <p>Gorp accepts optional global flags, inserted right after "gorp". Ex: <code>gorp -q start server</code>.</p>
+
+        <h3>Valid global flags</h3>
+
+        <ul>
+            <li><mono>-q</mono> Quiet. Do not show status messages.</li>
+            <li><mono>-Q</mono> Silent. Suppress all output except for strictly necessary.</li>
+        </ul>
+
 
 
         <h2>Manage Servers <span>see: <a href="/manage-servers/">manage servers</a></span></h2>
@@ -56,15 +65,15 @@ require_once('0/php/functions.php');
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td><code>gorp start <em>server</em></code></td>
+                    <td><code>gorp start <em>server</em> [-y]</code></td>
                     <td>Starts a servers.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp stop <em>server</em> [fast|now]</code></td>
+                    <td><code>gorp stop <em>server</em> [-f|-n]</code></td>
                     <td>Stops a server.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp restart <em>server</em> [fast|now]</code></td>
+                    <td><code>gorp restart <em>server</em> [-f|-n]</code></td>
                     <td>Restarts a server.</td>
                 </tr>
                 <tr>
@@ -142,7 +151,7 @@ require_once('0/php/functions.php');
                     <td>Downloads and sets the latest stable Paper JAR file globally.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp get-jar -v <em>version</em> | -u <em>URL</em></code></td>
+                    <td><code>gorp get-jar -g <em>gamever</em> | -u <em>URL</em></code></td>
                     <td>Downloads a Paper JAR for either the specified game version or from the specified URL. <a href="/utilities/jar-download/">Learn more</a>.</td>
                 </tr>
                 <tr>
@@ -167,7 +176,7 @@ require_once('0/php/functions.php');
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td><code>gorp help</code></td>
+                    <td><code>gorp -h</code></td>
                     <td>Open a command reference in the command line.</td>
                 </tr>
                 <tr>
@@ -175,7 +184,7 @@ require_once('0/php/functions.php');
                     <td>Show the installed Gorp version.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp list-servers</code></td>
+                    <td><code>gorp ls</code></td>
                     <td>List servers in <mono>~/gorpmc/servers</mono>.</td>
                 </tr>
             </table>
