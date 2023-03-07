@@ -181,27 +181,27 @@ require_once('../0/php/functions.php');
     {
       "running": true,
       "version": "1.19.3",
-      "jar_file": "/home/user/gorpmc/jars/paper-1.19.3-445.jar",
-      "ram": "4G",
-      "path": "/home/user/gorpmc/servers/public"
+      "jar_file": "/home/redifer/gorpmc/jars/paper-1.19.3-431.jar",
+      "ram": "10G",
+      "path": "/home/redifer/gorpmc/servers/public"
     }
   ],
   "world": [
     {
-      "active": "world-ottawa",
-      "total_size": "30M",
-      "o_size": "13M",
-      "n_size": "9.2M",
+      "active": "world-potato",
+      "total_size": "530M",
+      "o_size": "484M",
+      "n_size": "38M",
       "e_size": "8.1M"
     }
   ],
   "properties": [
     {
-      "whitelist": false,
+      "whitelist": true,
       "gamemode": "survival",
-      "difficulty": "hard",
+      "difficulty": "normal",
       "hardcore": false,
-      "server_port": 25565
+      "server_port": 25570
     }
   ]
 }</pre>
