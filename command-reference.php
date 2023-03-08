@@ -12,7 +12,6 @@ require_once('0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <script src="/0/js/modal.js" type="text/javascript" defer></script>
     <title>Command Reference - Gorp Docs</title>
 </head>
 

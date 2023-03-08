@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-03-07.3';
+    return '2023-03-08.1';
 }
 
 function ver() {
@@ -39,6 +39,7 @@ function head() {
         <script src="/0/js/cookies.js?rev=$rev" type="text/javascript" defer></script>
         <script src="/0/js/theme.js?rev=$rev" type="text/javascript" defer></script>
         <script src="/0/js/navigation.js?rev=$rev" type="text/javascript" defer></script>
+        <script src="/0/js/features.js?rev=$rev" type="text/javascript" defer></script>
 
         <script>
             // Firefox fix
