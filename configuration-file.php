@@ -61,7 +61,7 @@ require_once('0/php/functions.php');
                 <tr>
                     <td>GAMEVER</td>
                     <td>Minecraft game version. Used by the JAR update utility when looking for the latest JAR build. This will not apply to servers using a <a href="/manage-servers/server-settings/">custom JAR file</a>.</td>
-                    <td><a id="open-modal-1" class="button blue nomargin">See list</a></td>
+                    <td><a name="m1" class=" open-modal button blue nomargin">See list</a></td>
                     <td><mono>1.19.3</mono></td>
                 </tr>
 
@@ -101,10 +101,10 @@ require_once('0/php/functions.php');
 
 
 
-    <div id="modal-1" class="hidden">
+    <div id="m1" class="modal hidden">
         <div class="modal-bg">
             <div class="modal-window">
-                <a class="close-modal-button">
+                <a class="close-modal">
                     <img src="/0/img/close.svg" />
                 </a>
                 <div class="title">Valid GAMEVER Values</div>

@@ -64,30 +64,35 @@ pre, code {
   font-size: 14px;
   background: #cccfd3;
   border-radius: 6px;
-  padding: 3px 6px;
-  margin: 0px;
+  color: #3e4147;
+  margin: 0;
 }
-
-.pre-container {
-  overflow: scroll;
-  margin-left: -20px;
-  margin-right: -20px;
-  padding-left: 10px;
+pre.copy:hover, code.copy:hover {
+  cursor: pointer;
+  background: #bec2c7;
+}
+pre.copied, code.copied {
+  background: #90d5c0;
+}
+pre.copied:hover, code.copied:hover {
+  background: #90d5c0;
 }
 
 pre {
   padding: 10px;
-  line-height: 1.5;
-  background: #cccfd3;
-  margin-bottom: 10px;
-  margin-right: 10px;
+  margin-bottom: 15px;
+}
+
+code {
+  padding: 2px 6px;
 }
 
 mono {
-  font-family: "IBM Plex Mono", monospace;
-  font-size: 14px;
-  font-weight: bold;
   color: #46b996;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: bold;
   text-shadow: 0.75px 0.75px 0px rgba(0, 0, 0, 0.5);
 }
 
@@ -167,11 +172,17 @@ table tr:last-child td:first-child {
 table tr:last-child td:last-child {
   border-bottom-right-radius: 4px;
 }
-table pre {
+table pre, table code {
   background: #bec2c7;
 }
-table code {
-  background: #bec2c7;
+table pre.copy:hover, table code.copy:hover {
+  background: #b0b5bb;
+}
+table pre.copied:hover, table code.copied:hover {
+  background: #90d5c0;
+}
+table pre {
+  margin-bottom: 0;
 }
 
 header {
@@ -469,23 +480,34 @@ subnav a.active {
   display: inline-block;
 }
 .box.blue {
-  background: #5978c0;
-  border: 1px solid #3f5fa7;
+  background: #4669b9;
+  border: 1px solid #2a3f6f;
+}
+.box.blue.subtle {
+  border-color: #5978c0;
 }
 .box.green {
-  background: #3fa787;
-  border: 1px solid #318269;
+  background: #389478;
+  border: 1px solid #1c4a3c;
+}
+.box.green.subtle {
+  border-color: #3fa787;
 }
 .box.red {
-  background: #b9466a;
-  border: 1px solid #943854;
+  background: #a73f5f;
+  border: 1px solid #5d2335;
+}
+.box.red.subtle {
+  border-color: #b9466a;
 }
 .box.grey {
-  background: #949ba3;
-  border: 1px solid #bec2c7;
+  background: #bec2c7;
+  border: 1px solid #78818b;
+  color: #3e4147;
 }
 .box.subtle {
-  background: #b0b5bb;
+  background: #bec2c7;
+  color: #3e4147;
 }
 .box pre, .box code {
   background: rgba(0, 0, 0, 0.25) !important;
@@ -588,7 +610,7 @@ body.modal-open {
 .modal-window .actions .button {
   margin: 0px 0px 0px 2px;
 }
-.modal-window .close-modal-button {
+.modal-window .close-modal {
   position: relative;
   float: right;
   background: #82314a;
@@ -596,16 +618,17 @@ body.modal-open {
   border: 1px solid #c76b88;
   padding: 4px 7px 4px 7px;
   transition-duration: 0.075s;
+  cursor: pointer;
   margin-top: -10px;
   margin-right: -10px;
   box-shadow: 0px 5px 5px 0px rgba(18, 20, 24, 0.7);
   z-index: 60;
 }
-.modal-window .close-modal-button:hover {
+.modal-window .close-modal:hover {
   background: #a73f5f;
   border-color: #ce7e97;
 }
-.modal-window .close-modal-button img {
+.modal-window .close-modal img {
   margin-bottom: -1.25px;
   width: 15px;
   height: 15px;
@@ -685,13 +708,11 @@ body.modal-open {
     margin-left: 0;
     border: none;
   }
-  table {
-    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
-    display: inline-block;
-    margin-right: 10px;
-  }
-  table.minx {
-    min-width: 700px;
+  .pre-container {
+    overflow: scroll;
+    margin-left: -20px;
+    margin-right: -20px;
+    padding-left: 10px;
   }
   .table-container {
     margin-left: -20px;
@@ -701,8 +722,19 @@ body.modal-open {
     overflow: scroll;
     display: inline-block;
   }
+  table {
+    box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-right: 10px;
+  }
+  table.minx {
+    min-width: 700px;
+  }
   #open-mobile-menu {
     display: inline-block;
+  }
+  #open-mobile-menu:hover {
+    background: none;
   }
   #open-mobile-menu img {
     fill: red;
@@ -767,6 +799,9 @@ body.modal-open {
     padding: 7px;
     margin-top: 11px;
     margin-left: 14px;
+  }
+  #mobile-menu .close-mobile-menu:hover {
+    background: none;
   }
   #mobile-menu .close-mobile-menu svg {
     width: 25px;

@@ -114,17 +114,26 @@ $mainBorder: $neutral300;
 // Text
 $bodyColor: $text500;
 $headerColor: $text700;
-$preBG: $neutral300;
-$codeBG: $neutral300;
-$tablePreBG: $neutral400;
-$tableCodeBG: $neutral400;
-$monoColor: $green300;
 $importantColor: $red300;
 $linkColor: $blue500;
 $linkUnderline: rgba(255,255,255,0.25);
 $linkUnderlineHover: rgba(255,255,255,0.75);
 $h2Underline: rgba(0,0,0,0.2);
 $offWhite: rgba(255,255,255,0.8);
+
+
+
+// Pre, Code
+
+$codeBG: $neutral300;
+$codeHoverBG: $neutral400;
+$codeCopiedBG: $green50;
+
+$tableCodeBG: $neutral400;
+$tableCodeHoverBG: $neutral500;
+$tableCodeCopiedBG: $green50;
+
+$monoColor: $green300;
 
 
 
@@ -177,19 +186,24 @@ $modalCloseBorderHover: $red100;
 
 
 // Alert boxes
-$boxBlueBG: $blue400;
-$boxBlueBorder: $blue600;
+$boxBlueBG: $blue500;
+$boxBlueBorder: $blue900;
+$boxBlueSubtleBorder: $blue400;
 
-$boxRedBG: $red400;
-$boxRedBorder: $red600;
+$boxRedBG: $red500;
+$boxRedBorder: $red900;
+$boxRedSubtleBorder: $red400;
 
-$boxGreenBG: $green400;
-$boxGreenBorder: $green600;
+$boxGreenBG: $green500;
+$boxGreenBorder: $green900;
+$boxGreenSubtleBorder: $green400;
 
-$boxGreyBG: $neutral700;
-$boxGreyBorder: $neutral400;
+$boxGreyBG: $neutral400;
+$boxGreyBorder: $neutral900;
 
-$boxSubtleBG: $neutral500;
+$boxSubtleBG: $neutral400;
+
+$boxNeutralColor: $bodyColor;
 
 
 

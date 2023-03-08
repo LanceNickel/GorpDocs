@@ -83,8 +83,12 @@ const configurationFile = [
 
 
 
+
+
+
+
 /**
- * SIDEBAR logic
+ * SIDEBAR
  */
 
 // WELCOME
@@ -131,8 +135,12 @@ if (configurationFile.includes(path)) {
 
 
 
+
+
+
+
 /**
- * SUBNAV logic
+ * SUBNAV
  */
 
 $('subnav a[href="' + path + '"]').addClass('active');
@@ -140,8 +148,12 @@ $('subnav a[href="' + path + '/"]').addClass('active');
 
 
 
+
+
+
+
 /**
- * MOBILE MENU logic
+ * MOBILE MENU
  */
 
 $('#open-mobile-menu').click(function() {
@@ -155,3 +167,49 @@ $('.close-mobile-menu').click(function() {
     $('#mobile-menu').addClass('hidden');
     $('#mobile-menu-bg').addClass('hidden');
 });
+
+
+
+
+
+
+
+/**
+ * Copy-able code blocks
+ */
+
+$('.copy').attr('title', 'Click to copy');
+
+$('.copy').click(function() {
+    let id = $(this).attr('id');
+    let contents = $(`#${id}`).html();
+    let command = contents.replace(/&amp;/g, '&');
+
+    console.log(command);
+
+    if(sendToClipboard(command)) {
+        $(`#${id}`).addClass('copied');
+    }
+});
+
+
+
+
+
+
+
+
+/**
+ * Send string to clipboard
+ */
+
+function sendToClipboard(text) {
+    if (navigator.clipboard) {
+        navigator.clipboard.writeText(text);
+        return true;
+    }
+    else {
+        console.log('navigation.js: Browser not compatible with navigator.clipboard -- Please upgrade your browser.');
+        return false;
+    }
+}

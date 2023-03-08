@@ -172,10 +172,6 @@ require_once('../0/php/functions.php');
         <h2>Sample JSON Output</h2>
 
         <div class="pre-container">
-            <pre>user@hostname ~$ <strong>gorp -s public</strong></pre>
-        </div>
-
-        <div class="pre-container">
             <pre>{
   "status": [
     {
@@ -206,6 +202,15 @@ require_once('../0/php/functions.php');
   ]
 }</pre>
         </div>
+
+        
+        <h3>Parse JSON with JQ (exmaples):</h3>
+
+        <ul>
+            <li>Is <mono>public</mono> running?: <code>gorp -s public | jq .status[].running</code></li>
+            <li>What's <mono>public</mono>'s active world?: <code>gorp -s public | jq .world[].active</code></li>
+            <li>What server port is <mono>public</mono> using?: <code>gorp -s public | jq .properties[].server_port</code></li>
+        </ul>
 
 
     </main>

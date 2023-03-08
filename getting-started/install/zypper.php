@@ -44,7 +44,7 @@ require_once('../../0/php/functions.php');
 
         <div class="spacer40"></div>
 
-        <h1>Install Gorp <div class="box green tag">Zypper</div></h1>
+        <h1>Install Gorp <div class="box blue subtle tag">Zypper</div></h1>
 
         <p>Install Gorp on openSUSE, SLES, etc.</p>
 
@@ -53,14 +53,14 @@ require_once('../../0/php/functions.php');
         <h2>Install Java 17</h2>
 
         <ol>
-            <li>Run <code>sudo zypper addrepo https://yum.corretto.aws/corretto.repo</code></li>
-            <li>Run <code>sudo zypper refresh</code></li>
-            <li>Run <code>sudo zypper install java-17-amazon-corretto-devel</code></li>
+            <li>Run <code id="c1" class="copy">sudo zypper addrepo https://yum.corretto.aws/corretto.repo</code></li>
+            <li>Run <code id="c2" class="copy">sudo zypper refresh</code></li>
+            <li>Run <code id="c3" class="copy">sudo zypper install java-17-amazon-corretto-devel</code></li>
         </ol>
 
         <h3>Verify Java installed correctly</h3>
         
-        <p>Run <code>java --version</code>. You should see something like:</p>
+        <p>Run <code id="c4" class="copy">java --version</code>. You should see something like:</p>
 
         <div class="pre-container">
             <pre>openjdk 17.0.6 2023-01-17 LTS
@@ -74,20 +74,20 @@ OpenJDK 64-Bit Server VM Corretto-17.0.6.10.1 (build 17.0.6+10-LTS, mixed mode, 
         
         <ol>        
             <li>SSH into your (soon to be) Minecraft server.</li>
-            <li>Go to your home directory: <code>cd</code></li>
-            <li>Run <code>sudo yum clean all</code></li>
-            <li>Run <code>sudo zypper install curl wget jq screen</code></li>
-            <li>Download Gorp: <code>wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v<?= ver(); ?>.tar.gz</code></li>
-            <li>Unarchive Gorp & cd: <code>tar -xf v<?= ver(); ?>.tar.gz && cd Gorp-<?= ver(); ?></code></li>
-            <li>Run the installer: <code>chmod +x install.sh && ./install.sh</code></li>
-            <li>Clean up: <code>rm v<?= ver(); ?>.tar.gz && rm -rf Gorp-<?= ver(); ?></code></li>
+            <li>Go to your home directory: <code id="c5" class="copy">cd</code></li>
+            <li>Run <code id="c6" class="copy">sudo yum clean all</code></li>
+            <li>Run <code id="c7" class="copy">sudo zypper install curl wget jq screen</code></li>
+            <li>Download Gorp: <code id="c8" class="copy">wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v<?= ver(); ?>.tar.gz</code></li>
+            <li>Unarchive Gorp & cd: <code id="c9" class="copy">tar -xf v<?= ver(); ?>.tar.gz && cd Gorp-<?= ver(); ?></code></li>
+            <li>Run the installer: <code id="c10" class="copy">chmod +x install.sh && ./install.sh</code></li>
+            <li>Clean up: <code id="c11" class="copy">cd .. && rm v<?= ver(); ?>.tar.gz && rm -rf Gorp-<?= ver(); ?></code></li>
         </ol>
 
 
 
         <h3 class="important">If you received a warning message</h3>
 
-        <p>During install, Gorp noticed that you already have a folder at ~/gorpmc. Gorp skips creating the folder and moving files inside to prevent any accidentail data loss. If these files are no longer needed or have been backed up, delete the folder and uninstall gorp with: <code>chmod +x uninstall.sh && ./uninstall.sh</code>. Then re-install Gorp.</p>
+        <p>During install, Gorp noticed that you already have a folder at ~/gorpmc. Gorp skips creating the folder and moving files inside to prevent any accidentail data loss. If these files are no longer needed or have been backed up, delete the folder and uninstall gorp with: <code id="c12" class="copy">chmod +x uninstall.sh && ./uninstall.sh</code>. Then re-install Gorp.</p>
 
 
 

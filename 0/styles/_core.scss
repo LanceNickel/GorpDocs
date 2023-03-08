@@ -5,6 +5,8 @@
 //  ██████  ██████  ██   ██ ███████
 
 
+// The entire viewport, HTML, or body
+
 * {
 	box-sizing: border-box;
 }
@@ -15,6 +17,10 @@ html, body {
 	color: $bodyColor;
 	background: $bodyBG;
 }
+
+
+
+// Text, headings, links, lists
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: $fontCondensed;
@@ -70,38 +76,54 @@ ul, ol {
     }
 }
 
-pre, code {
-    display: inline-block;
-    font-family: $fontMono;
-    font-size: 14px;
-    background: $codeBG;
-    border-radius: 6px;
-    padding: 3px 6px;
-    margin: 0px;
-}
 
-.pre-container {
-	overflow: scroll;
-	margin-left: -20px;
-	margin-right: -20px;
-	padding-left: 10px;
+
+// Pre, code, mono
+
+pre, code {
+	display: inline-block;
+	font-family: $fontMono;
+	font-size: 14px;
+	background: $codeBG;
+	border-radius: 6px;
+	color: $bodyColor;
+	margin: 0;
+
+	&.copy:hover {
+		cursor: pointer;
+		background: $codeHoverBG;
+	}
+
+	&.copied {
+		background: $codeCopiedBG;
+
+		&:hover {
+			background: $codeCopiedBG;
+		}
+	}
 }
 
 pre {
-    padding: 10px;
-    line-height: 1.5;
-    background: $preBG;
-    margin-bottom: 10px;
-	margin-right: 10px;
+	padding: 10px;
+	margin-bottom: 15px;
+}
+
+code {
+	padding: 2px 6px;
 }
 
 mono {
-	font-family: $fontMono;
-	font-size: 14px;
-	font-weight: bold;
 	color: $monoColor;
-    text-shadow: $monoShadow;
+	font-family: $fontMono;
+	font-size: 15px;
+	line-height: 16px;
+	font-weight: bold;
+	text-shadow: $monoShadow;
 }
+
+
+
+// Containers, structure, bold text, additional styles, etc.
 
 .important {
     color: $importantColor;
@@ -206,12 +228,22 @@ table {
 		}
 	}
 
-	pre {
-		background: $tablePreBG;
+	pre, code {
+		background: $tableCodeBG;
+
+		&.copy {
+			&:hover {
+				background: $tableCodeHoverBG;
+			}
+		}
+
+		&.copied:hover {
+			background: $tableCodeCopiedBG;
+		}
 	}
 
-	code {
-		background: $tableCodeBG;
+	pre {
+		margin-bottom: 0;
 	}
 }
 
@@ -645,26 +677,39 @@ subnav {
 	&.blue {
 		background: $boxBlueBG;
 		border: 1px solid $boxBlueBorder;
+
+		&.subtle {
+			border-color: $boxBlueSubtleBorder;
+		}
 	}
 
 	&.green {
 		background: $boxGreenBG;
 		border: 1px solid $boxGreenBorder;
+
+		&.subtle {
+			border-color: $boxGreenSubtleBorder;
+		}
 	}
 
 	&.red {
 		background: $boxRedBG;
 		border: 1px solid $boxRedBorder;
+
+		&.subtle {
+			border-color: $boxRedSubtleBorder;
+		}
 	}
 
 	&.grey {
 		background: $boxGreyBG;
 		border: 1px solid $boxGreyBorder;
+		color: $boxNeutralColor;
 	}
 
 	&.subtle {
 		background: $boxSubtleBG;
-		border: 1px solid $boxSubtleBorder;
+		color: $boxNeutralColor;
 	}
 
 	pre,code {
@@ -801,7 +846,7 @@ body.modal-open {
 		}
 	}
 
-	.close-modal-button {
+	.close-modal {
 		position: relative;
 		float: right;
 		background: $modalCloseBG;
@@ -809,6 +854,7 @@ body.modal-open {
 		border: 1px solid $modalCloseBorder;
 		padding: 4px 7px 4px 7px;
 		transition-duration: 0.075s;
+		cursor: pointer;
 		margin-top: -10px;
 		margin-right: -10px;
 		box-shadow: 0px 5px 5px 0px rgba(18,20,24,0.7);
@@ -935,14 +981,11 @@ body.modal-open {
 		}
 	}
 
-	table {
-		box-shadow: $tableShadowMobile;
-		display: inline-block;
-		margin-right: 10px;
-
-		&.minx {
-			min-width: 700px;
-		}
+	.pre-container {
+		overflow: scroll;
+		margin-left: -20px;
+		margin-right: -20px;
+		padding-left: 10px;
 	}
 
 	.table-container {
@@ -954,8 +997,22 @@ body.modal-open {
 		display: inline-block;
 	}
 
+	table {
+		box-shadow: $tableShadowMobile;
+		display: inline-block;
+		margin-right: 10px;
+
+		&.minx {
+			min-width: 700px;
+		}
+	}
+
 	#open-mobile-menu {
 		display: inline-block;
+
+		&:hover {
+			background: none;
+		}
 
 		img {
 			fill: red;
@@ -1030,6 +1087,10 @@ body.modal-open {
 			padding: 7px;
 			margin-top: 11px;
 			margin-left: 14px;
+
+			&:hover {
+				background: none;
+			}
 
 			svg {
 				width: 25px;

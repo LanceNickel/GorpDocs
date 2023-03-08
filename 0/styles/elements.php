@@ -45,7 +45,7 @@ require_once('../php/functions.php');
 
         <div class="spacer40"></div>
 
-        <h1>The Humble Elements Page</h1>
+        <h1>The Humble Elements Page <div class="box blue tag">A blue tag!</div></h1>
 
         <p>This page contains all the elements that can be used throughout this website. It is meant to be the one-stop place to update stylesheets. This is what a normal title and introduction paragraph will look like in articles. The primary heading will always be in Title Case and can be up to 4 words.</p>
 
@@ -92,7 +92,7 @@ require_once('../php/functions.php');
         <h3>Command formatting</h3>
 
         <pre>gorp create-server <em>server</em> [<em>world</em>]
-gorp stop <em>server</em> [fast|now]</pre>
+gorp stop <em>server</em> [-f|-n]</pre>
 
         <p>Where:</p>
 
@@ -101,6 +101,25 @@ gorp stop <em>server</em> [fast|now]</pre>
             <li>Elements wrapped in braces are optional.</li>
             <li>Elements separted by pipes are mutually exclusive.</li>
         </ul>
+
+        <pre id="c1" class="copy">this text is wrapped in pre. it has quick-copy, click it!</pre>
+        <code id="c2" class="copy">this text is wrapped in code. it, too, can be copied.</code>
+
+        <div class="spacer40"></div>
+
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th></th>
+                    <th></th>
+                </tr>
+
+                <tr>
+                    <td><pre id="c3" class="copy">this text is wrapped in pre, in a table.</pre></td>
+                    <td><code id="c4" class="copy">this text is wrapped in code, in a table.</code></td>
+                </tr>
+            </table>
+        </div>
 
 
 
@@ -131,10 +150,10 @@ gorp stop <em>server</em> [fast|now]</pre>
 
         <p>See comments in file for placement of modal markup.</p>
 
-        <a id="open-modal-1" class="button">Open Modal</a>
-        <a id="open-modal-2" class="button">Open Modal With Action</a>
-        <a id="open-modal-3" class="button">Open Modal With Overflow</a>
-        <a id="open-modal-4" class="button">Open Modal With Overflow and Actions</a>
+        <a class="button open-modal" name="m1">Open Modal</a>
+        <a class="button open-modal" name="m2">Open Modal With Action</a>
+        <a class="button open-modal" name="m3">Open Modal With Overflow</a>
+        <a class="button open-modal" name="m4">Open Modal With Overflow and Actions</a>
 
 
 
@@ -172,10 +191,20 @@ gorp stop <em>server</em> [fast|now]</pre>
         <div class="box red">This is a red box</div>
         <div class="box green">This is a green box.</div>
         <div class="box blue">This is a blue box.</div>
+        <div class="box grey">This is a grey box.</div>
+
+        <div class="box red subtle">This is a red subtle box.</div>
+        <div class="box green subtle">This is a green subtle box.</div>
+        <div class="box blue subtle">This is a blue subtle box.</div>
 
         <div class="box red inline">This is a red inline box.</div>
         <div class="box green inline">This is a green inline box.</div>
         <div class="box blue inline">This is a blue inline box.</div>
+        <div class="box grey inline">This is a grey inline box.</div>
+
+        <div class="box red subtle inline">This is a red subtle inline box.</div>
+        <div class="box green subtle inline">This is a green subtle inline box.</div>
+        <div class="box blue subtle inline">This is a blue subtle inline box.</div>
         
 
 
@@ -186,10 +215,10 @@ gorp stop <em>server</em> [fast|now]</pre>
     <!-- MODALS MUST BE PLACED AFTER THE CLOSING </main> TAG -->
     <!-- Modals are numbered (a possible 1-5). -->
 
-    <div id="modal-1" class="hidden">
+    <div id="m1" class="modal hidden">
         <div class="modal-bg">
             <div class="modal-window">
-                <a class="close-modal-button">
+                <a class="close-modal">
                     <img src="/0/img/close.svg" />
                 </a>
                 <div class="title">Overflow Modal Title</div>
@@ -200,10 +229,10 @@ gorp stop <em>server</em> [fast|now]</pre>
         </div>
     </div>
 
-    <div id="modal-2" class="hidden">
+    <div id="m2" class="modal hidden">
         <div class="modal-bg">
             <div class="modal-window">
-                <a class="close-modal-button">
+                <a class="close-modal">
                     <img src="/0/img/close.svg" />
                 </a>
                 <div class="title">Tiny Modal With Action</div>
@@ -217,10 +246,10 @@ gorp stop <em>server</em> [fast|now]</pre>
         </div>
     </div>
 
-    <div id="modal-3" class="hidden">
+    <div id="m3" class="modal hidden">
         <div class="modal-bg">
             <div class="modal-window">
-                <a class="close-modal-button">
+                <a class="close-modal">
                     <img src="/0/img/close.svg" />
                 </a>
                 <div class="title">Overflow Modal Title</div>
@@ -233,10 +262,10 @@ gorp stop <em>server</em> [fast|now]</pre>
         </div>
     </div>
 
-    <div id="modal-4" class="hidden">
+    <div id="m4" class="modal hidden">
         <div class="modal-bg">
             <div class="modal-window">
-                <a class="close-modal-button">
+                <a class="close-modal">
                     <img src="/0/img/close.svg" />
                 </a>
                 <div class="title">Overflow Modal With Actions Title</div>

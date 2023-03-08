@@ -44,7 +44,9 @@ require_once('../0/php/functions.php');
 
         <div class="spacer40"></div>
 
-        <h1>JAR Downloader <div class="box green tag">Updated in 1.3.0</div></h1>
+        <h1>JAR Downloader</h1>
+
+        <div class="box red"><strong>HEADS UP:</strong> A recent breaking change was made to the JAR downloader. Please note the new command syntax below and update any scripts you may have using Gorp.</div>
 
         <p>The JAR downloader can be used to download JARS from a URL, or a Paper JAR for a particular Minecraft version.</p>
 
