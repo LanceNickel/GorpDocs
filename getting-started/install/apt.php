@@ -80,10 +80,10 @@ OpenJDK 64-Bit Server VM (build 17.0.5+8-Ubuntu-2ubuntu122.04, mixed mode, shari
             <li>Go to your home directory: <code id="c8" class="copy">cd</code></li>
             <li>Run <code id="c9" class="copy">sudo apt update</code></li>
             <li>Run <code id="c10" class="copy">sudo apt install -y curl wget jq screen</code></li>
-            <li>Download Gorp: <code id="c11" class="copy">wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v<?= ver(); ?>.tar.gz</code></li>
-            <li>Unarchive Gorp & cd: <code id="c12" class="copy">tar -xf v<?= ver(); ?>.tar.gz && cd Gorp-<?= ver(); ?></code></li>
+            <li>Download Gorp: <code id="c11" class="copy">wget https://gorp.lanickel.com/latest.tar.gz</code></li>
+            <li>Unarchive Gorp & cd: <code id="c12" class="copy">tar -xf latest.tar.gz && cd ./latest/</code></li>
             <li>Run the installer: <code id="c13" class="copy">chmod +x install.sh && ./install.sh</code></li>
-            <li>Clean up: <code id="c14" class="copy">cd .. && rm v<?= ver(); ?>.tar.gz && rm -rf Gorp-<?= ver(); ?></code></li>
+            <li>Clean up: <code id="c14" class="copy">cd .. && rm latest.tar.gz && rm -rf ./latest/</code></li>
         </ol>
 
 

@@ -7,11 +7,11 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-03-08.2';
+    return '2023-04-25.1';
 }
 
 function ver() {
-    return '0.4.1';
+    return '0.4.2';
 }
 
 

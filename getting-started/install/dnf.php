@@ -79,10 +79,10 @@ OpenJDK 64-Bit Server VM Corretto-17.0.6.10.1 (build 17.0.6+10-LTS, mixed mode, 
             <li>Go to your home directory: <code id="c4" class="copy">cd</code></li>
             <li>Run <code id="c5" class="copy">sudo dnf check-update</code></li>
             <li>Run <code id="c6" class="copy">sudo dnf -y install curl wget jq screen</code></li>
-            <li>Download Gorp: <code id="c7" class="copy">wget https://github.com/LanceNickel/Gorp/archive/refs/tags/v<?= ver(); ?>.tar.gz</code></li>
-            <li>Unarchive Gorp & cd: <code id="c8" class="copy">tar -xf v<?= ver(); ?>.tar.gz && cd Gorp-<?= ver(); ?></code></li>
+            <li>Download Gorp: <code id="c7" class="copy">wget https://gorp.lanickel.com/latest.tar.gz</code></li>
+            <li>Unarchive Gorp & cd: <code id="c8" class="copy">tar -xf latest.tar.gz && cd ./latest/</code></li>
             <li>Run the installer: <code id="c9" class="copy">chmod +x install.sh && ./install.sh</code></li>
-            <li>Clean up: <code id="c10" class="copy">cd .. && rm v<?= ver(); ?>.tar.gz && rm -rf Gorp-<?= ver(); ?></code></li>
+            <li>Clean up: <code id="c10" class="copy">cd .. && rm latest.tar.gz && rm -rf ./latest/</code></li>
         </ol>
 
 
