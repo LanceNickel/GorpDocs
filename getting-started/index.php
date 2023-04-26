@@ -48,17 +48,10 @@ require_once('../0/php/functions.php');
 
         <p>The Getting Started topic contains some important first-time information. These are quick reads but will get you running and familiar with Gorp.</p>
 
-        <a class="no-underline" href="/getting-started/terminology/">
-            <div class="option-button">
-                <span class="subsection">Terminology</span>
-                <span class="description">Some key terms used throughout this documentation.</span>
-            </div>
-        </a>
-
         <a class="no-underline" href="/getting-started/install/">
             <div class="option-button">
                 <span class="subsection">Install</span>
-                <span class="description">Installing Java, dependencies, and cloning & downloading Gorp.</span>
+                <span class="description">Use the Gorp installer to install Gorp, or download the portable files.</span>
             </div>
         </a>
 
@@ -66,6 +59,13 @@ require_once('../0/php/functions.php');
             <div class="option-button">
                 <span class="subsection">Uninstall</span>
                 <span class="description">All Gorp-related files are removed, but Minecraft files are preserved.</span>
+            </div>
+        </a>
+        
+        <a class="no-underline" href="/getting-started/requirements/">
+            <div class="option-button">
+                <span class="subsection">Requirements</span>
+                <span class="description">Learn more about Gorp's system requirements and dependencies.</span>
             </div>
         </a>
 

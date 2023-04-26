@@ -49,7 +49,7 @@ require_once('0/php/functions.php');
 
         <p>I created this program to make managing my personal Minecraft servers easier. Before this, I was running each server in a screen and manually updating each. This program makes the task of updating multiple servers go from 5 minutes to 5 seconds!</p>
 
-        <p>Gorp's name courtesy of my good friend <a class="invisible" href="/0/styles/elements/">Connor Atkins</a>. He was not aware at the time (and neither was I) that Gorp was another name for trail mix. Yummy!</p>
+        <p>Gorp's name courtesy of my good friend <a class="invisible" href="/0/styles/elements/">Connor</a>. He was not aware at the time (and neither was I) that Gorp was slang for trail mix. Yummy!</p>
 
         <a href="https://github.com/LanceNickel/Gorp" target="_blank" class="button">Gorp on Github</a>
         <a href="https://github.com/LanceNickel/Gorp/issues" target="_blank" class="button">Raise an Issue</a>
@@ -60,31 +60,24 @@ require_once('0/php/functions.php');
         <h2>Requirements</h2>
 
         <ul>
-            <li>8GB of RAM (for decent Minecraft server performance)</li>
+            <li>8GB of RAM (for optimal Minecraft server performance)</li>
             <li>50GB available disk space (for world saves and local backups)</li>
-            <li>Debian (or Debian-based) or Fedora</li>
+            <li>Depends on: curl, wget, jq, screen</li>
         </ul>
 
 
 
-        <h2>Notices</h2>
-        
-        <p>You will install/update the following packages during installation.</p>
+        <h2>License & Warranty</h2>
 
-        <ul>
-            <li>curl</li>
-            <li>wget</li>
-            <li>jq</li>
-            <li>screen</li>
-        </ul>
+        <p>Gorp is licensed under the GNU GPL v3 license. The full license text is available here: <a href="/license/">License info</a>.</p>
+
+        <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
 
 
 
         <h2>Install Gorp</h2>
-        
-        <p>Installing Gorp is quick and easy!</p>
 
-        <a href="/getting-started/terminology/" class="button blue">Getting Started</a>
+        <a href="/getting-started/install/" class="button blue">Installation Instructions (it's one command!)</a>
 
 
     </main>

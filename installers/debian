@@ -1,0 +1,87 @@
+#!/bin/env bash
+
+# GORP INSTALLATION SCRIPT
+# For Debian, Ubuntu, etc.
+#
+# THIS SCRIPT WILL USE APT TO UPDATE/INSTALL THE FOLLOWING PACKAGES:
+# curl, wget, jq, screen
+#
+# THIS INSTALL SCRIPT WAS LAST EDITED:
+# 26 April 2023
+#
+# NEVER BLINDLY RUN SCRIPTS ON THE INTERNET!!!
+# Please inspect this script to ensure it does what it should.
+
+
+
+####
+
+
+
+echo "Welcome to Gorp!"
+
+
+
+#### FILE/FOLDER CONFLICT GUARD
+
+if [[ -d "./latest/" ]] || [[ -f "./latest.tar.gz" ]] || [[ -f "./release" ]]; then
+    echo "Conflicting files found. To make life easier, perform this installation in a temporary folder."
+    exit 1
+fi
+
+
+
+#### GET AND STORE RELEASE INFORMATION
+
+wget -q https://raw.githubusercontent.com/LanceNickel/Gorp/main/release
+# Text file containing checksums & version number of Gorp in latest.tar.gz. Used to cross-check download and ensure it's integrity.
+
+R_SHA256=$(grep 'SHA256=' release | cut -d '=' -f2)
+R_MD5=$(grep 'MD5=' release | cut -d '=' -f2)
+
+
+
+#### DOWNLOAD & VERIFY LATEST RELEASE
+
+wget -q https://gorp.lanickel.com/latest.tar.gz
+
+L_SHA256=$(sha256sum latest.tar.gz)
+L_MD5=$(md5sum latest.tar.gz)
+
+if [[ "$L_SHA256" != "$R_SHA256" ]] || [[ "$L_MD5" != "$R_MD5" ]]; then
+    echo "Gorp release download does not match expected checksum. Cleaning up and exiting."
+    rm release
+    rm latest.tar.gz
+    exit 1
+fi
+
+
+
+#### DOWNLOAD/INSTALL DEPENDENCIES WITH DNF
+
+echo -e "This installer will use sudo for the following commands:\n  - apt-get update\n  - apt-get -y install curl wget jq screen"
+
+sudo apt-get update
+sudo apt-get -y install curl wget jq screen
+
+
+
+#### EXTRACT ARCHIVE AND RUN INSTALLER
+
+tar -xf latest.tar.gz
+chmod +x ./latest/install.sh
+bash ./latest/install.sh
+
+
+
+#### CLEAN UP
+
+rm -rf ./latest/
+rm latest.tar.gz
+rm release
+
+
+
+#### WE'RE DONE!
+
+exit 0

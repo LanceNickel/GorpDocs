@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-04-25.1';
+    return '2023-04-26.1';
 }
 
 function ver() {
@@ -158,9 +158,9 @@ function subnav($topic='notpassed') {
 
     else if ($topic == 'getting-started') {
         echo <<<EOF
-        <a href="/getting-started/terminology/">Terminology</a>
-                    <a href="/getting-started/install/">Install</a>
+        <a href="/getting-started/install/">Install</a>
                     <a href="/getting-started/uninstall/">Uninstall</a>
+                    <a href="/getting-started/requirements/">Requirements</a>
 
         EOF;
     }
