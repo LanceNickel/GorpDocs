@@ -55,12 +55,12 @@ require_once('../0/php/functions.php');
         <p class="box red">These installers also automatically update/install Gorp's dependencies. <a href="/getting-started/requirements/">Learn more</a>.</p>
 
         <h3>Debian/Ubuntu</h3>
-        <p>Run <code id="c1" class="copy">wget https://gorp.lanickel.com/installers/debian | bash</code>
+        <p>Run <code id="c1" class="copy">curl -s https://gorp.lanickel.com/installers/debian | bash</code>
         <br />
         <a href="/installers/debian" target="_blank">inspect this source</a></p>
 
         <h3>Fedora/RHEL</h3>
-        <p>Run <code id="c2" class="copy">wget https://gorp.lanickel.com/installers/rhel | bash</code>
+        <p>Run <code id="c2" class="copy">curl -s https://gorp.lanickel.com/installers/rhel | bash</code>
         <br />
         <a href="/installers/rhel" target="_blank">inspect this source</a></p>
 
