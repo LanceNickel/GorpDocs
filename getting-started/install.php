@@ -52,7 +52,7 @@ require_once('../0/php/functions.php');
 
         <h2>Install Gorp</h2>
 
-        <p class="box red">These installers also automatically update/install Gorp's dependencies. <a href="/getting-started/requirements/">Learn more</a>.</p>
+        <p class="box red">These install scripts automatically update/install Gorp's dependencies. <a href="/getting-started/requirements/">Learn more</a>.</p>
 
         <h3>Debian/Ubuntu</h3>
         <p>Run <code id="c1" class="copy">curl -s https://gorp.lanickel.com/installers/debian | bash</code>

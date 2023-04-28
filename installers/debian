@@ -69,13 +69,15 @@ sudo apt-get -y install curl wget jq screen
 #### EXTRACT ARCHIVE AND RUN INSTALLER
 
 tar -xf latest.tar.gz
-chmod +x ./latest/install.sh
-bash ./latest/install.sh
+cd ./latest/
+chmod +x ./install.sh
+bash ./install.sh
 
 
 
 #### CLEAN UP
 
+cd ../
 rm -rf ./latest/
 rm latest.tar.gz
 rm release

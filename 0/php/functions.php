@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-04-26.2';
+    return '2023-04-28.1';
 }
 
 function ver() {
@@ -161,6 +161,7 @@ function subnav($topic='notpassed') {
         <a href="/getting-started/install/">Install</a>
                     <a href="/getting-started/uninstall/">Uninstall</a>
                     <a href="/getting-started/requirements/">Requirements</a>
+                    <a href="/getting-started/install-java/">Install Java</a>
 
         EOF;
     }

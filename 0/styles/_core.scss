@@ -121,6 +121,19 @@ mono {
 	text-shadow: $monoShadow;
 }
 
+.command-block {
+	margin-bottom: 20px;
+
+	code {
+		display: block;
+		padding: 5px 10px;
+
+		&:not(:last-child) {
+			margin-bottom: 8px;
+		}
+	}
+}
+
 
 
 // Containers, structure, bold text, additional styles, etc.

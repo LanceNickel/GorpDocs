@@ -34,7 +34,6 @@ fi
 #### GET AND STORE RELEASE INFORMATION
 
 wget -q https://raw.githubusercontent.com/LanceNickel/Gorp/main/release
-# Text file containing checksums & version number of Gorp in latest.tar.gz. Used to cross-check download and ensure it's integrity.
 
 R_SHA256=$(grep 'SHA256=' release | cut -d '=' -f2)
 R_MD5=$(grep 'MD5=' release | cut -d '=' -f2)
@@ -59,9 +58,7 @@ fi
 
 #### DOWNLOAD/INSTALL DEPENDENCIES WITH DNF
 
-echo -e "This installer will use sudo for the following commands:\n  - dnf check-update\n  - dnf -y install curl wget jq screen"
-
-sudo dnf check-update
+echo -e "This installer will use sudo for the following command:\n  - dnf -y install curl wget jq screen"
 sudo dnf -y install curl wget jq screen
 
 
@@ -69,13 +66,15 @@ sudo dnf -y install curl wget jq screen
 #### EXTRACT ARCHIVE AND RUN INSTALLER
 
 tar -xf latest.tar.gz
-chmod +x ./latest/install.sh
-bash ./latest/install.sh
+cd ./latest/
+chmod +x ./install.sh
+bash ./install.sh
 
 
 
 #### CLEAN UP
 
+cd ../
 rm -rf ./latest/
 rm latest.tar.gz
 rm release

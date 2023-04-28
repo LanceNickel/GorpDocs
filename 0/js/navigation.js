@@ -23,7 +23,9 @@ const gettingStarted = [
     "/getting-started/uninstall",
     "/getting-started/uninstall/",
     "/getting-started/requirements",
-    "/getting-started/requirements/"
+    "/getting-started/requirements/",
+    "/getting-started/install-java",
+    "/getting-started/install-java/"
 ];
 
 const manageServers = [

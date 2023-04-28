@@ -69,6 +69,8 @@ require_once('../0/php/functions.php');
             <li>screen</li>
         </ul>
 
+        <p>The Gorp install scripts will use your system's package manager to install or update these packages. If you don't want this to happen, download the portable installer and install that way.</p>
+
 
     </main>
 

@@ -96,6 +96,17 @@ mono {
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
 }
 
+.command-block {
+  margin-bottom: 20px;
+}
+.command-block code {
+  display: block;
+  padding: 5px 10px;
+}
+.command-block code:not(:last-child) {
+  margin-bottom: 8px;
+}
+
 .important {
   color: #c05979;
   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.75);
