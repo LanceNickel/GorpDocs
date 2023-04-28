@@ -22,7 +22,7 @@ require_once('0/php/functions.php');
     <header>
         <?= mobileMenu(); ?>
 
-        Gorp's License
+        Gorp's License (GPL-3)
 
         <a id="change-theme" class="button theme"></a>
     </header>
