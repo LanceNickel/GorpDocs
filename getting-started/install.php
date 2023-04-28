@@ -80,12 +80,12 @@ require_once('../0/php/functions.php');
 
             <tr>
                 <td>sha256</td>
-                <td><code id="c3" class="copy">e849d46b8e157dd696012fb818f317e5c5ec9dba1a4a0b3af6d2387502b366fb</code></td>
+                <td><code id="c3" class="copy">1acbb4e1bc3954e90bdef92112e67c6ecf6946b11ba63b8aa441fc01120f2d14</code></td>
             </tr>
 
             <tr>
                 <td>md5</td>
-                <td><code id="c4" class="copy">0ac146c3302ea55b3249859916e54de6</code></td>
+                <td><code id="c4" class="copy">bc880da6ecec6694d1f3a68e9712be54</code></td>
             </tr>
         </table>
 
