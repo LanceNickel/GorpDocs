@@ -65,7 +65,7 @@ require_once('../0/php/functions.php');
         <a href="/installers/rhel" target="_blank">inspect this source</a></p>
 
         <h3>openSUSE</h3>
-        <p>Run <code id="c2" class="copy">curl -s https://gorp.lanickel.com/installers/opensuse | bash</code>
+        <p>Run <code id="c3" class="copy">curl -s https://gorp.lanickel.com/installers/opensuse | bash</code>
         <br />
         <a href="/installers/opensuse" target="_blank">inspect this source</a></p>
 
@@ -85,12 +85,12 @@ require_once('../0/php/functions.php');
 
             <tr>
                 <td>sha256</td>
-                <td><code id="c3" class="copy">1acbb4e1bc3954e90bdef92112e67c6ecf6946b11ba63b8aa441fc01120f2d14</code></td>
+                <td><code id="c4" class="copy">1acbb4e1bc3954e90bdef92112e67c6ecf6946b11ba63b8aa441fc01120f2d14</code></td>
             </tr>
 
             <tr>
                 <td>md5</td>
-                <td><code id="c4" class="copy">bc880da6ecec6694d1f3a68e9712be54</code></td>
+                <td><code id="c5" class="copy">bc880da6ecec6694d1f3a68e9712be54</code></td>
             </tr>
         </table>
 
