@@ -46,8 +46,6 @@ require_once('../0/php/functions.php');
 
         <h1>Gorp Requirements</h1>
 
-        <h2>Requirements</h2>
-
         <ul>
             <li>8GB of RAM (for optimal Minecraft server performance)</li>
             <li>50GB available disk space (for world saves and local backups)</li>
@@ -56,7 +54,7 @@ require_once('../0/php/functions.php');
 
         <h3>A note about distros</h3>
 
-        <p>Each release of Gorp is tested on Fedora 38, Ubuntu Server 22.04, and openSUSE Leap 15.4. If it supports these distros, it will likely work on most others.</p>
+        <p>Each release of Gorp is tested on openSUSE Tumbleweed and Ubuntu Server 22.04. If you encounter an issue with a specific distro, and you are sure it is a distro-specific issue, please let me know.</p>
 
 
 
