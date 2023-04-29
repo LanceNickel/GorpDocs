@@ -64,6 +64,11 @@ require_once('../0/php/functions.php');
         <br />
         <a href="/installers/rhel" target="_blank">inspect this source</a></p>
 
+        <h3>openSUSE</h3>
+        <p>Run <code id="c2" class="copy">curl -s https://gorp.lanickel.com/installers/opensuse | bash</code>
+        <br />
+        <a href="/installers/opensuse" target="_blank">inspect this source</a></p>
+
         <p><em>This site is monitored by an integrity program and will immediately be taken offline if it is tampered with. However, you should never blindly run a script from the internet. Use the inspect links to ensure the scripts are doing what they should.</em></p>
 
 
