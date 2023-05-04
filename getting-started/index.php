@@ -46,8 +46,6 @@ require_once('../0/php/functions.php');
 
         <h1>Getting Started</h1>
 
-        <p>The Getting Started topic contains some important first-time information. These are quick reads but will get you running and familiar with Gorp.</p>
-
         <a class="no-underline" href="/getting-started/install/">
             <div class="option-button">
                 <span class="subsection">Install</span>

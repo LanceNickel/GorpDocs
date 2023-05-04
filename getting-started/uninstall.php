@@ -53,9 +53,9 @@ require_once('../0/php/functions.php');
         <p>To remove Gorp, delete the Gorp files:</p>
 
         <ol>
-            <li><code>sudo rm /usr/local/bin/gorp</code></li>
-            <li><code>sudo rm -rf /usr/local/bin/gorpmc/</code></li>
-            <li><code>sudo rm /usr/local/etc/gorp.conf</code></li>
+            <li><code id="c1" class="copy">sudo rm /usr/local/bin/gorp</code></li>
+            <li><code id="c2" class="copy">sudo rm -rf /usr/local/bin/gorpmc/</code></li>
+            <li><code id="c3" class="copy">sudo rm /usr/local/etc/gorp.conf</code></li>
         </ol>
 
 

@@ -48,7 +48,7 @@ require_once('0/php/functions.php');
 
         <p>By installing one small jumble of shell scripts, day-to-day tasks in a Minecraft server become easy. Gorp creates a simple suite of command line tools for Linux Minecraft server hosts. It automates daily tasks such as server state management, backups, updates, and other features. It is built to handle multiple server instances natively, allowing managing two or more instances even simpler.</p>
 
-        <p>Gorp was built with one purpose: Simplicity. Gorp is not a fancy user interface and it does not have a million options. Gorp takes seconds to download, install, and update. It has a very light footprint, and when uninstalled, leaves no traces. Hell, it's literally just a bunch of shell scripts to automate daily tasks.</p>
+        <p>Gorp was built with one purpose: Simplicity. Gorp is not a fancy user interface and it does not have a million options. Gorp takes seconds to download, install, and update. It has a very light footprint, and when uninstalled, leaves no traces. It is quite literally just a bunch of shell scripts to automate daily tasks.</p>
 
 
 
@@ -66,18 +66,6 @@ require_once('0/php/functions.php');
 
 
 
-        <h2>How Gorp Works</h2>
-
-        <p>Gorp, as just a bunch of shell scripts, is very simple in its functionality. However, there are some hierarchical ways that Gorp works. I created a "launcher, action, worker" model, where:</p>
-
-        <ol>
-            <li>The user calls the launcher using the <code>gorp</code> command.</li>
-            <li>The launcher calls the appropriate action script based on the user's action (such as <mono>stop</mono> or <mono>backup-world</mono>).</li>
-            <li>The action script then does a little bit of setup work, and then coordinates the execution of one or more worker scripts that perform the necessary tasks.</li>
-        </ol>
-
-
-
         <h2>Gorp Files Location</h2>
 
         <p>Gorp installs to or creates these directories:</p>
@@ -91,17 +79,12 @@ require_once('0/php/functions.php');
 
                 <tr>
                     <td>/usr/local/bin/</td>
-                    <td>The main Gorp launcher script.</td>
+                    <td>The Gorp scripts themselves.</td>
                 </tr>
 
                 <tr>
                     <td>/usr/local/etc/</td>
                     <td>The Gorp global <a href="/configuration-file/">configuration file</a>.</td>
-                </tr>
-
-                <tr>
-                    <td>/usr/local/bin/gorpmc/</td>
-                    <td>Action and worker scripts, along with other supporting files.</td>
                 </tr>
 
                 <tr>
