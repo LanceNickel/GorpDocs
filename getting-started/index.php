@@ -69,6 +69,13 @@ require_once('../0/php/functions.php');
             </div>
         </a>
 
+        <a class="no-underline" href="/getting-started/install-java/">
+            <div class="option-button">
+                <span class="subsection">Install Java</span>
+                <span class="description">Instructions for installing the JDK for your Distro.</span>
+            </div>
+        </a>
+
 
 
         <h2>Related Reading</h2>
