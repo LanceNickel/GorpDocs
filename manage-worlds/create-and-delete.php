@@ -12,7 +12,7 @@ require_once('../0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Create, Delete, & Reset Worlds - Gorp Docs</title>
+    <title>Create, Delete, Rename, & Reset Worlds - Gorp Docs</title>
 </head>
 
 
@@ -44,7 +44,7 @@ require_once('../0/php/functions.php');
 
         <div class="spacer40"></div>
 
-        <h1>Create, Delete, & Reset Worlds</h1>
+        <h1>Create, Delete, Rename, & Reset Worlds</h1>
 
         <p>Each server instance can have many worlds. Creating and deleting worlds can be done per-instance with ease.</p>
 
@@ -71,6 +71,16 @@ require_once('../0/php/functions.php');
         <p>If the world name is not specified, Gorp will show a list of options and ask for you to enter a world name.</p>
 
         <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the world. Gorp will force you to confirm you are deleting the intended world.</p>
+
+
+
+        <h2>Rename a World</h2>
+
+        <pre>gorp rename-world <em>server</em> [<em>current name</em>] [<em>new name</em>]</pre>
+
+        <p>This will rename the world. Any time you need to reference this world, use the new name. The folder names are changed as well.</p>
+
+        <p>If the world is the "active" world, meaning it is set in server.properties, server.properties will also be automatically updated.</p>
 
 
 

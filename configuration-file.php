@@ -61,7 +61,7 @@ require_once('0/php/functions.php');
                     <td>GAMEVER</td>
                     <td>Minecraft game version. Used by the JAR update utility when looking for the latest JAR build. This will not apply to servers using a <a href="/manage-servers/server-settings/">custom JAR file</a>.</td>
                     <td><a name="m1" class=" open-modal button blue nomargin">See list</a></td>
-                    <td><mono>1.19.3</mono></td>
+                    <td><mono>latest</mono></td>
                 </tr>
 
                 <tr>
@@ -109,6 +109,7 @@ require_once('0/php/functions.php');
                 <div class="title">Valid GAMEVER Values</div>
                 <div class="content bulleted">
                     <ul>
+                        <li>latest</li>
                         <li>1.8.8</li>
                         <li>1.9.4</li>
                         <li>1.10.2</li>
@@ -142,6 +143,7 @@ require_once('0/php/functions.php');
                         <li>1.19.1</li>
                         <li>1.19.2</li>
                         <li>1.19.3</li>
+                        <li>1.19.4</li>
                     </ul>
                 </div>
             </div>

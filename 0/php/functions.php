@@ -7,11 +7,11 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-05-04.1';
+    return '2023-05-20.1';
 }
 
 function ver() {
-    return '0.5.0';
+    return '0.5.1';
 }
 
 
@@ -179,7 +179,7 @@ function subnav($topic='notpassed') {
 
     else if ($topic == 'manage-worlds') {
         echo <<<EOF
-        <a href="/manage-worlds/create-and-delete/">Create, Delete, & Reset</a>
+        <a href="/manage-worlds/create-and-delete/">Create, Delete, Rename, & Reset</a>
                 <a href="/manage-worlds/switch-worlds/">Switch Worlds</a>
                 <a href="/manage-worlds/backup/">Backup</a>
                 <a href="/manage-worlds/archive/">Archive</a>

@@ -56,7 +56,9 @@ require_once('../0/php/functions.php');
 
         <pre>gorp update-jar</pre>
 
-        <p>This will download the latest JAR file to <mono>~/gorpmc/jars/</mono> and update <mono>~/gorpmc/jars/latest</mono> with the downloaded JAR's information. This update will take effect the next time a server instance is started or restarted.</p>
+        <p>This will download the latest JAR file to the JAR folder and update the link server instances will use to start the JAR.</p>
+
+        <p>If the value of <mono>GAMEVER</mono> in the <a href="/configuration-file/">configuration file</a> is <mono>latest</mono> (default), Gorp will check for the latest Paper release and download it.</p>
 
 
     </main>

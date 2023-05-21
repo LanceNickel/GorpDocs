@@ -52,8 +52,8 @@ require_once('../0/php/functions.php');
 
         <a class="no-underline" href="/manage-worlds/create-and-delete/">
             <div class="option-button">
-                <span class="subsection">Create, Delete, & Reset</span>
-                <span class="description">Create, delete, and regenerate worlds in a server instance.</span>
+                <span class="subsection">Create, Delete, Rename, & Reset</span>
+                <span class="description">Create, delete, rename, and regenerate worlds in a server instance.</span>
             </div>
         </a>
 

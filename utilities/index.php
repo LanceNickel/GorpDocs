@@ -69,6 +69,13 @@ require_once('../0/php/functions.php');
             </div>
         </a>
 
+        <a class="no-underline" href="/utilities/server-status/">
+            <div class="option-button">
+                <span class="subsection">Server Status</span>
+                <span class="description">Get the status of a server in JSON format. Great for external scripts.</span>
+            </div>
+        </a>
+
 
 
         <h2>Related Reading</h2>
