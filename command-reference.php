@@ -56,7 +56,7 @@ require_once('0/php/functions.php');
                 </tr>
                 <tr>
                     <td><code>gorp start <em>server</em> [-y]</code></td>
-                    <td>Starts a servers.</td>
+                    <td>Starts a server.</td>
                 </tr>
                 <tr>
                     <td><code>gorp stop <em>server</em> [fast|now]</code></td>
@@ -102,6 +102,10 @@ require_once('0/php/functions.php');
                 <tr>
                     <td><code>gorp delete-world <em>server</em> [<em>world</em>]</code></td>
                     <td>Deletes a world named <em><mono>world</mono></em> in a server instance.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp rename-world <em>server</em> <em>world</em> <em>newname</em></code></td>
+                    <td>Renames a world named <em><mono>world</mono></em> in a server instance.</td>
                 </tr>
                 <tr>
                     <td><code>gorp reset-world <em>server</em></code></td>
