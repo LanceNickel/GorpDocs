@@ -26,10 +26,36 @@ h1, h2, h3, h4, h5, h6, a, p {
   margin-top: 0;
 }
 
+h1 {
+  font-size: 38px;
+}
+
+h2 {
+  font-size: 30px;
+  margin-top: 75px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  padding-bottom: 7px;
+}
 h2 span {
   font-size: 16px;
   font-weight: 400;
   margin-left: 10px;
+}
+
+h3 {
+  font-size: 22px;
+}
+
+h4 {
+  font-size: 16px;
+}
+
+h5 {
+  font-size: 16px;
+}
+
+h6 {
+  font-size: 16px;
 }
 
 a {
@@ -304,35 +330,6 @@ main {
   min-height: calc(100vh - 75px);
   margin-top: 60px;
   padding: 30px 40px 100px 40px;
-}
-main h1 {
-  font-size: 34px;
-}
-main h2 {
-  font-size: 24px;
-}
-main h3 {
-  font-size: 22px;
-}
-main h4 {
-  font-size: 18px;
-}
-main h5 {
-  font-size: 16px;
-}
-main h6 {
-  font-size: 16px;
-}
-main p {
-  font-size: 16px;
-}
-main.article h2 {
-  padding-top: 35px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-}
-main.article h3, main.article h4 {
-  margin-top: 25px;
 }
 
 subnav {

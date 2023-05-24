@@ -76,7 +76,9 @@ require_once('../0/php/functions.php');
 
         <h2>Rename a World</h2>
 
-        <pre>gorp rename-world <em>server</em> [<em>current name</em>] [<em>new name</em>]</pre>
+        <div class="pre-container">
+            <pre>gorp rename-world <em>server</em> [<em>current name</em>] [<em>new name</em>]</pre>
+        </div>
 
         <p>This will rename the world. Any time you need to reference this world, use the new name. The folder names are changed as well.</p>
 

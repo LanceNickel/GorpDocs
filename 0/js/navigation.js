@@ -79,6 +79,11 @@ const configurationFile = [
     "/configuration-file/"
 ];
 
+const changelog = [
+    "/changelog",
+    "/changelog/"
+]
+
 
 
 
@@ -129,6 +134,12 @@ if (commandReference.includes(path)) {
 if (configurationFile.includes(path)) {
     $('aside a.nav-item[topic="configuration-file"]').addClass('active');
     $('#mobile-menu a.nav-item[topic="configuration-file"]').addClass('active');
+}
+
+// CHANGE LOG
+if (changelog.includes(path)) {
+    $('aside a.nav-item[topic="changelog"]').addClass('active');
+    $('#mobile-menu a.nav-item[topic="changelog"]').addClass('active');
 }
 
 

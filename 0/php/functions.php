@@ -7,11 +7,11 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-05-20.1';
+    return '2023-05-24.1';
 }
 
 function ver() {
-    return '0.5.1';
+    return '0.5.2';
 }
 
 
@@ -96,6 +96,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
                 <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
+                <a class="nav-item" topic="changelog" href="/changelog/">Change Log</a>
 
                 <span id="sidebar-version">For Gorp $ver<br>$rev</span>
 
@@ -113,6 +114,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
                 <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
+                <a class="nav-item" topic="changelog" href="/changelog/">Change Log</a>
 
         EOF;
     }
@@ -247,6 +249,7 @@ function mobileMenu() {
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
                 <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
+                <a class="nav-item" topic="changelog" href="/changelog/">Change Log</a>
 
                 <span id="mobile-version">For Gorp $ver<br>$rev</span>
             </div>

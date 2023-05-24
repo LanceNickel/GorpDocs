@@ -78,21 +78,23 @@ require_once('../0/php/functions.php');
 
         <a class="button blue" href="/latest.tar.gz">Download Gorp (tar-gz)</a>
 
-        <table>
-            <tr>
-                <th colspan="2">Verification</th>
-            </tr>
+        <div class="table-container">
+            <table>
+                <tr>
+                    <th colspan="2">Verification</th>
+                </tr>
 
-            <tr>
-                <td>sha256</td>
-                <td><code id="c4" class="copy">5607a21eec3ef959538b0545124547c583210f49d9b5598d69bcbaee8fddeba3</code></td>
-            </tr>
+                <tr>
+                    <td>sha256</td>
+                    <td><code id="c4" class="copy">fd158e916a959c27905e1c87bf38242cf1af6f72ba7d540ad397317b05727f0a</code></td>
+                </tr>
 
-            <tr>
-                <td>md5</td>
-                <td><code id="c5" class="copy">8a9bc1817e1f67619e08f2bc158613ae</code></td>
-            </tr>
-        </table>
+                <tr>
+                    <td>md5</td>
+                    <td><code id="c5" class="copy">08b5e116ec791cc5f03c6dfdf7954823</code></td>
+                </tr>
+            </table>
+        </div>
 
 
     </main>

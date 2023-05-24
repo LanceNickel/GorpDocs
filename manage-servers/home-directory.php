@@ -88,14 +88,6 @@ require_once('../0/php/functions.php');
         <pre>gorp move-home <em>path</em></pre>
 
 
-
-        <h2>What is BOBSBURGERS?</h2>
-
-        <p>The Gorp configuration file's placeholder values for the home directory are entered as "BOBSBURGERS". This is used as a search key during installation, and replaced with the home directory of the user who is installing Gorp. If it was not replaced during installation, try checking your home directory for a folder named "gorpmc". If that folder is there, update the Gorp configuration file to your home directory.</p>
-
-        <p>If you need help, please reach out: <a href="mailto:gorp@lanickel.com">gorp@lanickel.com</a>.</p>
-
-
     </main>
 
 </html>

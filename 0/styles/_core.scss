@@ -36,12 +36,37 @@ h1, h2, h3, h4, h5, h6, a, p {
 	margin-top: 0;
 }
 
+h1 {
+	font-size: 38px;
+}
+
 h2 {
+	font-size: 30px;
+	margin-top: 75px;
+	border-bottom: 1px solid $h2Underline;
+	padding-bottom: 7px;
+
 	span {
 		font-size: 16px;
 		font-weight: 400;
 		margin-left: 10px;
 	}
+}
+
+h3 {
+	font-size: 22px;
+}
+
+h4 {
+	font-size: 16px;
+}
+
+h5 {
+	font-size: 16px;
+}
+
+h6 {
+	font-size: 16px;
 }
 
 a {
@@ -421,46 +446,6 @@ main {
 	min-height: calc(100vh - 75px);
 	margin-top: 60px;
     padding: 30px 40px 100px 40px;
-
-    h1 {
-        font-size: 34px;
-    }
-    
-    h2 {
-        font-size: 24px;
-    }
-    
-    h3 {
-        font-size: 22px;
-    }
-
-    h4 {
-        font-size: 18px;
-    }
-
-    h5 {
-        font-size: 16px;
-    }
-
-    h6 {
-        font-size: 16px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    &.article {
-        h2 {
-            padding-top: 35px;
-            padding-bottom: 5px;
-            border-bottom: 1px solid $h2Underline;
-        }
-
-        h3, h4 {
-            margin-top: 25px;
-        }
-    }
 }
 
 
