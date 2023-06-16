@@ -46,8 +46,6 @@ require_once('../0/php/functions.php');
 
         <h1>JAR Downloader</h1>
 
-        <div class="box red"><strong>HEADS UP:</strong> A recent breaking change was made to the JAR downloader. Please note the new command syntax below and update any scripts you may have using Gorp.</div>
-
         <p>The JAR downloader can be used to download JARS from a URL, or a Paper JAR for a particular Minecraft version.</p>
 
         <p>This will NOT set the JAR for any server instance, though. This must be done by configuring an <a href="/manage-servers/server-settings/">instance's settings</a>.</p>
@@ -112,12 +110,12 @@ require_once('../0/php/functions.php');
                     <li>1.14.3</li>
                     <li>1.14.4</li>
                     <li>1.15</li>
+                    <li>1.15.1</li>
                 </ul>
             </div>
 
             <div class="col">
                 <ul>
-                    <li>1.15.1</li>
                     <li>1.15.2</li>
                     <li>1.16.1</li>
                     <li>1.16.2</li>
@@ -133,6 +131,9 @@ require_once('../0/php/functions.php');
                     <li>1.19.1</li>
                     <li>1.19.2</li>
                     <li>1.19.3</li>
+                    <li>1.19.4</li>
+                    <li>1.20</li>
+                    <li>1.20.1</li>
                 </ul>
             </div>
         </div>

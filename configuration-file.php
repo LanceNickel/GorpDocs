@@ -51,13 +51,13 @@ require_once('0/php/functions.php');
                 <tr>
                     <th>Option</th>
                     <th>Description</th>
-                    <th>Expected Value</th>
+                    <th width="150px">Expected Value</th>
                     <th>Default Value</th>
                 </tr>
 
                 <tr>
                     <td>GAMEVER</td>
-                    <td>Minecraft game version. Used by the JAR update utility when looking for the latest JAR build. This will not apply to servers using a <a href="/manage-servers/server-settings/">custom JAR file</a>.</td>
+                    <td>Minecraft game version. Used by the JAR update utility when looking for the latest JAR build. This will not apply to servers using a <a href="/manage-servers/server-settings/">custom JAR file</a>. Using <mono>latest</mono> will always use the latest stable build, including major game version updates.</td>
                     <td><a name="m1" class=" open-modal button blue nomargin">See list</a></td>
                     <td><mono>latest</mono></td>
                 </tr>
@@ -149,6 +149,8 @@ require_once('0/php/functions.php');
                         <li>1.19.2</li>
                         <li>1.19.3</li>
                         <li>1.19.4</li>
+                        <li>1.20</li>
+                        <li>1.20.1</li>
                     </ul>
                 </div>
             </div>

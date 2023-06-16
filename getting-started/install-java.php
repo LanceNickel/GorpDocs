@@ -12,7 +12,7 @@ require_once('../0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Download & Install - Gorp Docs</title>
+    <title>Install Java - Gorp Docs</title>
 </head>
 
 

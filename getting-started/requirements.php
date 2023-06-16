@@ -12,7 +12,7 @@ require_once('../0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
 
-    <title>Install on Fedora - Gorp Docs</title>
+    <title>Requirements - Gorp Docs</title>
 </head>
 
 
@@ -54,7 +54,7 @@ require_once('../0/php/functions.php');
 
         <h3>A note about distros</h3>
 
-        <p>Each release of Gorp is tested on openSUSE Tumbleweed and Ubuntu Server 22.04. If you encounter an issue with a specific distro, and you are sure it is a distro-specific issue, please let me know.</p>
+        <p>Each release of Gorp is tested on openSUSE Tumbleweed and Debian 12. If you encounter an issue with a specific distro, and you are sure it is a distro-specific issue, please let me know.</p>
 
 
 
