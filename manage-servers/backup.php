@@ -54,7 +54,9 @@ require_once('../0/php/functions.php');
 
         <h2>Backing Up</h2>
 
-        <pre>gorp backup-server <em>server</em></pre>
+        <div class="pre-container">
+            <pre>gorp backup-server <em>server</em></pre>
+        </div>
 
         <p>This will backup the server instance named <em><mono>server</mono></em>.</p>
 
@@ -62,7 +64,9 @@ require_once('../0/php/functions.php');
 
         <h2>Restoring</h2>
 
-        <pre>gorp restore-server <em>server</em></pre>
+        <div class="pre-container">
+            <pre>gorp restore-server <em>server</em></pre>
+        </div>
 
         <p>This will ask you to choose from the set of dates and times the server was backed up. Once run, the restoration utility will backup the server in its current state and restore the selected backup file.</p>
 

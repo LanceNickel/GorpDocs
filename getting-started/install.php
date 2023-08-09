@@ -55,20 +55,41 @@ require_once('../0/php/functions.php');
         <p class="box red">These install scripts automatically update/install Gorp's dependencies. <a href="/getting-started/requirements/">Learn more</a>.</p>
 
         <h3>Debian/Ubuntu</h3>
-        <p>Run <code id="c1" class="copy">curl -s https://gorp.lanickel.com/installers/debian | bash</code>
-        <br />
-        <a href="/installers/debian" target="_blank">inspect this source</a></p>
+        
+        <div class="pre-container">
+            <code id="c1" class="copy">curl -s https://gorp.lanickel.com/installers/debian | bash</code>
+        </div>
+            
+        <a href="/installers/debian" target="_blank">inspect this source</a>
 
+        <div class="spacer40"></div>
+
+        
+        
         <h3>Fedora/RHEL</h3>
-        <p>Run <code id="c2" class="copy">curl -s https://gorp.lanickel.com/installers/rhel | bash</code>
-        <br />
+        
+        <div class="pre-container">
+            <code id="c2" class="copy">curl -s https://gorp.lanickel.com/installers/rhel | bash</code>
+        </div>
+        
         <a href="/installers/rhel" target="_blank">inspect this source</a></p>
 
+        <div class="spacer40"></div>
+
+        
+        
         <h3>openSUSE</h3>
-        <p>Run <code id="c3" class="copy">curl -s https://gorp.lanickel.com/installers/opensuse | bash</code>
-        <br />
+        
+        <div class="pre-container">
+            <code id="c3" class="copy">curl -s https://gorp.lanickel.com/installers/opensuse | bash</code>
+        </div>
+        
         <a href="/installers/opensuse" target="_blank">inspect this source</a></p>
 
+        <div class="spacer40"></div>
+
+        
+        
         <p><em>This site is monitored by an integrity program and will immediately be taken offline if it is tampered with. However, you should never blindly run a script from the internet. Use the inspect links to ensure the scripts are doing what they should.</em></p>
 
 
@@ -86,12 +107,12 @@ require_once('../0/php/functions.php');
 
                 <tr>
                     <td>sha256</td>
-                    <td><code id="c4" class="copy">fd158e916a959c27905e1c87bf38242cf1af6f72ba7d540ad397317b05727f0a</code></td>
+                    <td><code id="c4" class="copy">e1bc08a951fbaa880c1a0dd4ab01eb3f407fbb8566d0c53608f8a7fb95c4cfcc</code></td>
                 </tr>
 
                 <tr>
                     <td>md5</td>
-                    <td><code id="c5" class="copy">08b5e116ec791cc5f03c6dfdf7954823</code></td>
+                    <td><code id="c5" class="copy">a61fa739445735fca10d22f8b3e2bc05</code></td>
                 </tr>
             </table>
         </div>

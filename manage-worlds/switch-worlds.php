@@ -52,7 +52,9 @@ require_once('../0/php/functions.php');
 
         <h2>Switch a Server's Active World</h2>
 
-        <pre>gorp switch-world <em>server</em> [<em>world</em>]</pre>
+        <div class="pre-container">
+            <pre>gorp switch-world <em>server</em> [<em>world</em>]</pre>
+        </div>
 
         <p>This will switch the active world in <em><mono>server</mono></em> to the world specified, in this case: <em><mono>world</mono></em>.</p>
 

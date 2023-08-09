@@ -149,6 +149,10 @@ require_once('0/php/functions.php');
                     <td>Downloads a Paper JAR for either the specified game version or from the specified URL. <a href="/utilities/jar-download/">Learn more</a>.</td>
                 </tr>
                 <tr>
+                    <td><code>gorp prop <em>server</em> <em>key</em> <em>value</em></code></td>
+                    <td>Changes the server.properties file for the specified server by key/value pair. <a href="/manage-servers/server-settings/">Learn more</a>.</td>
+                </tr>
+                <tr>
                     <td><code>gorp upgrade</code></td>
                     <td>Downloads and installs the latest version of Gorp.</td>
                 </tr>

@@ -93,6 +93,14 @@ a {
 			background: none;
 		}
 	}
+
+	code {
+		border-bottom: 2px solid $linkColor;
+
+		&:hover {
+			background: $linkColor;
+		}
+	}
 }
 
 ul, ol {
@@ -110,6 +118,7 @@ pre, code {
 	font-family: $fontMono;
 	font-size: 14px;
 	background: $codeBG;
+	border: 1px solid $codeBorder;
 	border-radius: 6px;
 	color: $bodyColor;
 	margin: 0;
@@ -707,11 +716,11 @@ subnav {
 
 	&.subtle {
 		background: $boxSubtleBG;
-		color: $boxNeutralColor;
+		color: $headerColor;
 	}
 
 	pre,code {
-		background: rgba(0,0,0,0.25)!important;
+		background: rgba(0,0,0,0.15)!important;
 	}
 
 	a {

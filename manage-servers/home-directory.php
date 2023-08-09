@@ -85,7 +85,9 @@ require_once('../0/php/functions.php');
 
         <h2>Changing the Home Directory</h2>
 
-        <pre>gorp move-home <em>path</em></pre>
+        <div class="pre-container">
+            <pre>gorp move-home <em>path</em></pre>
+        </div>
 
 
     </main>

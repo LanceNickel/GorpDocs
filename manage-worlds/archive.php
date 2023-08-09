@@ -52,7 +52,9 @@ require_once('../0/php/functions.php');
 
         <h2>Archive a World</h2>
 
-        <pre>gorp archive-world <em>server</em> [<em>world</em>]</pre>
+        <div class="pre-container">
+            <pre>gorp archive-world <em>server</em> [<em>world</em>]</pre>
+        </div>
 
         <p>This will archive the world files for <em><mono>world</mono></em> in the server instance named <em><mono>server</mono></em>.</p>
 

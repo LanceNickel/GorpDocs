@@ -46,7 +46,9 @@ require_once('../0/php/functions.php');
 
         <h1>Get Server Status</h1>
 
-        <pre>gorp -s <em>server</em></pre>
+        <div class="pre-container">
+            <pre>gorp -s <em>server</em></pre>
+        </div>
 
         <p>Get a server instance's current status and other information in JSON format.</p>
 
@@ -82,8 +84,18 @@ require_once('../0/php/functions.php');
                 </tr>
 
                 <tr>
+                    <td>jar_file_overridden</td>
+                    <td>[boolean] Whether the JAR file has been overridden in the server's run.sh file</td>
+                </tr>
+
+                <tr>
                     <td>ram</td>
                     <td>[String] Amount of RAM allocated to server</td>
+                </tr>
+
+                <tr>
+                    <td>ram_overridden</td>
+                    <td>[boolean] Whether the allocated RAM has been overridden in the server's run.sh file</td>
                 </tr>
 
                 <tr>
@@ -176,28 +188,30 @@ require_once('../0/php/functions.php');
   "status": [
     {
       "running": true,
-      "version": "1.19.3",
-      "jar_file": "/home/redifer/gorpmc/jars/paper-1.19.3-431.jar",
-      "ram": "10G",
-      "path": "/home/redifer/gorpmc/servers/public"
+      "version": "1.20.1",
+      "jar_file": "/home/redifer/gorpmc/jars/paper-1.20.1-111.jar",
+      "jar_file_overridden": false,
+      "ram": "8G",
+      "ram_overridden": true,
+      "path": "/home/redifer/gorpmc/servers/yocumtowne"
     }
   ],
   "world": [
     {
-      "active": "world-potato",
-      "total_size": "530M",
-      "o_size": "484M",
-      "n_size": "38M",
+      "active": "world-cityscape",
+      "total_size": "23M",
+      "o_size": "6.4M",
+      "n_size": "7.8M",
       "e_size": "8.1M"
     }
   ],
   "properties": [
     {
-      "whitelist": true,
+      "whitelist": false,
       "gamemode": "survival",
-      "difficulty": "normal",
+      "difficulty": "hard",
       "hardcore": false,
-      "server_port": 25570
+      "server_port": 25565
     }
   ]
 }</pre>

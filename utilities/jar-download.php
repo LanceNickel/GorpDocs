@@ -54,7 +54,9 @@ require_once('../0/php/functions.php');
 
         <h2>Download by URL</h2>
 
-        <pre>gorp get-jar -u <em>url</em></pre>
+        <div class="pre-container">
+            <pre>gorp get-jar -u <em>url</em></pre>
+        </div>
 
         <p>This will download the JAR file in the link and will put it in <mono>~/gorpmc/jars/</mono>. <strong class="important">Please make sure you trust the source of the JAR file!</strong></p>
 
@@ -80,7 +82,9 @@ require_once('../0/php/functions.php');
         
         <h2>Download by Version</h2>
 
-        <pre>gorp get-jar -v <em>version</em></pre>
+        <div class="pre-container">
+            <pre>gorp get-jar -v <em>version</em></pre>
+        </div>
 
         <p>This will download the latest stable Paper JAR file for the game version to <mono>~/gorpmc/jars/</mono>.</p>
 

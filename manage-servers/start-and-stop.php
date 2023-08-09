@@ -52,7 +52,9 @@ require_once('../0/php/functions.php');
 
         <h2>Start a Server</h2>
         
-        <pre>gorp start <em>server</em> [-y]</pre>
+        <div class="pre-container">
+            <pre>gorp start <em>server</em> [-y]</pre>
+        </div>
 
         <p>This starts an instance in the background, via the Screen utility. You can access the server instance at any time by using <code>screen -r <em>server</em></code>.</p>
 
@@ -62,7 +64,9 @@ require_once('../0/php/functions.php');
 
         <h2>Stop a Server</h2>
 
-        <pre>gorp stop <em>server</em> [fast|now]</pre>
+        <div class="pre-container">
+            <pre>gorp stop <em>server</em> [fast|now]</pre>
+        </div>
 
         <p>This will take a backup of the world files, send a warning message and wait 30 seconds, then shut down the server. Optional flags can be used to change the shutdown behaviour:</p>
 
@@ -75,7 +79,9 @@ require_once('../0/php/functions.php');
 
         <h2>Restarting a Server</h2>
 
-        <pre>gorp restart <em>server</em> [fast|now]</pre>
+        <div class="pre-container">
+            <pre>gorp restart <em>server</em> [fast|now]</pre>
+        </div>
 
         <p>Restarting a server behaves just like stopping an instance, except it is started back up.</p>
 

@@ -48,13 +48,15 @@ require_once('../0/php/functions.php');
 
         <p>The JAR updater will download the latest Paper Server JAR file for the Minecraft game version set in the <a href="/configuration-file">Gorp configuration file</a>.</p>
 
-        <div class="blue box">JAR updates should be done regularly, around once a week. This allows you to keep your servers up-to-date, including getting the latest security and bug fixes from the PaperMC team.</div>
+        <div class="blue box subtle">JAR updates should be done regularly, around once a week. This allows you to keep your servers up-to-date, including getting the latest security and bug fixes from the PaperMC team.</div>
 
 
 
         <h2>Update Server JAR</h2>
 
-        <pre>gorp update-jar</pre>
+        <div class="pre-container">
+            <pre>gorp update-jar</pre>
+        </div>
 
         <p>This will download the latest JAR file to the JAR folder and update the link server instances will use to start the JAR.</p>
 

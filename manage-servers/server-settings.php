@@ -50,15 +50,11 @@ require_once('../0/php/functions.php');
 
 
 
-        <h2>Editing run.sh</h2>
+        <h2>Launch/Resource Settings</h2>
 
         <p>The <mono>run.sh</mono> file is located in a server's directory. Server instance directories are located in <mono>~/gorpmc/servers/</mono>.</p>
 
         <p>The upper portion of the file contains customizable options. These options, when left uncustomized, will inherit the settings in the <a href="/configuration-file/">Gorp configuration file</a>.</p>
-
-
-
-        <h2>Options</h2>
 
         <div class="table-container">
             <table>
@@ -82,6 +78,28 @@ require_once('../0/php/functions.php');
                 </tr>
             </table>
         </div>
+
+
+
+        <h2>Changing server.properties</h2>
+
+        <div class="pre-container">
+            <pre>gorp prop <em>server</em> <em>key</em> <em>value</em></pre>
+        </div>
+
+        <p>Where <code>key</code> is the property name (like <mono>difficulty</mono>) and <code>value</code> is the new value (like <mono>hard</mono>).</p>
+
+        <div class="box red subtle">At the moment, <code>key</code> and <code>value</code> do <strong>NOT</strong> accept spaces. The value will be cut off at the first word. This will be fixed in a future release that addresses the argument parsing.</div>
+
+        
+        <h3>Shortcuts</h3>
+
+        <p>Shortcuts for common keys have been added, with more to come by request or need. The current shortcuts are:</p>
+
+        <ul>
+            <li><strong>port</strong> for "server-port"</li>
+            <li><strong>seed</strong> for "level-seed"</li>
+        </ul>
 
 
     </main>

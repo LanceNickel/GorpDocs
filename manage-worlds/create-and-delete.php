@@ -52,7 +52,9 @@ require_once('../0/php/functions.php');
 
         <h2>Create a World</h2>
 
-        <pre>gorp create-world <em>server</em> [<em>world</em>]</pre>
+        <div class="pre-container">
+            <pre>gorp create-world <em>server</em> [<em>world</em>]</pre>
+        </div>
 
         <p>This will create a world named <em><mono>world</mono></em> in the server instance named <em><mono>server</mono></em>.</p>
 
@@ -64,7 +66,9 @@ require_once('../0/php/functions.php');
 
         <h2>Delete a World</h2>
 
-        <pre>gorp delete-world <em>server</em> [<em>world</em>]</pre>
+        <div class="pre-container">
+            <pre>gorp delete-world <em>server</em> [<em>world</em>]</pre>
+        </div>
 
         <p>This will delete the world named <em><mono>world</mono></em> in the server instance named <em><mono>server</mono></em>.</p>
 
@@ -88,7 +92,9 @@ require_once('../0/php/functions.php');
 
         <h2>Reset a World</h2>
         
-        <pre>gorp reset-world <em>server</em></pre>
+        <div class="pre-container">
+            <pre>gorp reset-world <em>server</em></pre>
+        </div>
 
         <p>This will delete and regenerate the active world in the server instance named <em><mono>server</mono></em>.</p>
 

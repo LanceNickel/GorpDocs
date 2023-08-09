@@ -79,6 +79,12 @@ a.invisible {
 a.invisible:hover {
   background: none;
 }
+a code {
+  border-bottom: 2px solid #4669b9;
+}
+a code:hover {
+  background: #4669b9;
+}
 
 ul li, ol li {
   margin-bottom: 5px;
@@ -89,6 +95,7 @@ pre, code {
   font-family: "IBM Plex Mono", monospace;
   font-size: 14px;
   background: #cccfd3;
+  border: 1px solid #a2a8af;
   border-radius: 6px;
   color: #3e4147;
   margin: 0;
@@ -515,10 +522,10 @@ subnav a.active {
 }
 .box.subtle {
   background: #bec2c7;
-  color: #3e4147;
+  color: #26282c;
 }
 .box pre, .box code {
-  background: rgba(0, 0, 0, 0.25) !important;
+  background: rgba(0, 0, 0, 0.15) !important;
 }
 .box a {
   color: white;
