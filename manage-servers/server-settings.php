@@ -65,13 +65,13 @@ require_once('../0/php/functions.php');
                     <th>Example Value</th>
                 </tr>
                 <tr>
-                    <td>JAR</td>
+                    <td>CUSTOM_JAR</td>
                     <td>Absolute path to a JAR file. For JARs downloaded with <code>get-jar</code> use:<br><mono>$HOMEDIR/jars/[version].jar</td>
                     <td><mono>$LATEST_JAR</mono></td>
-                    <td>$HOMEDIR/jars/1.18.2.jar</td>
+                    <td>$HOMEDIR/jars/1.20.1.jar</td>
                 </tr>
                 <tr>
-                    <td>RAM</td>
+                    <td>CUSTOM_RAM</td>
                     <td>The amount of RAM to allocate to the server, in gigabytes.</td>
                     <td><mono>$RAM</mono></td>
                     <td>8G</td>
@@ -89,7 +89,7 @@ require_once('../0/php/functions.php');
 
         <p>Where <code>key</code> is the property name (like <mono>difficulty</mono>) and <code>value</code> is the new value (like <mono>hard</mono>).</p>
 
-        <div class="box red subtle">At the moment, <code>key</code> and <code>value</code> do <strong>NOT</strong> accept spaces. The value will be cut off at the first word. This will be fixed in a future release that addresses the argument parsing.</div>
+        <div class="box blue subtle">To enter values with spaces, please wrap them in quotes. Example: <code>gorp prop server motd "My Wonderful Server!"</code></div>
 
         
         <h3>Shortcuts</h3>

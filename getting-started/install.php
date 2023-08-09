@@ -107,12 +107,12 @@ require_once('../0/php/functions.php');
 
                 <tr>
                     <td>sha256</td>
-                    <td><code id="c4" class="copy">e1bc08a951fbaa880c1a0dd4ab01eb3f407fbb8566d0c53608f8a7fb95c4cfcc</code></td>
+                    <td><code id="c4" class="copy">cd4bc757a87d6e9d79e2beae12492f388e6304ae6d5e34a9deea65fe187134e3</code></td>
                 </tr>
 
                 <tr>
                     <td>md5</td>
-                    <td><code id="c5" class="copy">a61fa739445735fca10d22f8b3e2bc05</code></td>
+                    <td><code id="c5" class="copy">9622536efcbff21c4bc8c92b587749f5</code></td>
                 </tr>
             </table>
         </div>

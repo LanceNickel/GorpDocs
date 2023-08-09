@@ -42,7 +42,7 @@ require_once('0/php/functions.php');
 
         
         
-        <h2>0.6.0 <span>in dev</span></h2>
+        <h2>0.6.0 <span>9 August 2023</span></h2>
 
         <p><strong>The Configuration Update</strong></h2>
 
@@ -51,6 +51,15 @@ require_once('0/php/functions.php');
             <li><code>NEW</code> Change server.properties in an instance with <a class="no-underline" href="/manage-servers/server-settings/"><code>prop</code></a>.</li>
             <li><code>CHG</code> Status <code>-s</code> now shows whether the JAR file and RAM allocation have been overridden.</li>
             <li><code>FIX</code> General improvements.</li>
+        </ul>
+
+
+        <h3>0.6.1</h3>
+        <ul>
+            <li><code>FIX</code> Fixed bug where server status would not show custom server settings.</li>
+            <li><code>FIX</code> Made <code>gorp -v</code> information clearer.</li>
+            <li><code>FIX</code> Upgrader now handles server run.sh files a little cleaner.</li>
+            <li><code>FIX</code> <code>prop</code> now accepts values with spaces.</li>
         </ul>
         
         
