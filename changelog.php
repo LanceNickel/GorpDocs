@@ -61,6 +61,14 @@ require_once('0/php/functions.php');
             <li><code>FIX</code> Upgrader now handles server run.sh files a little cleaner.</li>
             <li><code>FIX</code> <code>prop</code> now accepts values with spaces.</li>
         </ul>
+
+
+        <h3>0.6.2</h3>
+        <ul>
+            <li><code>NEW</code> <a href="/utilities/jar-update.php">Automatic JAR file updates</a>.</li>
+            <li><code>NEW</code> Configuration file editor. Now, edit Gorp settings with <a class="no-underline" href="/configuration-file.php"><code>gorp config</code></a> and server settings with <a class="no-underline" href="/manage-servers/server-settings.php"><code>gorp config <em>server</em></code></a>.</li>
+            <li><code>FIX</code> General improvements.</li>
+        </ul>
         
         
         

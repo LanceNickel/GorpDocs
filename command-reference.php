@@ -153,6 +153,10 @@ require_once('0/php/functions.php');
                     <td>Changes the server.properties file for the specified server by key/value pair. <a href="/manage-servers/server-settings/">Learn more</a>.</td>
                 </tr>
                 <tr>
+                    <td><code>gorp config [<em>server</em>]</code></td>
+                    <td>Open the config in a text editor. If <code>server</code> is specified, that server's config will be opened.</td>
+                </tr>
+                <tr>
                     <td><code>gorp upgrade</code></td>
                     <td>Downloads and installs the latest version of Gorp.</td>
                 </tr>

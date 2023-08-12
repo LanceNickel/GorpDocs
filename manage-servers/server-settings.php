@@ -46,15 +46,13 @@ require_once('../0/php/functions.php');
 
         <h1>Server Settings</h1>
 
-        <p>Servers may be customized further by editing the <mono>run.sh</mono> file in each server's directory.</p>
 
 
+        <h2>Launch & Resource Allocation <span class="tag box blue inline">RECENTLY CHANGED</span></h2>
 
-        <h2>Launch/Resource Settings</h2>
+        <p>Override a server instance's JAR file and RAM allocation, breaking from the global settings set in <a target="_blank" href="/configuration-file.php">Gorp's configuration file</a>.</p>
 
-        <p>The <mono>run.sh</mono> file is located in a server's directory. Server instance directories are located in <mono>~/gorpmc/servers/</mono>.</p>
-
-        <p>The upper portion of the file contains customizable options. These options, when left uncustomized, will inherit the settings in the <a href="/configuration-file/">Gorp configuration file</a>.</p>
+        <pre>gorp config <em>server</em></pre>
 
         <div class="table-container">
             <table>
@@ -67,13 +65,13 @@ require_once('../0/php/functions.php');
                 <tr>
                     <td>CUSTOM_JAR</td>
                     <td>Absolute path to a JAR file. For JARs downloaded with <code>get-jar</code> use:<br><mono>$HOMEDIR/jars/[version].jar</td>
-                    <td><mono>$LATEST_JAR</mono></td>
+                    <td><em>Value from gorp.conf</em></td>
                     <td>$HOMEDIR/jars/1.20.1.jar</td>
                 </tr>
                 <tr>
                     <td>CUSTOM_RAM</td>
                     <td>The amount of RAM to allocate to the server, in gigabytes.</td>
-                    <td><mono>$RAM</mono></td>
+                    <td><em>Value from gorp.conf</em></td>
                     <td>8G</td>
                 </tr>
             </table>

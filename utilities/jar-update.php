@@ -63,6 +63,14 @@ require_once('../0/php/functions.php');
         <p>If the value of <mono>GAMEVER</mono> in the <a href="/configuration-file/">configuration file</a> is <mono>latest</mono> (default), Gorp will check for the latest Paper release and download it.</p>
 
 
+
+        <h2>Automatic Updates <span class="tag box green subtle inline">NEW</span></h2>
+
+        <p><strong>By default</strong>, Gorp automatically updates the server JAR file to the latest version every Tuesday at 4AM (server time). The update frequency can be changed by updating <mono>UPDATE_FREQUENCY</mono> in the Gorp configuration file. Either input a cron expression or disable automatic updates with <mono>disabled</mono>.</p>
+
+        <p>You can edit the Gorp configuration file using <a class="no-underline" href="/configuration-file.php"><code>gorp config</code></a>.</p>
+
+
     </main>
 
 </html>

@@ -537,7 +537,7 @@ subnav a.active {
   text-decoration: none;
 }
 
-h1 .tag {
+h1 .tag, h2 .tag {
   position: absolute;
   display: inline-block;
   font-size: 14px;

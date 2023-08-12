@@ -46,11 +46,11 @@ require_once('0/php/functions.php');
 
         <h1>Welcome to the Gorp Documentation Site!</h1>
 
-        <p>Gorp is a small jumble of shell scripts to help automate daily Minecraft server tasks. Gorp is lightweight, fast, and much simpler than other tools. Because of that, installing and updating Gorp takes seconds! Gorp can support many server instances. It has backup functionality, automatic JAR update functionality, and custom global options. Since it is a bunch of shell scripts, it is incredibly portable.</p>
+        <p>Gorp is an open source Minecraft server management tool. It runs on the command line and can get you from nothing to playing in less than five minutes! Then, Gorp becomes a powerful server management tool, providing quick access to updates, backups/restorals, configuration changes, and more.</p>
 
-        <p>I initially created this out of frustruation. While I am very comfortable with the Linux CLI, automation is key. When I would want to play a new world with my friends, for example, it would be a (albiet easy) process to get a new server up and running. Gorp makes it one command that takes 5 seconds to run.</p>
+        <p>Gorp reduces time spent on repetitive tasks, allows for quicker customization, and can be used to gather information with status outputs.</p>
 
-        <p>Gorp's name courtesy of my good friend <a class="invisible" href="/0/styles/elements/">Connor</a>. He was not aware at the time (and neither was I) that Gorp was slang for trail mix. Yummy!</p>
+        <p>Spend less time managing your servers and more time playing in them!</p>
 
         <a href="https://github.com/LanceNickel/Gorp" target="_blank" class="button">Gorp on Github</a>
         <a href="https://github.com/LanceNickel/Gorp/issues" target="_blank" class="button">Raise an Issue</a>
