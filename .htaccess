@@ -1,4 +1,5 @@
 ErrorDocument 404 /404.php
+Redirect 301 /configuration-file /configuration
 
 RewriteEngine On
 

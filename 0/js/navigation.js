@@ -75,8 +75,8 @@ const commandReference = [
 ];
 
 const configurationFile = [
-    "/configuration-file",
-    "/configuration-file/"
+    "/configuration",
+    "/configuration/"
 ];
 
 const changelog = [
@@ -132,8 +132,8 @@ if (commandReference.includes(path)) {
 
 // CONFIGURATION FILE
 if (configurationFile.includes(path)) {
-    $('aside a.nav-item[topic="configuration-file"]').addClass('active');
-    $('#mobile-menu a.nav-item[topic="configuration-file"]').addClass('active');
+    $('aside a.nav-item[topic="configuration"]').addClass('active');
+    $('#mobile-menu a.nav-item[topic="configuration"]').addClass('active');
 }
 
 // CHANGE LOG

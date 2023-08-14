@@ -7,7 +7,7 @@
  * Revision version. Set to current date when publishing to Redifer to clear device caches.
  */
 function rev() {
-    return '2023-08-12.1';
+    return '2023-08-14.1';
 }
 
 function ver() {
@@ -96,7 +96,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="manage-worlds" href="/manage-worlds/">Manage Worlds</a>
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
-                <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
+                <a class="nav-item" topic="configuration" href="/configuration/">Configuring Gorp</a>
                 <a class="nav-item" topic="changelog" href="/changelog/">Change Log</a>
 
                 <span id="sidebar-version">For Gorp $ver<br>$rev</span>
@@ -114,7 +114,7 @@ function sidebar($type='normal') {
                 <a class="nav-item" topic="manage-worlds" href="/manage-worlds/">Manage Worlds</a>
                 <a class="nav-item" topic="utilities" href="/utilities/">Utilities</a>
                 <a class="nav-item" topic="command-reference" href="/command-reference/">Command Reference</a>
-                <a class="nav-item" topic="configuration-file" href="/configuration-file/">Configuration File</a>
+                <a class="nav-item" topic="configuration" href="/configuration/">Configuring Gorp</a>
                 <a class="nav-item" topic="changelog" href="/changelog/">Change Log</a>
 
         EOF;
