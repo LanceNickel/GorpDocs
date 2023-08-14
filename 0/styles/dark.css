@@ -110,6 +110,11 @@ pre.copied, code.copied {
 pre.copied:hover, code.copied:hover {
   background: #1c4a3c;
 }
+pre mono, code mono {
+  color: #6b87c7;
+  font-style: italic;
+  text-transform: uppercase;
+}
 
 pre {
   padding: 10px;

@@ -52,7 +52,7 @@ require_once('../0/php/functions.php');
 
         <p>Override a server instance's JAR file and RAM allocation, breaking from the global settings set in <a target="_blank" href="/configuration-file.php">Gorp's configuration file</a>.</p>
 
-        <pre>gorp config <em>server</em></pre>
+        <pre>gorp config <mono>server</mono></pre>
 
         <div class="table-container">
             <table>
@@ -82,10 +82,10 @@ require_once('../0/php/functions.php');
         <h2>Changing server.properties</h2>
 
         <div class="pre-container">
-            <pre>gorp prop <em>server</em> <em>key</em> <em>value</em></pre>
+            <pre>gorp prop <mono>server</mono> <mono>key</mono> <mono>value</mono></pre>
         </div>
 
-        <p>Where <code>key</code> is the property name (like <mono>difficulty</mono>) and <code>value</code> is the new value (like <mono>hard</mono>).</p>
+        <p>Where <code><mono>key</mono></code> is the property name (like <em>difficulty</em>) and <code><mono>value</mono></code> is the new value (like <em>hard</em>).</p>
 
         <div class="box blue subtle">To enter values with spaces, please wrap them in quotes. Example: <code>gorp prop server motd "My Wonderful Server!"</code></div>
 

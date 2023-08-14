@@ -53,20 +53,16 @@ require_once('../0/php/functions.php');
         <h2>Backing Up</h2>
 
         <div class="pre-container">
-            <pre>gorp backup-world <em>server</em></pre>
+            <pre>gorp backup-world <mono>server</mono></pre>
         </div>
-
-        <p>This will backup the active world in the server instance named <em><mono>server</mono></em>.</p>
 
 
 
         <h2>Restoring</h2>
 
         <div class="pre-container">
-            <pre>gorp restore-world <em>server</em></pre>
+            <pre>gorp restore-world <mono>server</mono></pre>
         </div>
-
-        <p>This will ask you to select a world file, and allow you to choose from the set of dates and times the world was backed up. Once run, the restoration utility will backup the world in its current state and restore the selected backup file.</p>
 
 
     </main>

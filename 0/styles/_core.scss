@@ -135,6 +135,12 @@ pre, code {
 			background: $codeCopiedBG;
 		}
 	}
+
+	mono {
+		color: $codeMonoColor;
+		font-style: italic;
+		text-transform: uppercase;
+	}
 }
 
 pre {

@@ -53,12 +53,10 @@ require_once('../0/php/functions.php');
         <h2>Archive a World</h2>
 
         <div class="pre-container">
-            <pre>gorp archive-world <em>server</em> [<em>world</em>]</pre>
+            <pre>gorp archive-world <mono>server</mono> [<mono>world</mono>]</pre>
         </div>
 
-        <p>This will archive the world files for <em><mono>world</mono></em> in the server instance named <em><mono>server</mono></em>.</p>
-
-        <p><strong class="important">There is no world archive restoration utility.</strong> Unlike backups, there is no tool to restore world archives. This is because world archives are intended to be used as long-term storage for historical data. There are many server operators who wish to store historical world archives in a separate location, and this utility provides this functionality.</p>
+        <p><strong class="important">There is no world archive restoration utility.</strong> Unlike backups, there is no tool to restore world archives. This is because world archives are intended to be used as long-term storage for historical data.</p>
 
 
     </main>

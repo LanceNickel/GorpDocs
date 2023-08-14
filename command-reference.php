@@ -42,7 +42,8 @@ require_once('0/php/functions.php');
 
         <p>These are all the possible commands in Gorp.</p>
 
-        <p>Elements in <code><em>italics</em></code> are placeholder values where your values should go (like world names). Elements in <code>[brackets]</code> are optional. Elements separated <code>by|pipes</code> are mutually exlusive arguments.</p>
+        <pre>gorp action <mono>REQUIRED_ARG</mono> [<mono>OPTIONAL_ARG</mono>] MUTUALLY|EXCLUSIVE|ARGS</pre>
+        <p>Items in blue are placeholders for YOUR values, like a server name.</p>
 
 
 
@@ -55,32 +56,36 @@ require_once('0/php/functions.php');
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td><code>gorp start <em>server</em> [-y]</code></td>
-                    <td>Starts a server.</td>
+                    <td><code>gorp start <mono>server</mono> [-y]</code></td>
+                    <td>Start a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp stop <em>server</em> [fast|now]</code></td>
-                    <td>Stops a server.</td>
+                    <td><code>gorp stop <mono>server</mono> [fast|now]</code></td>
+                    <td>Stop a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp restart <em>server</em> [fast|now]</code></td>
-                    <td>Restarts a server.</td>
+                    <td><code>gorp restart <mono>server</mono> [fast|now]</code></td>
+                    <td>Restart a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp create-server <em>server</em></code></td>
-                    <td>Creates a server instance.</td>
+                    <td><code>gorp create-server <mono>server</mono> [<mono>world</mono>]</code></td>
+                    <td>Create a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp delete-server <em>server</em></code></td>
-                    <td>Deletes a server instance.</td>
+                    <td><code>gorp delete-server <mono>server</mono></code></td>
+                    <td>Delete a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp backup-server <em>server</em></code></td>
+                    <td><code>gorp backup-server <mono>server</mono></code></td>
                     <td>Backup a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp restore-server <em>server</em></code></td>
-                    <td>Restore a server instance's files from a backup.</td>
+                    <td><code>gorp restore-server <mono>server</mono></code></td>
+                    <td>Restore a server instance from backup.</td>
+                </tr>
+                <tr>
+                    <td><code>gorp prop <mono>server</mono> <mono>key</mono> <mono>value</mono></code></td>
+                    <td>Changes the server.properties file for the specified server by key/value pair.</td>
                 </tr>
             </table>
         </div>
@@ -96,36 +101,36 @@ require_once('0/php/functions.php');
                     <th>Description</th>
                 </tr>
                 <tr>
-                    <td><code>gorp create-world <em>server</em> [<em>world</em>]</code></td>
-                    <td>Creates a world named <em><mono>world</mono></em> in a server instance.</td>
+                    <td><code>gorp create-world <mono>server</mono> [<mono>world</mono>]</code></td>
+                    <td>Create a new world in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp delete-world <em>server</em> [<em>world</em>]</code></td>
-                    <td>Deletes a world named <em><mono>world</mono></em> in a server instance.</td>
+                    <td><code>gorp delete-world <mono>server</mono> [<mono>world</mono>]</code></td>
+                    <td>Delete a world in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp rename-world <em>server</em> <em>world</em> <em>newname</em></code></td>
-                    <td>Renames a world named <em><mono>world</mono></em> in a server instance.</td>
+                    <td><code>gorp rename-world <mono>server</mono> <mono>world</mono> <mono>newname</mono></code></td>
+                    <td>Rename a world in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp reset-world <em>server</em></code></td>
-                    <td>Deletes and regenerates the active world in a server instance.</td>
+                    <td><code>gorp reset-world <mono>server</mono></code></td>
+                    <td>Delete and regenerate the active world in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp switch-world <em>server</em> [<em>world</em>]</code></td>
-                    <td>Switches to a world named <em><mono>world</mono></em> in a server instance.</td>
+                    <td><code>gorp switch-world <mono>server</mono> [<mono>world</mono>]</code></td>
+                    <td>Change the active world in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp backup-world <em>server</em></code></td>
-                    <td>Backs up the active world in a server instance.</td>
+                    <td><code>gorp backup-world <mono>server</mono></code></td>
+                    <td>Back up the active world in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp restore-world <em>server</em></code></td>
-                    <td>Restores a world from a backup in a server instance.</td>
+                    <td><code>gorp restore-world <mono>server</mono></code></td>
+                    <td>Restore a world from backup in a server instance.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp archive-world <em>server</em> [<em>world</em>]</code></td>
-                    <td>Archives the world named <em><mono>world</mono></em> in a server instance.</td>
+                    <td><code>gorp archive-world <mono>server</mono> [<mono>world</mono>]</code></td>
+                    <td>Archive a world in a server instance for long-term storage.</td>
                 </tr>
             </table>
         </div>
@@ -142,26 +147,22 @@ require_once('0/php/functions.php');
                 </tr>
                 <tr>
                     <td><code>gorp update-jar</code></td>
-                    <td>Downloads and sets the latest stable Paper JAR file globally.</td>
+                    <td>Get the latest Paper JAR, automatically updating servers.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp get-jar -g <em>gamever</em> | -u <em>URL</em></code></td>
-                    <td>Downloads a Paper JAR for either the specified game version or from the specified URL. <a href="/utilities/jar-download/">Learn more</a>.</td>
+                    <td><code>gorp get-jar {-g <mono>gamever</mono> | -u <mono>URL</mono>}</code></td>
+                    <td>Downloads a Paper JAR for either the specified game version or from the specified URL.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp prop <em>server</em> <em>key</em> <em>value</em></code></td>
-                    <td>Changes the server.properties file for the specified server by key/value pair. <a href="/manage-servers/server-settings/">Learn more</a>.</td>
-                </tr>
-                <tr>
-                    <td><code>gorp config [<em>server</em>]</code></td>
-                    <td>Open the config in a text editor. If <code>server</code> is specified, that server's config will be opened.</td>
+                    <td><code>gorp config [<mono>server</mono>]</code></td>
+                    <td>Open the config in a text editor. If <mono>server</mono> is specified, that server's config will be opened.</td>
                 </tr>
                 <tr>
                     <td><code>gorp upgrade</code></td>
                     <td>Downloads and installs the latest version of Gorp.</td>
                 </tr>
                 <tr>
-                    <td><code>gorp -s <em>server</em></code></td>
+                    <td><code>gorp -s <mono>server</mono></code></td>
                     <td>Get the status of a server instance in JSON format.</td>
                 </tr>
             </table>
@@ -184,10 +185,6 @@ require_once('0/php/functions.php');
                 <tr>
                     <td><code>gorp -v</code></td>
                     <td>Show the installed Gorp version.</td>
-                </tr>
-                <tr>
-                    <td><code>gorp ls</code></td>
-                    <td>List servers in <mono>~/gorpmc/servers</mono>.</td>
                 </tr>
             </table>
         </div>

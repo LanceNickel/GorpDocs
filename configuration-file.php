@@ -12,7 +12,7 @@ require_once('0/php/functions.php');
     <script src="/0/js/themesetup.js" type="text/javascript"></script>
     <?= head(); ?>
     
-    <title>Configuration File - Gorp Docs</title>
+    <title>Configuration - Gorp Docs</title>
 </head>
 
 
@@ -22,7 +22,7 @@ require_once('0/php/functions.php');
     <header>
         <?= mobileMenu(); ?>
 
-        Configuration File
+        Configuring Gorp
 
         <a id="change-theme" class="button theme"></a>
     </header>
@@ -38,7 +38,7 @@ require_once('0/php/functions.php');
     <div id="background"></div>
     <main class="article">
 
-        <h1>Gorp's Configuration File</h1>
+        <h1>Configuring Gorp</h1>
 
         <h2>Change Gorp's Config <span class="tag box green subtle inline">NEW</span></h2>
         
@@ -84,7 +84,7 @@ require_once('0/php/functions.php');
 
                 <tr>
                     <td>HOMEDIR</td>
-                    <td>Gorp's main directory containing the "backups", "jars", and "servers" directories. This key is automatically set during install.</td>
+                    <td>Game files directory, where server instances, jars, and backups are stored by default.</td>
                     <td>Absolute path</td>
                     <td><em>set during installation</em></td>
                 </tr>
@@ -105,7 +105,7 @@ require_once('0/php/functions.php');
 
                 <tr>
                     <td>UPDATE_FREQUENCY</td>
-                    <td>How often <a href="/utilities/jar-update.php">automatic updates</a> are done for the latest server JAR.</td>
+                    <td>How often <a href="/utilities/jar-update.php">automatic updates</a> are done for the latest server JAR, in the server's local time zone.</td>
                     <td>Cron expression or <mono>disabled</mono></td>
                     <td><mono>0 4 * * 2</mono></td>
                 </tr>

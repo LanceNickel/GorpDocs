@@ -53,54 +53,42 @@ require_once('../0/php/functions.php');
         <h2>Create a World</h2>
 
         <div class="pre-container">
-            <pre>gorp create-world <em>server</em> [<em>world</em>]</pre>
+            <pre>gorp create-world <mono>server</mono> [<mono>world</mono>]</pre>
         </div>
 
-        <p>This will create a world named <em><mono>world</mono></em> in the server instance named <em><mono>server</mono></em>.</p>
-
-        <p>If the world name is not specified, Gorp will ask for a world name.</p>
-
-        <div class="box red inline">World names may NOT have spaces or special characters in them.</div>
+        <div class="box red subtle inline">World names may NOT have spaces or special characters in them.</div>
 
 
 
         <h2>Delete a World</h2>
 
         <div class="pre-container">
-            <pre>gorp delete-world <em>server</em> [<em>world</em>]</pre>
+            <pre>gorp delete-world <mono>server</mono> [<mono>world</mono>]</pre>
         </div>
 
-        <p>This will delete the world named <em><mono>world</mono></em> in the server instance named <em><mono>server</mono></em>.</p>
-
-        <p>If the world name is not specified, Gorp will show a list of options and ask for you to enter a world name.</p>
-
-        <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the world. Gorp will force you to confirm you are deleting the intended world.</p>
+        <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the world.</p>
 
 
 
         <h2>Rename a World</h2>
 
         <div class="pre-container">
-            <pre>gorp rename-world <em>server</em> [<em>current name</em>] [<em>new name</em>]</pre>
+            <pre>gorp rename-world <mono>server</mono> [<mono>WORLD</mono>] [<mono>NEW_NAME</mono>]</pre>
         </div>
 
-        <p>This will rename the world. Any time you need to reference this world, use the new name. The folder names are changed as well.</p>
-
-        <p>If the world is the "active" world, meaning it is set in server.properties, server.properties will also be automatically updated.</p>
+        <div class="box red subtle inline">World names may NOT have spaces or special characters in them.</div>
 
 
 
-        <h2>Reset a World</h2>
+        <h2>Regenerate a World</h2>
         
         <div class="pre-container">
-            <pre>gorp reset-world <em>server</em></pre>
+            <pre>gorp reset-world <mono>server</mono></pre>
         </div>
 
-        <p>This will delete and regenerate the active world in the server instance named <em><mono>server</mono></em>.</p>
+        <p>This will delete and regenerate the active world in specified <code><mono>server</mono></code>.</p>
 
-        <p>This tool is useful for pulling a <em>Mulligan</em>, or to start over if another generated world was bad (such as a remote island).</p>
-
-        <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the active world. Gorp will force you to confirm you are regenerating the intended world.</p>
+        <p><strong class="important">This action is irreversible!</strong> Ensure you have a backup of the active world.</p>
 
 
     </main>

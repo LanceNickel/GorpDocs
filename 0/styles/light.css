@@ -110,6 +110,11 @@ pre.copied, code.copied {
 pre.copied:hover, code.copied:hover {
   background: #90d5c0;
 }
+pre mono, code mono {
+  color: #4669b9;
+  font-style: italic;
+  text-transform: uppercase;
+}
 
 pre {
   padding: 10px;
@@ -121,7 +126,7 @@ code {
 }
 
 mono {
-  color: #46b996;
+  color: #3fa787;
   font-family: "IBM Plex Mono", monospace;
   font-size: 15px;
   line-height: 16px;

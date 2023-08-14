@@ -47,7 +47,7 @@ require_once('../0/php/functions.php');
         <h1>Get Server Status</h1>
 
         <div class="pre-container">
-            <pre>gorp -s <em>server</em></pre>
+            <pre>gorp -s <mono>server</mono></pre>
         </div>
 
         <p>Get a server instance's current status and other information in JSON format.</p>

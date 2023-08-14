@@ -48,17 +48,17 @@ require_once('../0/php/functions.php');
 
         <p>The JAR downloader can be used to download JARS from a URL, or a Paper JAR for a particular Minecraft version.</p>
 
-        <p>This will NOT set the JAR for any server instance, though. This must be done by configuring an <a href="/manage-servers/server-settings/">instance's settings</a>.</p>
+        <p>This will NOT set the JAR for any server instance, though. Edit a server instance's JAR file by using <a class="no-underline" href="../manage-servers/server-settings.php"><code>gorp config <mono>server</mono></code></a>.</p>
 
 
 
         <h2>Download by URL</h2>
 
         <div class="pre-container">
-            <pre>gorp get-jar -u <em>url</em></pre>
+            <pre>gorp get-jar -u <mono>url</mono></pre>
         </div>
 
-        <p>This will download the JAR file in the link and will put it in <mono>~/gorpmc/jars/</mono>. <strong class="important">Please make sure you trust the source of the JAR file!</strong></p>
+        <p>This will download the JAR file in the link and will put it in <mono>~/gorpmc/jars/</mono>.</p>
 
         
         <h3 class="important">IMPORTANT NOTICES:</h3>
@@ -83,7 +83,7 @@ require_once('../0/php/functions.php');
         <h2>Download by Version</h2>
 
         <div class="pre-container">
-            <pre>gorp get-jar -v <em>version</em></pre>
+            <pre>gorp get-jar -v <mono>version</mono></pre>
         </div>
 
         <p>This will download the latest stable Paper JAR file for the game version to <mono>~/gorpmc/jars/</mono>.</p>
@@ -91,8 +91,6 @@ require_once('../0/php/functions.php');
 
 
         <h3>Supported versions</h3>
-        
-        <p>Download by version only works with the Paper API, therefore any version of Paper can be downloaded:</p>
 
         <div class="listcols">
             <div class="col">
